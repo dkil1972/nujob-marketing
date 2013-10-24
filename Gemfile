@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.rc2'
 ruby '1.9.3'
 gem 'haml-rails'
+group :production do 
 gem 'rails_12factor'
+end
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
