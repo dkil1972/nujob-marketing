@@ -1,0 +1,29 @@
+﻿!!!
+%html
+  %head
+    %title N u j o b
+    %link{href: "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600", rel: "stylesheet", type: "text/css"}/
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %meta{content: "prettystrap", name: "author"}/
+  %body
+    = yield
+  %footer.page.color-5
+    .inner-page.row-fluid
+      .span6.social
+        %a{href: "http://linkedin.com/a_nujob"}
+          %i.icon-linkedin-sign
+        %a{href: "http://twitter.com/a_nujob"}
+          %i.icon-twitter
+        %a{href: "http://github.com/a_nujob"}
+          %i.icon-github-sign
+        %a{href: "http://facebook.com/a_nujob"}
+          %i.icon-facebook-sign
+      .span6.text-right.copyright
+        \© 2013 http://nujob.co.uk | all rights reserved |
+        %a.scroll{href: "#top", title: "Got to top"}
+          To top
+          %i.icon-caret-up

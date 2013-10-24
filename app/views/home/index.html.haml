@@ -1,0 +1,100 @@
+!!!
+%html
+  %body#top{"data-offset" => "50", "data-spy" => "scroll", "data-target" => ".navbar"}
+    / Nav button
+    %a#toggle.closed
+      %i.icon-reorder
+    / Navigation
+    %header.navbar.navbar-fixed-top
+      .inner-page
+        %h1.logo NuJob
+        #nav
+          %ul.nav
+            %li.active
+              %a.scroll.brand-1{href: "#home", title: "Home page"} Home
+            %li
+              %a.scroll.brand-4{href: "#features", title: "Check out our awesome services"} Features
+    / Home Page
+    #home.page.color-1
+      .inner-page{style: "margin-top:-40px"}
+        %h2.page-headline.large Hire passionate developers for your team without wasting time sifting through CVs.
+        / h2 class="page-headline large">Where .Net developers meet .Net hiring managers without recruitment agents</h2
+      .row-fluid.inner-page
+        .span8.pull-right{style: "margin-top:-70px"}
+          / Video
+          .btn-container.figurette
+            %img{alt: "Play video", src: "/assets/NuJob_HD_Poster.png", style: "margin-left:50px"}/
+            / <a style="margin-left:-130px" class="lightbox iframe btn-play" target="_blank" href="http://www.youtube.com/watch?feature=player_embedded&v=h1er_dG_wF4"><i class="icon-play"></i></a>
+        .span4{style: "font-size:smaller"}
+          %ul.big-list
+            %li{style: "font-size:small"}
+              %i.icon-ok
+              Developers vetting developers
+            %li{style: "font-size:small"}
+              %i.icon-ok
+              The network is yours
+            %li{style: "font-size:small"}
+              %i.icon-ok
+              We set you up
+            %li{style: "font-size:small"}
+              %i.icon-ok
+              No recruiter premiums
+          %br/
+        .row-fluid.inner-page
+          .span6.pull-right
+            %a{href: "#features"}
+              %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px", type: "submit"}
+                Tell me more
+                %i.icon-caret-down
+    /
+      Sign up
+      <div class="sign-up color-2 visible-desktop">
+      <div class="row-fluid inner-page">
+      <div class="span12">
+      <h4 class="pull-left">They say visitors prefer scrolling rather than clicking. We combined both.</h4>
+      <a href="#features" class="scroll btn pull-right" title="Check out more freatures!"><i class="icon-caret-down"></i> Scroll down</a>
+      </div>
+      </div>
+      </div>
+    / Features
+    #features.page.color-4
+      .inner-page
+        %h2.page-headline Recruitment was broken, we've fixed it.
+      .inner-page.row-fluid
+        %ul.features.list-inline
+          %li
+            %h3
+              %i.icon-cog
+              Real developers
+            %p We are not trying to be LinkedIn or Facebook. NuJob is about managing real relationships and having a network of real potential developers for current and future roles in your team, it is not a social hangout with status updates or fascinating wall postings.
+          %li
+            %h3
+              %i.icon-heart
+              Lead generation
+            %p We will match you through LinkedIn, Github, Meetup.com, Stack Overflow and Twitter. All in one place, all with one dashboard, all with one goal - matching the right developers with the right jobs. You won't have to sift through tens of CVs to find the right developer.
+          %li
+            %h3
+              %i.icon-tablet
+              Managed process
+            %p Know clearly at a glance all of the candidates and which stage in your process they are at. Eg Coding challenge, Phone interview, Face to Face, Made an offer etc. See everything in one place and make the process as easy as it always should have been.
+      .row-fluid.inner-page
+        .span6
+          %img.figurette{alt: "pop in and see", src: "/assets/NuJob_HD_Screen.png"}/
+        .span6
+          %h3 Come in and see how NuJob will improve the way you hire developers.
+          %p.lead Your one stop dashboard for hiring developers to work in your team
+          %ul.list-wide
+            %li
+              %i.icon-check
+              Save time
+            %li
+              %i.icon-check
+              Hire better developers
+            %li
+              %i.icon-check
+              Capture a real network, not a social one
+            %li
+              %i.icon-check
+              Manage your hiring pipeline with ease
+          %a{href: "http://eepurl.com/DHM69"}
+            %button.btn.btn-centered{style: "background:orange;padding: 0px 20px 40px 20px", type: "submit"} Get early access now
