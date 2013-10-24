@@ -60,7 +60,7 @@ NujobMarketing::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  # config.assets.precompile += [ '*.js', '*.css']
+   config.assets.precompile += %w[ '.woff', '.eot' , '.svg' , '.ttf']
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
