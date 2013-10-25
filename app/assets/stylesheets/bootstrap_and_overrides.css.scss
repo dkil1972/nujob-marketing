@@ -1,8 +1,8 @@
 @import "twitter-bootstrap-static/bootstrap.css";
 
 // Set the correct sprite paths
-@iconSpritePath :asset-url("twitter/bootstrap/glyphicons-halflings-4e5b89324f1ac987ddf6835ef51f5fe9.png", image);
-@iconWhiteSpritePath :asset-url("twitter/bootstrap/glyphicons-halflings-white-2fa53df59ca25ee50f59f971c0c9175d.png", image);
+@iconSpritePath  :assets-path("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath :assets-path("twitter/bootstrap/glyphicons-halflings-white.png");
 
 // Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
 @fontAwesomeEotPath :asset-url("fontawesome-webfont.eot");
@@ -15,7 +15,7 @@
 @import "twitter-bootstrap-static/fontawesome.css";
 
 // Glyphicons
-//@import "twitter/bootstrap/sprites.less";
+@import "twitter-bootstrap-static/sprites.css";
 
 // Your custom LESS stylesheets goes here
 //
