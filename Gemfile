@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.rc2'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'sqlite3'
  ruby '1.9.3'
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
