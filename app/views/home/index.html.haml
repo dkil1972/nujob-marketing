@@ -24,6 +24,8 @@
           / Video
           .btn-container.figurette
             %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png", style: "margin-left:50px"}/
+            %a.lightbox.iframe.btn-play{:allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "215", :href => "http:////www.youtube.com/embed/reGc4XLl7Mc", :title => "YouTube video player", :width => "320"}
+              %i.icon-play
         .span4{style: "font-size:smaller"}
           %ul.big-list
             %li{style: "font-size:small"}
@@ -69,7 +71,7 @@
             %p Know clearly at a glance all of the candidates and which stage in your process they are at. Eg Coding challenge, Phone interview, Face to Face, Made an offer etc. See everything in one place and make the process as easy as it always should have been.
       .row-fluid.inner-page
         .span6
-          %img.figurette{alt: "pop in and see", src: "/assets/NuJob_HD_Screen-a995aecf81fc039a7c0ffa30da909899.png"}/
+          %img{alt: "pop in and see", src: "/assets/NuJob_HD_Screen-a995aecf81fc039a7c0ffa30da909899.png"}/
         .span6
           %h3 Come in and see how NuJob will improve the way you hire developers.
           %p.lead Your one stop dashboard for hiring developers to work in your team
@@ -88,3 +90,4 @@
               Manage your hiring pipeline with ease
           %a{href: "http://eepurl.com/DHM69"}
             %button.btn.btn-centered{style: "background:orange;padding: 0px 20px 40px 20px", type: "submit"} Get early access now
+      
