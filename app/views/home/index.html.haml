@@ -14,6 +14,7 @@
               %a.scroll.brand-1{href: "#home", title: "Home page"} Home
             %li
               %a.scroll.brand-4{href: "#features", title: "Check out our awesome services"} Features
+     
     / Home Page
     #home.page.color-1
       .inner-page{style: "margin-top:-40px"}
@@ -24,8 +25,9 @@
           / Video
           .btn-container.figurette
             %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png", style: "margin-left:50px"}/
-            %a.lightbox.iframe.btn-play{:allowscriptaccess => "always", :frameborder => "0", :height => "215", :href => "http:////www.youtube.com/embed/reGc4XLl7Mc", :title => "YouTube video player", :width => "320"}
+            %a.lightbox.iframe.btn-play{allowfullscreen: "", frameborder: "0", height: "315", href: "https://vimeo.com/78293639", width: "420"}
               %i.icon-play
+          
         .span4{style: "font-size:smaller"}
           %ul.big-list
             %li{style: "font-size:small"}
@@ -47,7 +49,6 @@
               %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px", type: "submit"}
                 Tell me more
                 %i.icon-caret-down
-    
     / Features
     #features.page.color-4
       .inner-page
@@ -90,4 +91,4 @@
               Manage your hiring pipeline with ease
           %a{href: "http://eepurl.com/DHM69"}
             %button.btn.btn-centered{style: "background:orange;padding: 0px 20px 40px 20px", type: "submit"} Get early access now
-      
+    

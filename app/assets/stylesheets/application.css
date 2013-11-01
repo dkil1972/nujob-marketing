@@ -10,6 +10,8 @@
  *
  *= require_self
  *= require_fontawesome.css
+ *= require_bootstrap.css
  *= require_style.min.css
+ *= require_bootstrap-lightbox.css
  *= require_tree .
  */
