@@ -9,6 +9,7 @@ ruby '1.9.3'
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'rails_12factor' 
+gem 'gibbon'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc2'
 gem 'closure-compiler'
