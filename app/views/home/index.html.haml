@@ -2,8 +2,10 @@
 %html
   %body#top{"data-offset" => "50", "data-spy" => "scroll", "data-target" => ".navbar"}
     / Nav button
-    %a#toggle.closed
+    %a#toggle.closed{style:"margin-bottom:30px"}
+     
       %i.icon-reorder
+    
     / Navigation
     %header.navbar.navbar-fixed-top
       .inner-page
@@ -31,18 +33,18 @@
 
     / Home Page
     #home.page.color-1
-      .inner-page{style: "margin-top: -40px"}
+      .inner-page{style:"margin-top:-30px"}
         %h2.page-headline.large Hire passionate developers for your team without wasting time sifting through CVs.
         / h2 class="page-headline large">Where .Net developers meet .Net hiring managers without recruitment agents</h2
-      .row-fluid.inner-page
-        .span8.pull-right{style: "margin-top:-70px"}
+      .row-fluid.inner-page 
+        .span8.pull-right{style:"margin-top:-50px"}
           / Video
           .btn-container.figurette
-            %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png", style: "margin-left:50px"}/
+            %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png"}/
             %a.lightbox.iframe.btn-play{allowfullscreen: "", frameborder: "0", height: "315", href: "https://vimeo.com/78293639", width: "420"}
               %i.icon-play
             
-        .span4{style: "font-size:smaller"}
+        .span4{style: "font-size:smaller; margin-top: 30px"}
           %ul.big-list
             %li{style: "font-size:small"}
               %i.icon-ok
