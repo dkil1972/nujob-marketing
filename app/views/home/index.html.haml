@@ -15,9 +15,23 @@
             %li
               %a.scroll.brand-4{href: "#features", title: "Check out our awesome services"} Features
      
+    :javascript
+      $(document).ready(function() {
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+          disableOn: 0,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false
+        });
+      });
+    
+
+
     / Home Page
     #home.page.color-1
-      .inner-page{style: "margin-top:-40px"}
+      .inner-page{style: "margin-top: -40px"}
         %h2.page-headline.large Hire passionate developers for your team without wasting time sifting through CVs.
         / h2 class="page-headline large">Where .Net developers meet .Net hiring managers without recruitment agents</h2
       .row-fluid.inner-page
@@ -27,7 +41,7 @@
             %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png", style: "margin-left:50px"}/
             %a.lightbox.iframe.btn-play{allowfullscreen: "", frameborder: "0", height: "315", href: "https://vimeo.com/78293639", width: "420"}
               %i.icon-play
-          
+            
         .span4{style: "font-size:smaller"}
           %ul.big-list
             %li{style: "font-size:small"}
