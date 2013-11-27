@@ -1084,7 +1084,7 @@ ul{list-style:none;}
 .features{text-align:center;}.features h3{font-size:32px;}
 .features li{max-width:310px;text-align:left;margin:0 10px;}.features li i{color:#3a9ac4;font-size:32px;padding-top:30px;}
 .big-list{font-size:25px;font-weight:300;}.big-list li{line-height:35px;height:50px;margin:10px;}
-.big-list i{float:left;width:50px;font-size:40px;margin-right:20px;}
+.big-list i{float:left;width:50px;font-size:40px;margin-right:10px;}
 .list-wide li{padding:5px 0;}
 .accordion-group{border:0;margin:10px 0;}
 .accordion-heading{background:#4baad3;}.accordion-heading a{color:#ffffff;}

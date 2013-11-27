@@ -6,6 +6,7 @@ NujobMarketing::Application.routes.draw do
   # root 'welcome#index'
    root to: "home#index"
    resources :signup
+   resources :blog
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
