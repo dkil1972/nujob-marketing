@@ -9,7 +9,17 @@
     %meta{charset: "utf-8"}/
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %meta{content: "prettystrap", name: "author"}/
-   
+  %header.navbar.navbar-fixed-top
+    .inner-page
+      %h2.logo NuJob
+      #nav
+        %ul.nav
+          %li.active
+            %a.scroll.brand-1{href: "#home", title: "Home page"} Home
+          %li
+            %a.scroll.brand-4{href: "#features", title: "Check out our awesome services"} Features
+          %li
+            %a.scroll.brand-1{href: "/blog" } Blog
   %body
     = yield
   %footer.page.color-5
