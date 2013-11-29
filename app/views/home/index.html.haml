@@ -21,38 +21,43 @@
 
     / Home Page
     #home.page.color-1
-      .inner-page{style:"margin-top:-30px"}
+      .inner-page
         %h2.page-headline.large Hire passionate developers for your team without wasting time sifting through CVs.
         / h2 class="page-headline large">Where .Net developers meet .Net hiring managers without recruitment agents</h2
       .row-fluid.inner-page 
-        .span7.pull-right{style:"margin-top:-40px"}
+          
+        .span6.pull-right
           / Video
           .btn-container.figurette
             %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png"}/
             %a.lightbox.iframe.btn-play{allowfullscreen: "", frameborder: "0", height: "315", href: "https://vimeo.com/78293639", width: "420"}
               %i.icon-play
             
-        .span5{style: "font-size:smaller; margin-top: 30px"}
-          %ul.big-list
-            %li{style: "font-size: 20px"}
+
+        .span6
+          %ul
+            %strong
+              %h4 Benefit from
+            %li
               %i.icon-ok
-              Developers vetting developers
-            %li{style: "font-size: 20px"}
+              the collective network of your team
+            %li
               %i.icon-ok
-              The network is yours
-            %li{style: "font-size: 20px"}
+              a single powerful view of all hiring sources
+            %li
               %i.icon-ok
-              Beautiful CRM 
-            %li{style: "font-size: 20px"}
+              the whole team efficiently vetting candidates
+            %li
               %i.icon-ok
-              No recruiter premiums
+              owning the contact list (no recruiter premiums)
+            %li
+              %i.icon-ok
+              quality over quantity of developers
           %br/
-        .row-fluid.inner-page
-          .span6.pull-right
-            %a{href: "#features"}
-              %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px", type: "submit"}
-                Tell me more
-                %i.icon-caret-down
+          %a{href: "#features"}
+            %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px; margin-left: 10px;", type: "submit"}
+              Tell me more
+              %i.icon-caret-down
     / Features
     #features.page.color-4
       .inner-page
