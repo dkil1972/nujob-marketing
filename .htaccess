@@ -1,8 +1,2 @@
 RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^(www\.)?nujob\.co\.uk$
-RewriteRule ^blog2/(.*)$ http://blog.nujob.co.uk/$1 [L,QSA,R=301]
-
-RewriteCond %{HTTP_HOST} ^blog\.nujob\.co\.uk$
-RewriteCond %{REQUEST_URI} !^blog2/
-RewriteRule ^(.*)$ /blog2/$1 [L,QSA]
+RewriteRule ^/?blog2/(.*)$ http://blog.nujob.co.uk/$1?proxy=http://blog.nujob.co.uk [QSA, P]
