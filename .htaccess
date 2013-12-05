@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^/?blog2/(.*)$ http://blog.nujob.co.uk/$1?proxy=http://blog.nujob.co.uk [QSA, P]
