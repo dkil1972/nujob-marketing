@@ -5,6 +5,7 @@ gem 'rails', '4.0.0.rc2'
 
 # Use sqlite3 as the database for Active Record
 ruby '1.9.3'
+gem 'pg'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'haml-rails'
 gem 'rails_12factor' 
