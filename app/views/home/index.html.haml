@@ -1,4 +1,4 @@
-!!!
+﻿!!!
 %html
   %body#top{"data-offset" => "50", "data-spy" => "scroll", "data-target" => ".navbar"}
     / Nav button
@@ -21,38 +21,41 @@
 
     / Home Page
     #home.page.color-1
-      .inner-page{style:"margin-top:-30px"}
+      .inner-page
         %h2.page-headline.large Hire passionate developers for your team without wasting time sifting through CVs.
         / h2 class="page-headline large">Where .Net developers meet .Net hiring managers without recruitment agents</h2
       .row-fluid.inner-page 
-        .span7.pull-right{style:"margin-top:-40px"}
+        .span6.pull-right
           / Video
           .btn-container.figurette
             %img{alt: "Play video", src: "/assets/NuJob_HD_Poster-3df31e10d05bdd7e96d46ea8475f3296.png"}/
             %a.lightbox.iframe.btn-play{allowfullscreen: "", frameborder: "0", height: "315", href: "https://vimeo.com/78293639", width: "420"}
               %i.icon-play
             
-        .span5{style: "font-size:smaller; margin-top: 30px"}
-          %ul.big-list
-            %li{style: "font-size: 20px"}
+        .span6
+          %ul
+            %strong
+              %h4{style: "font-weight: 300"} Benefit from
+            %li
               %i.icon-ok
-              Developers vetting developers
-            %li{style: "font-size: 20px"}
+              the collective network of your team
+            %li
               %i.icon-ok
-              The network is yours
-            %li{style: "font-size: 20px"}
+              a single powerful view of all hiring sources
+            %li
               %i.icon-ok
-              Beautiful CRM 
-            %li{style: "font-size: 20px"}
+              the whole team efficiently vetting candidates
+            %li
               %i.icon-ok
-              No recruiter premiums
+              owning the contact list (no recruiter premiums)
+            %li
+              %i.icon-ok
+              quality over quantity of developers
           %br/
-        .row-fluid.inner-page
-          .span6.pull-right
-            %a{href: "#features"}
-              %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px", type: "submit"}
-                Tell me more
-                %i.icon-caret-down
+          %a{href: "#features"}
+            %button.btn.scroll{style: "background-color:orange;padding: 0px 20px 40px 20px; margin-left: 10px;", type: "submit"}
+              Tell me more
+              %i.icon-caret-down
     / Features
     #features.page.color-4
       .inner-page
@@ -96,3 +99,48 @@
           %a{href: "/signup"}
             %button.btn.btn-centered{style: "background:orange;padding: 0px 20px 40px 20px", type: "submit"} Get early access now
     
+    #pricing.page.blue-theme{style: "padding-left: 20px; padding-right: 20px; line-height: 20px"}
+      .container.text-center
+        %h4.heading{style: "padding-top: -20px;"} Start your 60 day trial today
+        %p.lead.sub-title No long term contracts. 100% money back guarantee.
+        .plans.row.text-center
+          .span2
+            %h5.plan-name Consultant
+            %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £99
+            %span.muted per month
+            %ul.unstyled.plan-features{style: "font-size : 14px;"}
+              %li 1 hiring manager
+              %li 3 open roles
+              %li &#8734; hires
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "#"} Choose Plan
+          .span2.preferred-plan
+            %h5.plan-name Team
+            %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £299
+            %span.muted per month
+            %ul.unstyled.plan-features{style: "font-size : 14px; "}
+              %li 1 hiring manager
+              %li 5 team members
+              %li 10 open roles
+              %li &#8734; hires
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "#"} Choose Plan
+          .span2
+            %h5.plan-name Programme Manager
+            %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £499
+            %span.muted per month
+            %ul.unstyled.plan-features{style: "font-size : 14px;"}
+              %li 3 hiring managers
+              %li 40 team members
+              %li 30 open roles
+              %li &#8734; hires
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "#"} Choose Plan
+          .span2
+            %h5.plan-name HR Department
+            %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £1599
+            %span.muted per month
+            %ul.unstyled.plan-features{style: "font-size : 14px;"}
+              %li &#8734; hiring managers
+              %li &#8734; team members
+              %li &#8734; open roles
+              %li &#8734; hires
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "#"} Choose Plan
+        %p.lead.sub-title{style: "padding-bottom:30px;"} All plans give access to the full leads network and the full CRM capability.
