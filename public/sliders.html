@@ -68,7 +68,7 @@ var ViewModel = function() {
         return ((self.salary()/(1-(self.recruiterMargin()/100)))-self.salary())*self.devs();
     });
 	self.recruiterCostRounded = ko.computed(function() {
-		return Math.round(self.recruiterCost() / 100) * 100;
+		return Math.round(self.recruiterCost() * 100) / 100;
 	});
     
 	self.nujobPlan1Cost = ko.computed(function() {
