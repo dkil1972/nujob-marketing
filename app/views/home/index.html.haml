@@ -4,7 +4,7 @@
     / Nav button
     %a#toggle.closed
       %i.icon-reorder
-     
+    
     :javascript
       $(document).ready(function() {
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -16,8 +16,83 @@
           fixedContentPos: false
         });
       });
-    
-
+    :javascript
+      ko.bindingHandlers.slider = {
+        init: function (element, valueAccessor, allBindingsAccessor) {
+          var options = allBindingsAccessor().sliderOptions || {};
+          $(element).slider(options);
+          ko.utils.registerEventHandler(element, "slidechange", function (event, ui) {
+              var observable = valueAccessor();
+              observable(ui.value);
+          });
+          ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
+              $(element).slider("destroy");
+          });
+          ko.utils.registerEventHandler(element, "slide", function (event, ui) {
+              var observable = valueAccessor();
+              observable(ui.value);
+          });
+        },
+        update: function (element, valueAccessor) {
+          var value = ko.utils.unwrapObservable(valueAccessor());
+          if (isNaN(value)) value = 0;
+          $(element).slider("value", value);
+  
+        }
+      };
+  
+  
+      var ViewModel = function() {
+          var self = this;
+      
+          self.salary = ko.observable(45000);
+          self.monthsTaken = ko.observable(1);
+          self.recruiterMargin = ko.observable(15);
+          self.devs = ko.observable(0);
+  
+          self.recruiterCost = ko.computed(function() {
+            return ((self.salary()/(1-(self.recruiterMargin()/100)))-self.salary())*self.devs();
+          });
+          self.recruiterCostRounded = ko.computed(function() {
+            return Math.round(self.recruiterCost() * 100) / 100;
+          });
+      
+          self.nujobPlan1Cost = ko.computed(function() {
+            return (99 * self.monthsTaken());
+          });
+  
+          self.nujobPlan2Cost = ko.computed(function() {
+            return (299 * self.monthsTaken());
+          });
+  
+          self.nujobPlan3Cost = ko.computed(function() {
+            return (499 * self.monthsTaken());
+          });
+  
+          self.nujobPlan4Cost = ko.computed(function() {
+            return (1599 * self.monthsTaken());
+          });
+  
+          self.plan1Saving = ko.computed(function() {
+            return self.recruiterCostRounded() - self.nujobPlan1Cost();
+          });
+  
+          self.plan2Saving = ko.computed(function() {
+            return self.recruiterCostRounded() - self.nujobPlan2Cost();
+          });
+  
+          self.plan3Saving = ko.computed(function() {
+            return self.recruiterCostRounded() - self.nujobPlan3Cost();
+          });
+  
+          self.plan4Saving = ko.computed(function() {
+            return self.recruiterCostRounded() - self.nujobPlan4Cost();
+          });
+      }
+  
+      $(document).ready(function() {
+        ko.applyBindings(new ViewModel());     
+      });
 
     / Home Page
     #home.page.color-1
@@ -100,7 +175,61 @@
     
     #pricing.page.blue-theme{style: "padding-left: 20px; padding-right: 20px; line-height: 20px"}
       .container.text-center
-        %h4.heading{style: "padding-top: -20px;"} Start your 60 day trial today
+        %h2{style: "padding-top: -20px; font-family: 'Noto Sans', sans-serif;"} Recruiters vs NuJob
+        %p
+          Average salary:  £
+          %input{"data-bind" => "value: salary"}/
+          Average recruiter margin:
+          = succeed "%" do
+            %input{"data-bind" => "value: recruiterMargin", style: "width:50px"}/
+        %p{style: "padding-bottom: 20px;padding-top: 20px;"}
+          Number of developers you need to hire:
+          %input{"data-bind" => "value: devs, valueUpdate: 'afterkeydown'"}/
+        .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{"data-bind" => "slider: devs, sliderOptions: {min: 0, max: 40, range: 'min', step: 1}", style: "margin: 10px"}
+          .ui-slider-range.ui-widget-header.ui-slider-range-min{style: "width: 0%;"}
+          %a.ui-slider-handle.ui-state-default.ui-corner-all{href: "#", style: "left: 0%;"}
+        %p{style: "padding-bottom: 20px;padding-top: 20px;"} 
+          Number of months it might take:
+          %input{"data-bind" => "value: monthsTaken, valueUpdate: 'afterkeydown'"}/
+        .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{"data-bind" => "slider: monthsTaken, sliderOptions: {min: 1, max: 24, range: 'min', step: 1}", style: "margin: 10px"}
+          .ui-slider-range.ui-widget-header.ui-slider-range-min{style: "width: 0%;"}
+          %a.ui-slider-handle.ui-state-default.ui-corner-all{href: "#", style: "left: 0%;"}
+        %p{style: "padding-top: 20px;"}
+          Total cost with a Recruiter: £
+          %span{"data-bind" => "text: recruiterCostRounded"}
+        %p
+          Total cost with NuJob plan 1: £
+          %span{"data-bind" => "text: nujobPlan1Cost"}
+          (Saving of
+          = succeed ")" do
+            %b
+              \£
+              %span{"data-bind" => "text: plan1Saving"}
+        %p
+          Total cost with NuJob plan 2: £
+          %span{"data-bind" => "text: nujobPlan2Cost"}
+          (Saving of
+          = succeed ")" do
+            %b
+              \£
+              %span{"data-bind" => "text: plan2Saving"}
+        %p
+          Total cost with NuJob plan 3: £
+          %span{"data-bind" => "text: nujobPlan3Cost"}
+          (Saving of
+          = succeed ")" do
+            %b
+              \£
+              %span{"data-bind" => "text: plan3Saving"}
+        %p
+          Total cost with NuJob plan 4: £
+          %span{"data-bind" => "text: nujobPlan4Cost"}
+          (Saving of
+          = succeed ")" do
+            %b
+              \£
+              %span{"data-bind" => "text: plan4Saving"}       
+        %h4.heading{style: "padding-top: 60px;"} Start your 60 day trial today
         %p.lead.sub-title No long term contracts. 100% money back guarantee.
         .plans.row.text-center
           .span2
@@ -111,7 +240,7 @@
               %li 1 hiring manager
               %li 3 open roles
               %li &#8734; hires
-            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/?plan=consultant"} Choose Plan
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/users/sign_up?plan=consultant"} Choose Plan
           .span2.preferred-plan
             %h5.plan-name Team
             %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £299
@@ -121,7 +250,7 @@
               %li 5 team members
               %li 10 open roles
               %li &#8734; hires
-            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/?plan=team"} Choose Plan
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/users/sign_up?plan=team"} Choose Plan
           .span2
             %h5.plan-name Programme Manager
             %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £499
@@ -131,7 +260,7 @@
               %li 40 team members
               %li 30 open roles
               %li &#8734; hires
-            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/?plan=Programme%20Manager"} Choose Plan
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/users/sign_up?plan=Programme%20Manager"} Choose Plan
           .span2
             %h5.plan-name HR Department
             %h2.plan-price{style: "color: #444 ; margin: 10px 0; padding: 0 0 0 0;  display:block !important"} £1599
@@ -141,5 +270,5 @@
               %li &#8734; team members
               %li &#8734; open roles
               %li &#8734; hires
-            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/?plan=HR%20Department"} Choose Plan
+            %a.btn.btn-block.btn-large.btn-success{style: "line-height : 20px;" , href: "http://app.nujob.co.uk/users/sign_up?plan=HR%20Department"} Choose Plan
         %p.lead.sub-title{style: "padding-bottom:30px;"} All plans give access to the full leads network and the full CRM capability.

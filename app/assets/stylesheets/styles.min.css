@@ -1067,7 +1067,7 @@ ul.icons-ul{list-style-type:none;text-indent:-0.7142857142857143em;margin-left:2
 .js #nav{clip:rect(0 0 0 0);max-height:0;position:absolute;display:block;overflow:hidden;zoom:1;}
 #nav.opened{max-height:9999px;}
 @media screen and (min-width:40em){.js #nav{position:relative;max-height:none;}}a{-webkit-transition:color 0.4s ease-out, background 0.7s ease-in;-moz-transition:color 0.4s ease-out, background 0.7s ease-in;-o-transition:color 0.4s ease-out, background 0.7s ease-in;transition:color 0.4s ease-out, background 0.7s ease-in;}a:hover{text-decoration:none;}
-textarea,input{text-indent:10px;border:1px solid #3a9ac4;font-size:16px;margin:5px 0px 5px 0px;min-height:40px;outline-color:#4baad3;padding:5px;}
+textarea,input{text-indent:10px;border:1px solid #3a9ac4;font-size:15px;margin:5px 0px 5px 0px;min-height:10px;outline-color:#4baad3;padding:5px;font-family:Arial;}
 hr{width:50%;margin:30px auto;}
 ul{list-style:none;}
 .list-inline li{display:inline-block;padding-right:8px;}
