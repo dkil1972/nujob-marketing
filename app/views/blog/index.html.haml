@@ -1,16 +1,15 @@
 ﻿%head
   :css
+    .navbar #nav ul li a { display : none}
     h1{color: #000000; font-size: 20px; padding: 20px}
     body { font-family: Georgia, 'Times New Roman', Times, serif; padding-top: 20px }
-    footer {  bottom: 0; width: 100%  }
-    ul[class="nav"] > li > a { display:none; }
-    
+    .page {padding-top:40px;}
     .pagination {text-transform: uppercase;letter-spacing: 1px;}
     .pagination .previous_page.disabled { display:none; }
     .pagination .next_page.disabled { display:none; }
     .pagination .next_page {text-align:right;display:block}
-    .page-headline a{color: #000000;font-size:38px; font-weight:normal;} 
-    .page-headline a:hover{color:#000000; }
+    .page-headline h1{color: #000000;font-size:38px; font-weight:normal;} 
+    .page-headline a, a:hover {color: #000000;} 
     .span8 a {color: #6B2AAB;}
     .headline {font-size:28px; line-height:1.367em;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; margin-bottom: 1.2em;}
     .headline a{color: #000000;} a:hover{color:#6B2AAB; }
@@ -24,7 +23,8 @@
 .page
   .inner-page
     .page-headline
-      %a{href: "http://localhost:3000/blog"}Welcome to Nujob Blog
+      %a{href: "http://www.nujob.co.uk/blog"}
+        %h1 Welcome to Nujob Blog
   .row-fluid.inner-page    
     .span8
       - for post in @page_results
