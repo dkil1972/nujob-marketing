@@ -7,6 +7,7 @@ NujobMarketing::Application.routes.draw do
    root to: "home#index"
    resources :signup
    resources :blog
+   get 'blog/:id', to: 'blog#show', constraints: { id: /[^\/]+/ }
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
