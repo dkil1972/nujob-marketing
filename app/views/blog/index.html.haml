@@ -24,7 +24,7 @@
   .inner-page
     .page-headline
       %a{href: "http://www.nujob.co.uk/blog"}
-        %h1 Welcome to Nujob Blog
+        %h1  Nujob Blog
   .row-fluid.inner-page    
     .span8
       - for post in @page_results
@@ -32,7 +32,7 @@
           = link_to post['title'],blog_path(:id => post['url_title'])
         .format
           %p= truncate( strip_tags(post['postbody']), length:600)
-          %p= link_to "[Click to Continue...]",blog_path(:id => post['url_title']) 
+          %p= link_to "[read more...]",blog_path(:id => post['url_title']) 
 .paginate
   = will_paginate @page_results,:page_links => false,:previous_label => '&laquo;&laquo; Newer Posts',:next_label => 'Older Posts &raquo;&raquo;'
 

@@ -19,11 +19,12 @@
   .inner-page
     .page-headline
       %a{href: "http://www.nujob.co.uk/blog"}
-        %h1 Welcome to Nujob Blog
+        %h1  Nujob Blog
   .row-fluid.inner-page    
     .span8
       .headline
         = $res['title']
       .format
         %p=  $res['postbody'].html_safe
-           
+      %a{style: "color:#6B2AAB;" ,href: "http://www.nujob.co.uk/blog"}
+        %p Back to  Nujob Blog    
