@@ -2,12 +2,8 @@ NujobMarketing::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-   root to: "home#index"
-   resources :signup
-   resources :blog
-   get 'blog/:id', to: 'blog#show', constraints: { id: /[^\/]+/ }
+  root 'home#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -16,7 +12,7 @@ NujobMarketing::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  
+
   # Example resource route with options:
   #   resources :products do
   #     member do
@@ -42,7 +38,7 @@ NujobMarketing::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

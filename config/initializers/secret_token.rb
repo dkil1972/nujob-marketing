@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NujobMarketing::Application.config.secret_key_base = '127c1f01d2ac8ac211dbaeff173c80ec2fd1740d6548e2a04b920062397dc927b647cd9470ff4be01bbb2a2393ffa23588e7d823ccb423b82a80862463d3f51a'
+NujobMarketing::Application.config.secret_key_base = '8d0d4b3fe609222fda6f8d7c07f1e64fc1a3039fab9e80477b1bc3113d446412933c0955f7d6dc2a3119c44f683dfa7bc5dde01af8fe9ec29e900578980c8ad7'
