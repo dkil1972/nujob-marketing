@@ -1,1 +1,94 @@
-home page
+.homepage-box-1
+  .col-xs-5.font-white
+    .ml-155.mt-100
+      %b.font-38= t ".title1"
+      %p.font-38= t ".title2"
+      %p
+        %span.icon.icon-tick
+        %span= t ".line1"
+      %p
+        %span.icon.icon-tick
+        %span= t ".line2"
+      %p
+        %span.icon.icon-tick
+        %span= t ".line3"
+      %p
+        %span.icon.icon-tick
+        %span= t ".line4"
+      %br
+      %button.btn.btn-orange.ph-35.pv-14
+        %span.icon.icon-request
+        %b= t ".request_free_trial"                                
+  .col-xs-7
+    .mt-100
+      %img{:src => '/assets/Take_Tour.png'}
+.h-500.text-center
+  %p.font-38.pt-75.mb-70= t ".line5"
+  .bad-hire
+    .bad-hire-step
+      .colons-div
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon    
+      %b.icon.icon-base.text-center= 1
+      %span.font-18= t ".bad_hire1"
+    .bad-hire-step
+      .colons-div
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon  
+      %b.icon.icon-base.text-center= 2
+      %span.font-18= t ".bad_hire2"
+    .bad-hire-step
+      .colons-div
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon      
+      %b.icon.icon-base.text-center= 3
+      %span.font-18= t ".bad_hire3"
+    .bad-hire-step
+      .colons-div
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon
+        %span.icon.icon-colon      
+      %b.icon.icon-base.text-center= 4
+      %span.font-18= t ".bad_hire4"
+    .bad-hire-step.text-red
+      %b.icon.icon-bad-hire
+      %b.font-20= t ".bad_hire5"
+.homepage-box-2.font-white.text-center
+  %p.font-38.mb-50
+    %span= t ".happy_hire_title"
+    %b= t ".happy_hire_steps"
+  .good-hire-div-1.mb-70
+    %p= t ".happy_hire1"
+    .icon.icon-dev.icon-86
+  .div-inline.div-center
+    .good-hire-div-2.float-left.text-right
+      %span= t ".happy_hire2"
+      %span.icon.icon-hand-shake.icon-86
+    .happy-hire-div
+      .icon.icon-happy-hire
+      %p
+        %b= t ".happy_hire5"
+    .good-hire-div-2.float-left.text-left
+      %span.icon.icon-list.icon-86
+      %span= t ".happy_hire3"
+  .good-hire-div-1.mt-70.w-260
+    .icon.icon-relationship.icon-86
+    %p= t ".happy_hire4"
+.h-580.text-center
+  %p.font-38= t ".feedback_title"
+  .div-inline
+    .feedback-div
+      %ul.bxslider.feedback-slider
+        - dummy_feedback.each do |fb|
+          = render partial: "feedback", locals: {feedback: fb}
+.chat
+  .bubble.me
+    %span.tail> &nbsp;
+    Hello there! Here's some more text for your bubble. And here's a bit more text so that wrapping happens.

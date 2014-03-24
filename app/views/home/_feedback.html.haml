@@ -1,0 +1,11 @@
+%li.feedback-item
+  .feedback-content
+    = feedback[:content].truncate(200)
+    .feedback-arrow
+  .feedback-author
+    .feedback-icon
+      = image_tag(feedback[:icon])
+    .feedback-name
+      = feedback[:user]
+    .feedback-role
+      = feedback[:role]

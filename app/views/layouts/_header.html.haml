@@ -1,0 +1,31 @@
+%nav.navbar.navbar-default.navbar-custom{:role => "navigation"}
+  .container-fluid.pl-100
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#header", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %img{:alt => "nujob", :height => "100",:src => "/assets/Logo_D.png", :class=> "pr-200"}
+    / Collect the nav links, forms, and other content for toggling
+    #header.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        #top-blue
+        %li.active
+          %a{:href => "#"}= t('.home')
+
+        %li
+          %a{:href => "#"}= t('.testomonials')
+        %li
+          %a{:href => "#"}= t('.tour')
+        %li
+          %a{:href => "#"}= t('.pricing')
+        %li
+          %a{:href => "#"}= t('.blog')
+        %li
+          %a{:href => "#"}= t('.contact')  
+        %li        
+          %button.btn.btn-grey{:type => "submit"}= t('.login')
+:javascript
+  moveTopBlue();
