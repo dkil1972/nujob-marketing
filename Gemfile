@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -47,3 +47,4 @@ end
 
 gem 'haml-rails', "0.4"
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'cucumber'
