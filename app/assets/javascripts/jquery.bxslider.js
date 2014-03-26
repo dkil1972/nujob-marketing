@@ -826,21 +826,29 @@
 		 */
 		var updateDirectionControls = function(){
 			if(getPagerQty() == 1){
-				slider.controls.prev.addClass('disabled');
-				slider.controls.next.addClass('disabled');
+				slider.controls.prev.addClass('bx-prev-disabled');
+				slider.controls.next.addClass('bx-next-disabled');
+        slider.controls.prev.removeClass('bx-prev');
+        slider.controls.next.removeClass('bx-next');
 			}else if(!slider.settings.infiniteLoop && slider.settings.hideControlOnEnd){
 				// if first slide
 				if (slider.active.index == 0){
-					slider.controls.prev.addClass('disabled');
-					slider.controls.next.removeClass('disabled');
+					slider.controls.prev.addClass('bx-prev-disabled');
+          slider.controls.prev.removeClass('bx-prev');
+					slider.controls.next.removeClass('bx-next-disabled');
+          slider.controls.next.addClass('bx-next');
 				// if last slide
 				}else if(slider.active.index == getPagerQty() - 1){
-					slider.controls.next.addClass('disabled');
-					slider.controls.prev.removeClass('disabled');
+					slider.controls.next.addClass('bx-next-disabled');
+          slider.controls.prev.addClass('bx-prev');
+					slider.controls.prev.removeClass('bx-prev-disabled');
+          slider.controls.next.removeClass('bx-next');
 				// if any slide in the middle
 				}else{
-					slider.controls.prev.removeClass('disabled');
-					slider.controls.next.removeClass('disabled');
+					slider.controls.prev.addClass('bx-prev');
+          slider.controls.next.addClass('bx-next');
+          slider.controls.prev.removeClass('bx-prev-disabled');
+          slider.controls.next.removeClass('bx-next-disabled');
 				}
 			}
 		}

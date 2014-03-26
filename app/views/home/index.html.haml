@@ -18,7 +18,7 @@
       %br
       %button.btn.btn-orange.ph-35.pv-14
         %span.icon.icon-request
-        %b= t ".request_free_trial"                                
+        %b= t ".request_free_trial"
   .col-xs-7
     .mt-100
       %img{:src => '/assets/Take_Tour.png'}
@@ -30,7 +30,7 @@
         %span.icon.icon-colon
         %span.icon.icon-colon
         %span.icon.icon-colon
-        %span.icon.icon-colon    
+        %span.icon.icon-colon
       %b.icon.icon-base.text-center= 1
       %span.font-18= t ".bad_hire1"
     .bad-hire-step
@@ -38,7 +38,7 @@
         %span.icon.icon-colon
         %span.icon.icon-colon
         %span.icon.icon-colon
-        %span.icon.icon-colon  
+        %span.icon.icon-colon
       %b.icon.icon-base.text-center= 2
       %span.font-18= t ".bad_hire2"
     .bad-hire-step
@@ -46,7 +46,7 @@
         %span.icon.icon-colon
         %span.icon.icon-colon
         %span.icon.icon-colon
-        %span.icon.icon-colon      
+        %span.icon.icon-colon
       %b.icon.icon-base.text-center= 3
       %span.font-18= t ".bad_hire3"
     .bad-hire-step
@@ -54,7 +54,7 @@
         %span.icon.icon-colon
         %span.icon.icon-colon
         %span.icon.icon-colon
-        %span.icon.icon-colon      
+        %span.icon.icon-colon
       %b.icon.icon-base.text-center= 4
       %span.font-18= t ".bad_hire4"
     .bad-hire-step.text-red
@@ -81,14 +81,140 @@
   .good-hire-div-1.mt-70.w-260
     .icon.icon-relationship.icon-86
     %p= t ".happy_hire4"
-.h-580.text-center
+%br
+%br
+%br
+.h-450.text-center
   %p.font-38= t ".feedback_title"
   .div-inline
     .feedback-div
       %ul.bxslider.feedback-slider
         - dummy_feedback.each do |fb|
           = render partial: "feedback", locals: {feedback: fb}
-.chat
-  .bubble.me
-    %span.tail> &nbsp;
-    Hello there! Here's some more text for your bubble. And here's a bit more text so that wrapping happens.
+      .outside
+        %p
+          %span#slider-prev
+          %span#slider-next
+.good-company.text-center
+  .font-38= t ".good_company"
+  %br
+  %br
+  %br
+  %br
+  .row-1
+    = image_tag('/assets/Thoughtworks.png')
+    = image_tag('/assets/Avanade.png')
+    = image_tag('/assets/Comparethemarket.png')
+  %br
+  %br
+  .row-2
+    = image_tag('/assets/Toptable.png')
+    = image_tag('/assets/BBC.png')
+    = image_tag('/assets/itv.png')
+%br
+%br
+%br
+.font-38.text-center
+  %span
+    = t ".more_benefits"
+  %strong
+    %span.blue-text
+      = t ".for_you"
+%br
+%br
+%br
+.bad-hire.benefit-section
+  %div
+    .col-50-percent
+      %div
+        .col-5-percent
+          .col-95-percent.circle-image
+            = image_tag('/assets/Referal.png')
+        .col-95-percent.padding-top-10
+          .font-24
+            %strong
+              = t(".refer")
+          .padding-top-10
+            - 10.times do
+              = t(".place_holder")
+    .col-50-percent.margin-left-30
+      %div
+        .col-5-percent
+          .col-95-percent.circle-image
+            = image_tag('/assets/Referal.png')
+        .col-95-percent
+          .font-24
+            %strong
+              = t(".other")
+          .padding-top-10
+            - 10.times do
+              = t(".place_holder")
+  %br{style: 'clear: both'}
+  %br
+  %br
+  %div
+    .col-50-percent
+      %div
+        .col-5-percent
+          .col-95-percent.circle-image
+            = image_tag('/assets/Referal.png')
+        .col-95-percent
+          .font-24
+            %strong
+              = t(".multiple")
+          .padding-top-10
+            - 10.times do
+              = t(".place_holder")
+    .col-50-percent.margin-left-30
+      %div
+        .col-5-percent
+          .col-95-percent.circle-image
+            = image_tag('/assets/Referal.png')
+        .col-95-percent
+          .font-24
+            %strong
+              = t(".hire")
+          .padding-top-10
+            - 10.times do
+              = t(".place_holder")
+%br
+%br
+%br
+%br
+.trial-section.text-center
+  .font-38.white-text=t(".start_trial")
+  .font-20.day-text
+    %strong=t(".60_days")
+  %br
+  %br
+  .request-trial.white-text
+    = image_tag('/assets/Request_Icon.png')
+    %strong=t(".request_trial")
+
+.footer
+  %div
+    .col-50-percent
+      %div
+        = image_tag("/assets/FLogo.png", class: 'logo')
+        = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe
+        %span.icon-footer.icon-fb
+        %span.icon-footer.icon-tw
+        %span.icon-footer.icon-in
+        %br
+        .copyright=t('.copyright').html_safe
+    .col-50-percent
+      %nav.navbar.navbar-defaul
+        %ul.nav.nav-justified.ul-footer
+          %li
+            %a{:href => "#"}= t('.home')
+
+          %li
+            %a{:href => "#"}= t('.testomonials')
+          %li
+            %a{:href => "#"}= t('.tour')
+          %li
+            %a{:href => "#"}= t('.pricing')
+          %li
+            %a{:href => "#"}= t('.blog')
+          %li
+            %a{:href => "#"}= t('.contact')

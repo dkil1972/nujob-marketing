@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require jquery.bxslider
-//= require turbolinks
 //= require bootstrap
 //= require home
 //= require_tree .
