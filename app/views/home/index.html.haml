@@ -66,20 +66,22 @@
     %b= t ".happy_hire_steps"
   .good-hire-div-1.mb-70
     %p= t ".happy_hire1"
-    .icon.icon-dev.icon-86
+    .icon.icon-dev.icon-86.has-background
   .div-inline.div-center
     .good-hire-div-2.float-left.text-right
       %span= t ".happy_hire2"
-      %span.icon.icon-hand-shake.icon-86
+      %span= "&nbsp;&nbsp;".html_safe
+      %span.icon.icon-hand-shake.icon-86.has-background
     .happy-hire-div
       .icon.icon-happy-hire
       %p
         %b= t ".happy_hire5"
     .good-hire-div-2.float-left.text-left
-      %span.icon.icon-list.icon-86
+      %span.icon.icon-list.icon-86.has-background
+      %span= "&nbsp;&nbsp;".html_safe
       %span= t ".happy_hire3"
   .good-hire-div-1.mt-70.w-260
-    .icon.icon-relationship.icon-86
+    .icon.icon-relationship.icon-86.has-background
     %p= t ".happy_hire4"
 %br
 %br
@@ -201,7 +203,7 @@
         %span.icon-footer.icon-tw
         %span.icon-footer.icon-in
         %br
-        .copyright=t('.copyright').html_safe
+        .copyright.font-14=t('.copyright').html_safe
     .col-50-percent
       %nav.navbar.navbar-defaul
         %ul.nav.nav-justified.ul-footer
