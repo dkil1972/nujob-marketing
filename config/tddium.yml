@@ -1,0 +1,5 @@
+:tddium:
+  :environment:
+    'HEROKU_EMAIL': 'jack@nustechnology.com'
+    'HEROKU_API_KEY': '996461f2-b26e-470f-997c-50a93894e4c2'
+    'HEROKU_APP_NAME': 'nujob-marketing'
