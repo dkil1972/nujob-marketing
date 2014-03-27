@@ -102,11 +102,11 @@
   %br
   %br
   %br
-  %br
   .row-1
     = image_tag('/assets/Thoughtworks.png')
     = image_tag('/assets/Avanade.png')
     = image_tag('/assets/Comparethemarket.png')
+  %br
   %br
   %br
   .row-2
@@ -129,10 +129,10 @@
   %div
     .col-50-percent
       %div
-        .col-5-percent
+        .col-5-percent.mt-10
           .col-95-percent.circle-image
             = image_tag('/assets/Referal.png')
-        .col-95-percent.padding-top-10
+        .col-95-percent
           .font-24
             %strong
               = t(".refer")
@@ -141,7 +141,7 @@
               = t(".place_holder")
     .col-50-percent.margin-left-30
       %div
-        .col-5-percent
+        .col-5-percent.mt-10
           .col-95-percent.circle-image
             = image_tag('/assets/Rapport.png')
         .col-95-percent
@@ -157,7 +157,7 @@
   %div
     .col-50-percent
       %div
-        .col-5-percent
+        .col-5-percent.mt-10
           .col-95-percent.circle-image
             = image_tag('/assets/People.png')
         .col-95-percent
@@ -169,7 +169,7 @@
               = t(".place_holder")
     .col-50-percent.margin-left-30
       %div
-        .col-5-percent
+        .col-5-percent.mt-10
           .col-95-percent.circle-image
             = image_tag('/assets/Hire.png')
         .col-95-percent
@@ -189,34 +189,6 @@
     %strong=t(".60_days")
   %br
   %br
-  .request-trial.white-text
-    = image_tag('/assets/Request_Icon.png')
+  .request-trial.btn.btn-blue
+    %span.mr-10= image_tag('/assets/Request_Icon.png')
     %strong=t(".request_trial")
-
-.footer
-  %div
-    .col-50-percent
-      %div
-        = image_tag("/assets/FLogo.png", class: 'logo')
-        = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe
-        %span.icon-footer.icon-fb
-        %span.icon-footer.icon-tw
-        %span.icon-footer.icon-in
-        %br
-        .copyright.font-14=t('.copyright').html_safe
-    .col-50-percent
-      %nav.navbar.navbar-defaul
-        %ul.nav.nav-justified.ul-footer
-          %li
-            %a{:href => "#"}= t('.home')
-
-          %li
-            %a{:href => "#"}= t('.testomonials')
-          %li
-            %a{:href => "#"}= t('.tour')
-          %li
-            %a{:href => "#"}= t('.pricing')
-          %li
-            %a{:href => "#"}= t('.blog')
-          %li
-            %a{:href => "#"}= t('.contact')

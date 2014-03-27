@@ -5,7 +5,6 @@ gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -47,4 +46,8 @@ end
 
 gem 'haml-rails', "0.4"
 gem 'bootstrap-sass', '~> 3.1.1'
-gem 'cucumber'
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end

@@ -8,3 +8,15 @@ development:
   database: nubjob_marketing
   username: postgres
   password: postgres
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  reconnect: false
+  pool: 5
+  port: 5432
+  host: localhost
+  database: nubjob_marketing_test
+  username: postgres
+  password: postgres
+cucumber:
+  <<: *test

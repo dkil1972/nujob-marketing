@@ -1,0 +1,26 @@
+.footer
+  %div
+    .col-50-percent
+      %div
+        = image_tag("/assets/FLogo.png", class: 'logo')
+        = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe
+        .icon-footer.icon-fb
+        .icon-footer.icon-tw
+        .icon-footer.icon-in
+        %br
+        .copyright.font-14.mt-10=t('.copyright').html_safe
+    .col-50-percent
+      %nav.navbar.navbar-defaul
+        %ul.nav.nav-justified.ul-footer
+          %li
+            %a{:href => "#"}= t('.home')
+          %li
+            %a{:href => "#"}= t('.testomonials')
+          %li
+            %a{:href => "#"}= t('.tour')
+          %li
+            %a{:href => "#"}= t('.pricing')
+          %li
+            %a{:href => "#"}= t('.blog')
+          %li
+            %a{:href => "#"}= t('.contact')

@@ -8,6 +8,15 @@ en:
       blog: "BLOG"
       contact: "CONTACT"
       login: "LOGIN"
+    footer:
+      copyright: "&copy; Nujob 2014. All rights reserved."
+      home: "Home"
+      testomonials: "Testomonials"
+      tour: "Tour"
+      pricing: "Pricing"
+      blog: "Blog"
+      contact: "Contact"
+      login: "Login"
   home:
     index:
       title1: "Hire great developers"
@@ -40,13 +49,6 @@ en:
       multiple: "Multiple people in team recommend"
       hire: "Hire"
       start_trial: "Start your free trial now!"
-      60_days: "60 days full features and FREE, no obligations."
+      60_days: "60-days full-features and FREE, no obligations."
       request_trial: "REQUEST A FREE TRIAL"
-      copyright: "&copy; Nujob 2014. All rights reserved."
-      home: "Home"
-      testomonials: "Testomonials"
-      tour: "Tour"
-      pricing: "Pricing"
-      blog: "Blog"
-      contact: "Contact"
-      login: "Login"
+
