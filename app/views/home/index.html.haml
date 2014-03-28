@@ -92,27 +92,12 @@
     .feedback-div
       %ul.bxslider.feedback-slider
         - dummy_feedback.each do |fb|
-          = render partial: "feedback", locals: {feedback: fb}
+          = render partial: "feedback", locals: {feedback: fb,length: 200}
       .outside
         %p
           %span#slider-prev
           %span#slider-next
-.good-company.text-center
-  .font-38= t ".good_company"
-  %br
-  %br
-  %br
-  .row-1
-    = image_tag('/assets/Thoughtworks.png')
-    = image_tag('/assets/Avanade.png')
-    = image_tag('/assets/Comparethemarket.png')
-  %br
-  %br
-  %br
-  .row-2
-    = image_tag('/assets/Toptable.png')
-    = image_tag('/assets/BBC.png')
-    = image_tag('/assets/itv.png')
+= render "good_companies"
 %br
 %br
 %br
@@ -183,12 +168,4 @@
 %br
 %br
 %br
-.trial-section.text-center
-  .font-38.white-text=t(".start_trial")
-  .font-20.day-text
-    %strong=t(".60_days")
-  %br
-  %br
-  .request-trial.btn.btn-blue
-    %span.mr-10= image_tag('/assets/Request_Icon.png')
-    %strong=t(".request_trial")
+

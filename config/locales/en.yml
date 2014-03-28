@@ -2,7 +2,7 @@ en:
   layouts:
     header:
       home: "HOME"
-      testomonials: "TESTIMONIALS"
+      testimonials: "TESTIMONIALS"
       tour: "TOUR"
       pricing: "PRICING"
       blog: "BLOG"
@@ -11,12 +11,17 @@ en:
     footer:
       copyright: "&copy; Nujob 2014. All rights reserved."
       home: "Home"
-      testomonials: "Testomonials"
+      testimonials: "Testimonials"
       tour: "Tour"
       pricing: "Pricing"
       blog: "Blog"
       contact: "Contact"
       login: "Login"
+      start_trial: "Start your free trial now!"
+      60_days: "60-days full-features and FREE, no obligations."
+      request_trial: "REQUEST A FREE TRIAL"
+    application:
+      title: "NujobMarketing"
   home:
     index:
       title1: "Hire great developers"
@@ -48,7 +53,13 @@ en:
       other: "Other team member builds rapport and evaluates"
       multiple: "Multiple people in team recommend"
       hire: "Hire"
-      start_trial: "Start your free trial now!"
-      60_days: "60-days full-features and FREE, no obligations."
-      request_trial: "REQUEST A FREE TRIAL"
+    testimonials:
+      featured_customer: "FEATURED CUSTOMER STORY"
+    tour:
+      tour1: "Recruitment was broken, we've fixed it"
+      tour2: "Created for web developers & recruiters"
+      tour3: "Lead Generation"
+      tour4: "Managed Process"
+      place_holder: "This is place holder text. "
+
 

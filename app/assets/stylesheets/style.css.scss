@@ -19,6 +19,15 @@ body {
   font-family: 'PT Sans';
   font-size: 16px;
 }
+.w-410{
+  width: 410px;
+}
+.w-500{
+  width: 500px;
+}
+.w-680{
+  width: 680px;
+}
 .w-1340{
   width: 1340px;
 }
@@ -31,6 +40,9 @@ body {
 .ph-0{
   padding-left: 0px;
   padding-right: 0px
+}
+.pb-60{
+  padding-bottom: 60px;
 }
 .navbar-custom{
   background-color: #fff;
@@ -132,6 +144,9 @@ body {
 }
 .mt-10{
   margin-top: 10px;
+}
+.mt-50{
+  margin-top: 50px;
 }
 .mt-70{
   margin-top: 70px!important;
@@ -263,6 +278,9 @@ body {
 .div-inline{
   display: inline-block;
 }
+.div-relative{
+  position: relative;
+}
 .float-left{
   float: left;
 }
@@ -287,11 +305,17 @@ body {
 .pt-75{
   margin-top: 75px;
 }
+.pt-80{
+  margin-top: 80px;
+}
 .mb-70{
   margin-bottom: 70px!important;
 }
 .mb-50{
   margin-bottom: 50px;
+}
+.mb-40{
+  margin-bottom: 40px;
 }
 .text-red{
   color: red;
@@ -319,7 +343,7 @@ body {
 }
 .feedback-div{
   height: 300px;
-  width: 1024px;
+  width: 960px;
   .icon-slide-left {
     margin-top: 120px;
   }
@@ -328,112 +352,77 @@ body {
   }
   .feedback-slider {
     height: 400px;
-    .feedback-item {
-      padding: 0px 70px;
-      .feedback-content {
-        height: 160px;
-        padding: 20px 15px;
-        text-align: left;
-        border: 1px solid #CCCCCC;
-        border-radius: 5px;
-        position: relative;
-        /* Required for Down Triangle */
-        .feedback-arrow:before,
-        .feedback-arrow:after {
-          position: absolute;
-          border-bottom: 0;
-          top: 100%;
-          left: 50%;
-          border: solid transparent;
-          content: " ";
-          pointer-events: none;
-        }
-
-        /* Stroke */
-        .feedback-arrow:before {
-          bottom: -16px;
-          left: 45px;
-          border-color: rgba(255, 255, 255, 0);
-          /* If 1px darken stroke slightly */
-          border-top-color: #CCCCCC;
-          border-width: 16px;
-        }
-
-        /* Fill */
-        .feedback-arrow:after {
-          bottom: -15px;
-          left: 46px;
-          border-top-color: white;
-          border-width: 15px;
-        }
+  }
+}
+.feedback-div,
+.feedback-list{
+  .feedback-item {
+    width: 480px!important;
+    padding: 0 30px;
+    .feedback-content {
+      height: 140px;
+      padding: 20px 15px;
+      text-align: left;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      position: relative;
+      /* Required for Down Triangle */
+      .feedback-arrow:before,
+      .feedback-arrow:after {
+        position: absolute;
+        border-bottom: 0;
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        pointer-events: none;
       }
-      .feedback-author {
-        margin-top: 40px;
-        text-align: left;
-        .feedback-icon {
-          float: left;
-          margin-bottom: 10px;
-        }
-        .feedback-name {
-          padding-top: 30px;
-          font-weight: bold;
-          margin-left: 150px;
-          font-size: 24px;
-        }
-        .feedback-role {
-          margin-left: 150px;
-          color: #00AEEF;
-        }
+      /* Stroke */
+      .feedback-arrow:before {
+        bottom: -16px;
+        left: 45px;
+        border-color: rgba(255, 255, 255, 0);
+        /* If 1px darken stroke slightly */
+        border-top-color: #CCCCCC;
+        border-width: 16px;
+      }
+
+      /* Fill */
+      .feedback-arrow:after {
+        bottom: -15px;
+        left: 46px;
+        border-top-color: white;
+        border-width: 15px;
       }
     }
   }
 }
-.chat {
-    width: 400px;
-    font-family: sans-serif;
-    font-size:small;
-}
-
-.bubble {
-    background-color: #F2F2F2;
-    border-radius: 5px;
-    box-shadow: 0 0 6px #B2B2B2;
-    display: inline-block;
-    padding: 10px 18px;
-    position: relative;
-    vertical-align: top;
-}
-
-.tail {
-    //box-sizing: border-box;
-    //border:1px dotted red;
-    position: absolute;
-    top: 12px;
-    left: -18px;
-    height: 18px;
-    width:18px;
-    overflow:hidden;
-}
-.tail:before {
-    //box-sizing: border-box;
-    //border:1px dotted green;
-    background-color: #F2F2F2;
-    box-shadow: 0 0 6px #B2B2B2;
-    content: "\00a0";
-
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 12px;
-    height: 12px;
-    width:  12px;
-    -webkit-transform: skew( -45deg );
-    -moz-transform:    skew( -45deg );
-}
-
-.me {
+.feedback-author {
+  margin-top: 40px;
+  text-align: left;
+  .feedback-icon {
     float: left;
-    margin: 5px 45px 5px 20px;
+    margin-bottom: 10px;
+  }
+  .feedback-name {
+    padding-top: 30px;
+    font-weight: bold;
+    margin-left: 150px;
+    font-size: 24px;
+  }
+  .feedback-role {
+    margin-left: 150px;
+    color: #00AEEF;
+  }
+}
+.feedback-list{
+  padding-top: 80px;
+  width: 960px;
+  .feedback-item {
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 80px;
+  }
 }
 
 .good-company{
@@ -461,6 +450,8 @@ body {
 }
 
 .circle-image{
+  width: 80px;
+  height: 80px;
   padding: 20px;
   background-color: #333645;
   border-radius: 50%;
@@ -574,4 +565,76 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   background-position: center;
+}
+.testimonials-box-1{
+  height: 580px;
+  width: 1340px;
+  background-image: url(testimonials1.png);
+  background-repeat:no-repeat;
+  padding-top: 85px;
+}
+.featured_customer{
+  width: 700px;
+  .feedback-item {
+    color: white;
+    width: 700px;
+    list-style: none outside none;
+    position: relative;
+    .feedback-content{
+      font-size: 18px;
+      height: 140px;
+      border: 1px solid rgba(255,255,255,1);
+      border-bottom:0;
+      border-radius: 5px;
+      padding: 20px 15px;
+      text-align: left;
+    }
+    .feedback-content:before{
+      content:'';
+      width:45px;
+      height:5px;
+      border-bottom: 1px solid rgba(255,255,255,1);
+      border-left: 1px solid rgba(255,255,255,1);
+      position:absolute;
+      bottom:0;
+      left:0;
+      border-bottom-left-radius:5px;
+      top: 135px;
+    }
+    .feedback-content:after{
+      content:'';
+      width:629px;
+      height:5px;
+      border-bottom: 1px solid rgba(255,255,255,1);
+      border-right: 1px solid rgba(255,255,255,1);
+      position:absolute;
+      bottom:0;
+      right:0;
+      border-bottom-right-radius:5px;
+      top: 135px;
+    }
+    .feedback-content .feedback-arrow{
+      content: '';
+      height:20px;
+      width:20px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      position:absolute;
+      bottom:-10px;
+      left:48px;
+      top:130px;
+      border-left: 1px solid rgba(255,255,255,1);
+      border-bottom: 1px solid rgba(255,255,255,1);
+    }
+  }
+}
+
+.tour-box-1{
+  height: 580px;
+  width: 1340px;
+  background-image: url(tour1.png);
+  background-repeat:no-repeat;
+  padding-top: 40px;
 }

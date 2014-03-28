@@ -97,22 +97,22 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 0px;
+	left: -80px;
 	background: url(Arrow_Left_Hover.png) no-repeat;
 }
 
 .bx-wrapper .bx-prev-disabled {
-  left: 0px;
+  left: -80px;
   background: url(Arrow_Left_Normal.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
-	right: 10px;
+	right: -76px;
 	background: url(Arrow_Right_Hover.png) no-repeat;
 }
 
 .bx-wrapper .bx-next-disabled {
-  right: 10px;
+  right: -76px;
   background: url(Arrow_Right_Normal.png) no-repeat;
 }
 

@@ -3,7 +3,7 @@
     / Brand and toggle get grouped for better mobile display
     .navbar-header
       %button.navbar-toggle{"data-target" => "#header", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
+        %span.sr-only
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
@@ -12,13 +12,13 @@
     #header.collapse.navbar-collapse
       %ul.nav.navbar-nav
         #top-blue
-        %li.active
-          %a{:href => "#"}= t('.home')
+        %li{class: active_link("home", params[:controller],params[:action])}
+          %a{:href => root_path}= t('.home')
 
-        %li
-          %a{:href => "#"}= t('.testomonials')
-        %li
-          %a{:href => "#"}= t('.tour')
+        %li{class: active_link("testimonials", params[:controller],params[:action])}
+          %a{:href => testimonials_path}= t('.testimonials')
+        %li{class: active_link("tour", params[:controller],params[:action])}
+          %a{:href => tour_path}= t('.tour')
         %li
           %a{:href => "#"}= t('.pricing')
         %li
@@ -26,6 +26,6 @@
         %li
           %a{:href => "#"}= t('.contact')  
         %li        
-          %button.btn.btn-grey{:type => "submit"}= t('.login')
+          %button.btn.btn-grey{:type => "submit"}= t('.login')         
 :javascript
   moveTopBlue();

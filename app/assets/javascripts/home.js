@@ -8,7 +8,6 @@ $(document).on('ready page:load', function () {
       prevImage: '/assets/Arrow_Left_Hover.png',
       prevText: '',
       nextText: '',
-      slideMargin: 30,
       minSlides: 2,
       maxSlides: 4,
       slideWidth: 2048,

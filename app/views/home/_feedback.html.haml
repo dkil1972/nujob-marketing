@@ -1,6 +1,6 @@
 %li.feedback-item
   .feedback-content
-    = feedback[:content].truncate(200, separator: ' ')
+    = feedback[:content].truncate(length, separator: ' ')
     .feedback-arrow
   .feedback-author
     .feedback-icon
