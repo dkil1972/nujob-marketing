@@ -1,6 +1,8 @@
 .tour-box-1.text-center.font-white
   %p.font-38.w-410.div-center
     = t(".tour1")
+  %br
+  = image_tag('/assets/Hero.png')
 .tour-box-2.pt-80.text-center
   .row
     %p.font-38
@@ -10,42 +12,49 @@
     %br
     %br
     .col-xs-6
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Search.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour2a")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/User.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour2b")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Link.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour2c")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
     .col-xs-6
-      %img.pull-left{:src => "/assets/tour11.png"}
-
+      .div-inline.pull-left
+        %ul.tour-bxslider
+          %li
+            = image_tag("/assets/My_team_1.png")
+          %li
+            = image_tag("/assets/My_team_2.png")
+          %li
+            = image_tag("/assets/My_team_3.png")          
+  %br
   .row
     %p.font-38
       = t(".tour3")
@@ -54,43 +63,50 @@
     %br
     %br
     .col-xs-6
-      %img.pull-right{:src => "/assets/tour11.png"}
+      .div-inline.pull-right
+        %ul.tour-bxslider
+          %li
+            = image_tag("/assets/Lead_1.png")
+          %li
+            = image_tag("/assets/Lead_2.png")
+          %li
+            = image_tag("/assets/Lead_3.png") 
     .col-xs-6
-      .w-500.pull-left.mb-40
+      .w-550.pull-left.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Net.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour3a")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-left.mb-40
+      .w-550.pull-left.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Monitor.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour3b")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-left.mb-40
+      .w-550.pull-left.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/File.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour3c")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
 
-
+  %br
   .row
     %p.font-38
       = t(".tour4")
@@ -99,38 +115,52 @@
     %br
     %br
     .col-xs-6
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/User1.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour4a")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Gear.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour4b")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
-      .w-500.pull-right.mb-40
+      .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
+            = image_tag('/assets/Lookup.png', :size => "38x38")
         .col-95-percent.text-left
           .font-24
             %strong.text-blue
-              = t(".place_holder")
+              = t(".tour4c")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
     .col-xs-6
-      %img.pull-left{:src => "/assets/tour11.png"}      
+      .div-inline.pull-left
+        %ul.tour-bxslider
+          %li
+            = image_tag("/assets/Managed_1.png")
+          %li
+            = image_tag("/assets/Managed_2.png")
+          %li
+            = image_tag("/assets/Managed_3.png")      
+:javascript
+  $('.tour-bxslider').bxSlider({
+    controls: false,
+    infiniteLoop: false,
+    slideWidth: 490,
+    adaptiveHeight: true
+  });      
