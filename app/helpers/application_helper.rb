@@ -75,7 +75,11 @@ module ApplicationHelper
     when "tour"
       if (controller == "home") and (action == "tour")
         class_name = "active"
-      end      
+      end   
+    when "pricing"
+      if (controller == "home") and (action == "pricing")
+        class_name = "active"
+      end 
     end
   end
 end

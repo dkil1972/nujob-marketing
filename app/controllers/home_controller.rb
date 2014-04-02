@@ -9,4 +9,7 @@ class HomeController < ApplicationController
 
   def tour
   end
+
+  def pricing
+  end  
 end

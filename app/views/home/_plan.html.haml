@@ -1,0 +1,29 @@
+.plan-title
+  .not-expand
+    %p.font-18
+      %b= title
+    %div
+      %span £
+      %span.font-42.text-blue= price
+    %p.text-grey= t(".per_month")
+  %hr
+%table
+  %tr
+    %td.text-right.pr-10{:width => 25}
+      %b= manager
+    %td.text-left= t(".hiring_manager")
+  - if team_member != "0"
+    %tr
+      %td.text-right.pr-10
+        %b= team_member
+      %td.text-left= t(".team_members")            
+  %tr
+    %td.text-right.pr-10
+      %b= roles
+    %td.text-left= t(".open_roles")
+  %tr
+    %td.text-right.pr-10
+      %b= hires
+    %td.text-left= t(".hires")
+%button.btn.btn-orange.ph-35.pv-14.w-full
+  %b= t ".choose_plan"

@@ -1,5 +1,6 @@
 .testimonials-box-1.text-center
-  %p.font-38.font-white.pb-60= t(".featured_customer")
+  %p.font-38.font-white.pb-60
+    %b= t(".featured_customer")
   .featured_customer.div-inline
     = render partial: "feedback", locals: {feedback: featured_customer,length: 330}
 = render "good_companies"

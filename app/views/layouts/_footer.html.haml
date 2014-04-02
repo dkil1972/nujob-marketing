@@ -1,12 +1,13 @@
-.trial-section.text-center
-  .font-38.white-text=t(".start_trial")
-  .font-20.day-text
-    %strong=t(".60_days")
-  %br
-  %br
-  .request-trial.btn.btn-blue
-    %span.mr-10= image_tag('/assets/Request_Icon.png')
-    %strong=t(".request_trial")
+- if params[:action] != "pricing"  
+  .trial-section.text-center
+    .font-38.white-text=t(".start_trial")
+    .font-20.day-text
+      %strong=t(".60_days")
+    %br
+    %br
+    .request-trial.btn.btn-blue
+      %span.mr-10= image_tag('/assets/Request_Icon.png')
+      %strong=t(".request_trial")
 .footer
   %div
     .col-50-percent

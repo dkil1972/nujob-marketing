@@ -19,8 +19,8 @@
           %a{:href => testimonials_path}= t('.testimonials')
         %li{class: active_link("tour", params[:controller],params[:action])}
           %a{:href => tour_path}= t('.tour')
-        %li
-          %a{:href => "#"}= t('.pricing')
+        %li{class: active_link("pricing", params[:controller],params[:action])}
+          %a{:href => pricing_path}= t('.pricing')
         %li
           %a{:href => "#"}= t('.blog')
         %li

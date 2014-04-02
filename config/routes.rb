@@ -5,6 +5,7 @@ NujobMarketing::Application.routes.draw do
   root 'home#index'
   get "/testimonials" => "home#testimonials"
   get "/tour" => "home#tour"
+  get "/pricing" => "home#pricing"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

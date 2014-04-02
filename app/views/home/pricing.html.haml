@@ -1,0 +1,166 @@
+.pricing-box.text-center
+  %p.font-38.font-white
+    %b= t(".pricing_base_title")
+  %p.font-24.text-grey.mb-70= t(".pricing_base_sub")
+  .div-inline.div-plan
+    .col-xs-3
+      .plan.plan-first
+        = render "plan",
+          :title => t(".plan3_title"),
+          :price => 99,
+          :manager => "1",
+          :team_member => "0",
+          :roles => "3",
+          :hires => "∞"
+    .col-xs-3
+      .plan.plan-second
+        = render "plan",
+          :title => t(".plan3_title"),
+          :price => 299,
+          :manager => "1",
+          :team_member => "5",
+          :roles => "10",
+          :hires => "∞"
+    .col-xs-3
+      .plan
+        = render "plan",
+          :title => t(".plan3_title"),
+          :price => 499,
+          :manager => "3",
+          :team_member => "40",
+          :roles => "30",
+          :hires => "∞"
+    .col-xs-3
+      .plan.plan-last
+        = render "plan",
+          :title => t(".plan4_title"),
+          :price => 1599,
+          :manager => "∞",
+          :team_member => "∞",
+          :roles => "∞",
+          :hires => "∞"
+%div{"ng-app" => "iFind"}
+  .pricing-vs-div.mt-120.text-center{"ng-controller" => "pricing"}
+    %p.font-24= t(".all_plans")
+    .circle-image.mt-100.div-center
+      = image_tag('/assets/pricingHire.png', :size => "50x50")
+      %p= t(".hire")
+    %p.font-38= t(".recruiters_vs_nujob").html_safe
+    .input-info
+      .div-inline
+        %p.text-left.font-20= t(".salary")
+        .input-with-addon
+          %span £
+          %hr
+          = text_field_tag :salary, 4500, :class => "form-control", :onkeypress=>"return isNumberKey(event)","ng-model"=>"average_salary"
+      .div-inline
+        %p.text-left.font-20= t(".plan")
+        .input-with-addon
+          %span %
+          %hr
+          = text_field_tag :margin, 15, :class => "form-control", :onkeypress=>"return isNumberKey(event)","ng-model"=>"recruiter_percentage"
+      .div-inline
+        %div
+          %p.text-left.font-20= t(".salary")
+          = select_tag :plan, options_for_select([ 99, 299, 499, 1599 ], 99), {:class => "selectpicker", "ng-model"=>"plan_price"}
+    .div-inline.div-vs
+      .col-xs-6
+        %slider#developers{"model"=>"number_of_hires"}
+        .slider-range
+          %span.range.dev1 5
+          %span.range.dev2 10
+          %span.range.dev3 15
+          %span.range.dev4 20
+          %span.range.dev5 25
+      .col-xs-6
+        %slider#months{"model"=>"number_of_months"}
+        .slider-range
+          %span.range.month1 3
+          %span.range.month2 6
+          %span.range.month3 9
+      .col-xs-6
+        .pricing-bad-hire
+          %img{:src => "/assets/Badprice.png", :size => "84x84"}
+          %p= t(".bad_hire_title")
+          %div
+            %span £
+            %b.font-42 {{total_cost_bad | number:0}}
+      .col-xs-6
+        .pricing-good-hire
+          %img{:src => "/assets/Goodprice.png", :size => "84x84"}
+          %p
+            %span= t(".good_hire_title")
+            %b.font-24 £
+            %b.font-24 {{total_cost_good | number:0}}
+          %p.font-32
+            %b= t(".saving")
+            %b {{saving_with_nujob_per_month | number:0}}
+            %span.font-24= t(".per_month")
+          %p.font-20
+            %span (
+            %span= t(".total")
+            %span {{saving_with_nujob | number:0}}
+            %span )
+:javascript
+  $(".selectpicker").selectpicker();
+  $('#developers').slider({
+    min: 0,
+    max: 30,
+    step: 1,
+    value: 0,
+    handle: 'square',
+    placeHolder: "#{t('.developers_number')}"
+  });
+  $('#months').slider({
+    min: 1,
+    max: 12,
+    step: 1,
+    value: 0,
+    handle: 'square',
+    placeHolder: "#{t('.month_number')}"
+  });  
+  function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    return !(charCode > 31 && (charCode < 48 || charCode > 57));
+  };
+  function pricing($scope) {
+    $scope.number_of_hires = 0;
+    $scope.number_of_months = 1;
+    $scope.average_salary = 4500;
+    $scope.recruiter_percentage = 15;
+    $scope.plan_price = 99;
+    
+    $scope.change = function() {
+      $scope.recruiter_cost_per_hire = $scope.average_salary * $scope.recruiter_percentage / 100;
+      $scope.total_cost_bad = $scope.number_of_hires * $scope.number_of_months * $scope.recruiter_cost_per_hire;
+      $scope.total_cost_good = $scope.plan_price * $scope.number_of_months;
+      $scope.saving_with_nujob = $scope.total_cost_bad - $scope.total_cost_good;
+      $scope.saving_with_nujob_per_month = $scope.saving_with_nujob / $scope.number_of_months;
+      if ($scope.saving_with_nujob_per_month == NaN) {
+        $scope.saving_with_nujob_per_month = 0;
+      };
+      console.log($scope.saving_with_nujob_per_month);
+    };
+    $scope.$watchCollection('[number_of_hires, number_of_months, average_salary, recruiter_percentage, plan_price]',function(){
+      $scope.change();
+    });
+  };
+
+  var iFind = angular.module('iFind',[]);
+
+  iFind.directive('slider', function ($parse) {
+      return {
+        restrict: 'E',
+        replace: true,
+        template: '<input type="text" />',
+        link: function ($scope, element, attrs) {
+          var model = $parse(attrs.model);
+          var slider = $(element[0]).slider();
+
+          slider.on('slide', function(ev) {
+            model.assign($scope, ev.value);
+            $scope.$apply();
+          });
+        }
+      }
+  });

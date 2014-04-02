@@ -41,6 +41,9 @@ body {
   padding-left: 0px;
   padding-right: 0px
 }
+.pb-15{
+  padding-bottom: 15px;
+}
 .pb-60{
   padding-bottom: 60px;
 }
@@ -52,6 +55,9 @@ body {
 }
 .pl-100{
   padding-left: 100px;
+}
+.pr-10{
+  padding-right: 10px;
 }
 .pr-200{
   padding-right: 200px;
@@ -67,11 +73,11 @@ body {
     margin-right: 50px;
   }
   #top-blue{
-    -moz-transition: 0.3s left,right,width ease,0.3s width ease;
-    -ms-transition: 0.3s left,right,width ease,0.3s width ease;
-    -o-transition: 0.3s left,right,width ease,0.3s width ease;
-    -webkit-transition: 0.3s left,right,width ease,0.3s width ease;
-    transition: 0.3s left,right,width ease,0.3s width ease;
+    -moz-transition: 0.3s left,right ease,0.3s width ease;
+    -ms-transition: 0.3s left,right ease,0.3s width ease;
+    -o-transition: 0.3s left,right ease,0.3s width ease;
+    -webkit-transition: 0.3s left,right ease,0.3s width ease;
+    transition: 0.3s left,right ease,0.3s width ease;
     position: absolute;
     background-color: #24B9F1;
     height: 5px;
@@ -154,6 +160,9 @@ body {
 .mt-100{
   margin-top: 100px;
 }
+.mt-120{
+  margin-top: 120px;
+}
 .mr-10{
   margin-right: 10px;
 }
@@ -166,8 +175,14 @@ body {
 .font-24{
   font-size: 24px;
 }
+.font-32{
+  font-size: 32px;
+}
 .font-38{
   font-size: 38px;
+}
+.font-42{
+  font-size: 42px;
 }
 .font-white{
   color: white;
@@ -273,7 +288,8 @@ body {
   height: 450px;
 }
 .div-center{
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .div-inline{
   display: inline-block;
@@ -322,6 +338,9 @@ body {
 }
 .text-blue{
   color: #00AEEF;
+}
+.text-grey{
+  color: #535765;
 }
 .good-hire-div-1{
   font-size: 24px;
@@ -469,10 +488,6 @@ body {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-}
-
-.font-24{
-  font-size: 24px;
 }
 
 .benefit-section{
@@ -631,5 +646,202 @@ body {
   }
   .bx-viewport{
     height: 371px!important;
+  }
+}
+.pricing-box{
+  height: 580px;
+  width: 1340px;
+  background-image: url(pricingBase.png);
+  background-repeat:no-repeat;
+  padding-top: 50px;
+}
+.div-plan{
+  width: 1020px;
+  .col-xs-3{
+    padding: 0;
+  }
+  .plan{
+    background-color: white;
+    padding: 20px 20px 30px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid #D2D5D6;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    -moz-transition: 0.3s left ease,0.3s width ease;
+    -ms-transition: 0.3s left ease,0.3s width ease;
+    -o-transition: 0.3s left ease,0.3s width ease;
+    -webkit-transition: 0.3s left ease,0.3s width ease;
+    transition: 0.3s left ease,0.3s width ease;
+    .not-expand{
+      width: 213px;
+    }
+    button{
+      text-align: left!important;
+      padding-left: 60px;
+    }
+    span{
+      vertical-align: middle;
+    }
+    td{
+      padding-bottom: 10px;
+    }
+    table{
+      margin: auto;
+    }
+  }
+  .plan-first{
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+  }
+  .plan-last{
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+  }
+  .plan-second{
+    border-bottom-left-radius:5px;
+  }
+  .plan:hover{
+    border-radius:5px;
+    width: 120%;
+    left: -10%;
+    top: -14px;
+    z-index:1;
+    button{
+      padding-left: 90px;
+    }
+    .not-expand{
+      margin-left: 15%;
+    }
+    .font-42{
+      font-size: 60px;
+    }
+    .plan-title{
+      background-color: #00AEEF;
+      margin: -20px -20px 0;
+      padding-top: 20px;
+    }
+    .text-blue{
+      color: white;
+    }
+  }
+}
+.pricing-vs-div{
+  .circle-image{
+    padding: 12px 5px;
+    position: relative;
+    margin-bottom: 15px;
+    p{
+      font-weight: bold;
+      color: white;
+      position: absolute;
+      top: 34px;
+      left: 24px;
+    }
+  }
+  .input-info{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 780px;
+    display: inline-block;
+    .div-inline{
+      width: 256px;
+      padding-right: 8px;
+      padding-left: 8px;
+      float: left;
+    }
+    .input-group{
+      .input-group-addon{
+        background-color: #fff;
+        width: 40px;
+        height: 34px;
+      }
+    }
+    input,button{
+      height: 36px;
+    }
+    .selectpicker{
+      padding-left: 30px;
+    }
+    .select-addon{
+      left: 10px;
+      position: absolute;
+    }
+  }
+  .div-vs{
+    width: 1020px;
+    margin-bottom: 60px;
+    .col-xs-6{
+      padding: 30px;
+    }
+    .slider-range{
+      margin-top: 45px;
+      position: relative;
+    }
+    .range{
+      position: absolute;
+    }
+    .month1{
+      left: 18%;
+    }
+    .month2{
+      left: 45%;
+    }
+    .month3{
+      left: 72%;
+    }
+    .dev1{
+      left: 16%;
+    }
+    .dev2{
+      left: 31%;
+    }
+    .dev3{
+      left: 48%;
+    }   
+    .dev4{
+      left: 65%;
+    }  
+    .dev5{
+      left: 81%;
+    }          
+  }
+}
+.pricing-bad-hire,.pricing-good-hire{
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  padding-top: 60px;
+  font-size: 20px;
+}
+.pricing-good-hire{
+  background-color: green;
+}
+.pricing-bad-hire{
+  background-color: red;
+  div span, div b{
+    vertical-align: middle;
+  }
+}
+.input-with-addon{
+  position: relative;
+  text-align: left;
+  hr{
+    position: absolute;
+    border-color: #D2D5D6;
+    left: 40px;
+    border-width: 22px;
+    width: 1px;
+    top: -11px;
+  }
+  span{
+    position: absolute;
+    top: 6px;
+    left: 18px;
+  }
+  input{
+    padding-left: 50px;
   }
 }

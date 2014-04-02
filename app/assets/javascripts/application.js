@@ -15,5 +15,6 @@
 //= require jquery.ui.all
 //= require jquery.bxslider
 //= require bootstrap
+//= require angular
 //= require home
 //= require_tree .

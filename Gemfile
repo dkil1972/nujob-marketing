@@ -52,3 +52,5 @@ group :test do
   gem 'database_cleaner'
 end
 gem 'quiet_assets', :group => :development
+
+gem 'angularjs-rails'
