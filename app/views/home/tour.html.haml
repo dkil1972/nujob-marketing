@@ -17,7 +17,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Search.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour2a")
           .padding-top-10
@@ -28,7 +28,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/User.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour2b")
           .padding-top-10
@@ -39,14 +39,14 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Link.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour2c")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
     .col-xs-6
-      .div-inline.pull-left
+      .div-inline.pull-left.tour-slider
         %ul.tour-bxslider
           %li
             = image_tag("/assets/My_team_1.png")
@@ -63,7 +63,7 @@
     %br
     %br
     .col-xs-6
-      .div-inline.pull-right
+      .div-inline.pull-right.tour-slider
         %ul.tour-bxslider
           %li
             = image_tag("/assets/Lead_1.png")
@@ -77,7 +77,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Net.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour3a")
           .padding-top-10
@@ -88,7 +88,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Monitor.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour3b")
           .padding-top-10
@@ -99,7 +99,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/File.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour3c")
           .padding-top-10
@@ -120,7 +120,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/User1.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour4a")
           .padding-top-10
@@ -131,7 +131,7 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Gear.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour4b")
           .padding-top-10
@@ -142,14 +142,14 @@
           .col-95-percent.circle-image
             = image_tag('/assets/Lookup.png', :size => "38x38")
         .col-95-percent.text-left
-          .font-24
+          .font-20
             %strong.text-blue
               = t(".tour4c")
           .padding-top-10
             - 10.times do
               = t(".place_holder")
     .col-xs-6
-      .div-inline.pull-left
+      .div-inline.pull-left.tour-slider
         %ul.tour-bxslider
           %li
             = image_tag("/assets/Managed_1.png")
@@ -162,5 +162,5 @@
     controls: false,
     infiniteLoop: false,
     slideWidth: 490,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });      

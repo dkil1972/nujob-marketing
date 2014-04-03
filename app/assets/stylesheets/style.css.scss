@@ -59,6 +59,9 @@ body {
 .pr-10{
   padding-right: 10px;
 }
+.pr-70{
+  padding-right: 70px;
+}
 .pr-200{
   padding-right: 200px;
 }
@@ -429,7 +432,7 @@ body {
   border-bottom: 1px solid #CCCCCC;
 }
 .feedback-author {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: left;
   .feedback-icon {
     float: left;
@@ -532,37 +535,39 @@ body {
   padding-right: 10%;
   background-color: #333645;
   height: 170px;
+  .active > a, a:hover, a:focus{
+    background-color: transparent!important;
+    color: #24B9F1!important;
+  }
 }
 
 .icon-footer{
+  background-color: white;
   display: inline-block;
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
   cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-size: 24px 24px;
+  background-repeat:no-repeat;
+  background-position: 5px 4px;
+  margin-right: 5px;
 }
-
+.icon-footer:hover{
+  background-color: #919399;
+}
 .icon-fb{
-  background: url("/assets/Fb.png") no-repeat;
+  background-image: url("/assets/Fb.png");
 }
 
 .icon-tw{
-  background: url("/assets/Twitter.png") no-repeat;
+  background-image: url("/assets/Twitter.png");
 }
 
 .icon-in{
-  background: url("/assets/In.png") no-repeat;
-}
-
-.icon-fb:hover{
-  background: url("/assets/Fb_Hover.png") no-repeat;
-}
-
-.icon-tw:hover{
-  background: url("/assets/Twitter_Hover.png") no-repeat;
-}
-
-.icon-in:hover{
-  background: url("/assets/In_Hover.png") no-repeat;
+  background-image: url("/assets/In.png");
 }
 
 .logo{

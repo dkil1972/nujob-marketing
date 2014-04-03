@@ -22,9 +22,9 @@
         %li{class: active_link("pricing", params[:controller],params[:action])}
           %a{:href => pricing_path}= t('.pricing')
         %li
-          %a{:href => "#"}= t('.blog')
+          %a= t('.blog')
         %li
-          %a{:href => "#"}= t('.contact')  
+          %a= t('.contact')  
         %li        
           %button.btn.btn-grey{:type => "submit"}= t('.login')         
 :javascript
