@@ -53,8 +53,14 @@ body {
   margin-bottom: 0;
   min-height: 100px
 }
+.pl-0{
+  padding-left: 0!important;
+}
 .pl-100{
   padding-left: 100px;
+}
+.pr-0{
+  padding-right: 0!important;
 }
 .pr-10{
   padding-right: 10px;
@@ -552,7 +558,7 @@ body {
   -moz-border-radius: 50%;
   background-size: 24px 24px;
   background-repeat:no-repeat;
-  background-position: 5px 4px;
+  background-position: 4px 4px;
   margin-right: 5px;
 }
 .icon-footer:hover{
@@ -849,4 +855,22 @@ body {
   input{
     padding-left: 50px;
   }
+}
+.blog-box-1{
+  height: 180px;
+  width: 1340px;
+  color: white;
+  text-align: center;
+  background-image: url(blogBase.png);
+  background-repeat:no-repeat;
+  padding-top: 65px;
+  font-size: 38px;
+  p{
+    font-weight: bold;
+  }
+}
+.blog-box-2{
+  width: 1340px;
+  padding: 100px 160px;
+
 }

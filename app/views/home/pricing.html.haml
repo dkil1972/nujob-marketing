@@ -6,7 +6,7 @@
     .col-xs-3
       .plan.plan-first
         = render "plan",
-          :title => t(".plan3_title"),
+          :title => t(".plan1_title"),
           :price => 99,
           :manager => "1",
           :team_member => "0",
@@ -15,7 +15,7 @@
     .col-xs-3
       .plan.plan-second
         = render "plan",
-          :title => t(".plan3_title"),
+          :title => t(".plan2_title"),
           :price => 299,
           :manager => "1",
           :team_member => "5",
@@ -54,17 +54,17 @@
           %hr
           = text_field_tag :salary, 4500, :class => "form-control", :onkeypress=>"return isNumberKey(event)","ng-model"=>"average_salary"
       .div-inline
-        %p.text-left.font-20= t(".plan")
+        %p.text-left.font-20= t(".recruiter_margin")
         .input-with-addon
           %span %
           %hr
           = text_field_tag :margin, 15, :class => "form-control", :onkeypress=>"return isNumberKey(event)","ng-model"=>"recruiter_percentage"
       .div-inline
         %div
-          %p.text-left.font-20= t(".salary")
+          %p.text-left.font-20= t(".plan")
           = select_tag :plan, options_for_select([ 99, 299, 499, 1599 ], 99), {:class => "selectpicker", "ng-model"=>"plan_price"}
     .div-inline.div-vs
-      .col-xs-6
+      .col-xs-6.pl-0
         %slider#developers{"model"=>"number_of_hires"}
         .slider-range
           %span.range.dev1 5
@@ -72,20 +72,20 @@
           %span.range.dev3 15
           %span.range.dev4 20
           %span.range.dev5 25
-      .col-xs-6
+      .col-xs-6.pr-0
         %slider#months{"model"=>"number_of_months"}
         .slider-range
           %span.range.month1 3
           %span.range.month2 6
           %span.range.month3 9
-      .col-xs-6
+      .col-xs-6.pl-0
         .pricing-bad-hire
           %img{:src => "/assets/Badprice.png", :size => "84x84"}
           %p= t(".bad_hire_title")
           %div
             %span £
             %b.font-42 {{total_cost_bad | number:0}}
-      .col-xs-6
+      .col-xs-6.pr-0
         .pricing-good-hire
           %img{:src => "/assets/Goodprice.png", :size => "84x84"}
           %p
