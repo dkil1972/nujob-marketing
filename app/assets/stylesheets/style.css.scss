@@ -279,6 +279,13 @@ body {
 .icon-slide-right:hover{
   background: url('slide_right_hover.png') no-repeat;
 }
+.icon-clock{
+  background: url('Clock.png') no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
 .ph-35{
   padding-left: 35px;
   padding-right: 35px;
@@ -521,10 +528,6 @@ body {
 
 .day-text{
   color: #96D7EF;
-}
-
-.font-20{
-  font-size: 20px;
 }
 
 .request-trial{
@@ -872,5 +875,17 @@ body {
 .blog-box-2{
   width: 1340px;
   padding: 100px 160px;
-
+  .blog-item{
+    overflow: hidden;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+#loading-indicator{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
 }

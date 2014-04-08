@@ -80,6 +80,10 @@ module ApplicationHelper
       if (controller == "home") and (action == "pricing")
         class_name = "active"
       end 
+    when "blog"
+      if (controller == "home") and (action == "blog")
+        class_name = "active"
+      end       
     end
   end
 end

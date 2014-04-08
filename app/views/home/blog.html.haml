@@ -1,0 +1,28 @@
+.blog-box-1
+  %p= t(".journal")
+.blog-box-2.over-hidden
+  .list-blog-items
+    = render partial: 'blog_items', :locals => {:blog_items => @blog_items}
+  %br
+  %br
+  %div
+    #osmek_newer.btn.btn-default.font-20
+      %span.glyphicon.glyphicon-chevron-left
+      %span.text-grey= t(".newer")
+    #osmek_older.btn.btn-default.font-20.pull-right
+      %span.text-grey= t(".older")
+      %span.glyphicon.glyphicon-chevron-right
+= hidden_field_tag :current_page, @current_page
+%img#loading-indicator{:src => "/assets/ajax-loader.gif"}
+- if !@item_ids.present? || @item_ids.include?(@last_item_id)
+  :javascript
+    $("#osmek_older").attr("disabled", true);
+- else
+  :javascript
+    $("#osmek_older").removeAttr("disabled");
+- if !@item_ids.present? || @item_ids.include?(@first_item_id)
+  :javascript
+    $("#osmek_newer").attr("disabled", true);
+- else
+  :javascript
+    $("#osmek_newer").removeAttr("disabled");

@@ -54,3 +54,5 @@ end
 gem 'quiet_assets', :group => :development
 
 gem 'angularjs-rails'
+
+gem 'httparty'

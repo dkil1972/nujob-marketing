@@ -237,6 +237,7 @@
 					type: 'slide',
 					value: val
 				});
+			this.layout();
 			return false;
 		},
 

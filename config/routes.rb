@@ -6,6 +6,7 @@ NujobMarketing::Application.routes.draw do
   get "/testimonials" => "home#testimonials"
   get "/tour" => "home#tour"
   get "/pricing" => "home#pricing"
+  get "/blog" => "home#blog"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

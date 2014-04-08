@@ -99,3 +99,8 @@ en:
       hires: "hires"
       team_members: "team members"
       choose_plan: "CHOOSE PLAN"
+    blog:
+      journal: "NuJob Journal"
+      newer: "Newer"
+      older: "Older"
+      has_no_items: "Has no blog's items"

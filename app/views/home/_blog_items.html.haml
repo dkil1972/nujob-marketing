@@ -1,0 +1,7 @@
+- if @error.present?
+  %p.text-center.font-20= @error
+-else 
+  %p.text-center.font-20= t(".has_no_items") if !@item_ids.present?
+  - if @blog_items.present?
+    - @blog_items.each_with_index do |item, index|
+      = render partial: 'blog_item', :locals => {:item => item, :index => index}
