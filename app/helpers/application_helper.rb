@@ -83,7 +83,11 @@ module ApplicationHelper
     when "blog"
       if (controller == "home") and (action == "blog")
         class_name = "active"
-      end       
+      end   
+    when "contact"
+      if (controller == "home") and (action == "contact")
+        class_name = "active"
+      end           
     end
   end
 end

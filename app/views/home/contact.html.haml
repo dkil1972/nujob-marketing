@@ -1,0 +1,67 @@
+.contact-box-1
+  %p= t(".let_talk")
+.contact-box-2
+  .row
+    .col-md-4.contact-info
+      .circle-image
+        = image_tag('/assets/Address.png', :size => "38x38")
+      .info
+        %p= Constants::ADDRESS
+    .col-md-4.contact-info
+      .circle-image
+        = image_tag('/assets/Phone.png', :size => "38x38")
+      .info
+        %span T
+        %span= Constants::TELL
+        %br
+        %span F
+        %span= Constants::FAX
+    .col-md-4.contact-info
+      .circle-image
+        = image_tag('/assets/Email.png', :size => "38x38")
+      .info
+        %p.one-line= Constants::EMAIL    
+  = simple_form_for(Message.new, :html => {"data-validate" => "parsley", class: 'form-horizontal' }) do |f|
+    .row.mt-90
+      .col-md-4
+        .custom-placeholder
+          = f.label :name, t(".name")
+          = f.text_field :name, :class => "form-control mb-15 required"
+      .col-md-4
+        .custom-placeholder
+          = f.label :email, t(".email")
+          = f.text_field :email, :class => "form-control mb-15 required", :type=>"email"
+      .col-md-4
+        .custom-placeholder
+          = f.label :phone, t(".phone")
+          = f.text_field :phone, :class => "form-control mb-15"
+    .row.mt-30.mb-30
+      .col-md-12
+        .custom-placeholder
+          = f.label :content, t(".content")
+          = f.text_area :content, :rows => 5, :class => "form-control required"
+    = f.submit t(".submit"), :class => "btn"
+.contact-box-3
+  %p.font-38= t(".our_team")
+  .our-team
+    .col-xs-6.member
+      .member-avatar
+        = image_tag('/assets/Left_Person.png', :size => "127x127")
+      .member-info
+        %p.text-bold.font-24= t(".member1_name")
+        %p.text-blue= t(".member1_description")
+        .contact
+          %span.icon.icon-small-in
+          %span.icon.icon-small-twitter
+          %span.icon.icon-small-email
+    .col-xs-6.member.pull-right
+      .member-avatar
+        = image_tag('/assets/Right_Person.png', :size => "127x127")
+      .member-info
+        %p.text-bold.font-24= t(".member2_name")
+        %p.text-blue= t(".member2_description")
+        .contact
+          %span.icon.icon-small-in
+          %span.icon.icon-small-twitter
+          %span.icon.icon-small-email
+

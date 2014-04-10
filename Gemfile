@@ -56,3 +56,11 @@ gem 'quiet_assets', :group => :development
 gem 'angularjs-rails'
 
 gem 'httparty'
+
+gem 'simple_form'
+
+gem 'mongoid', github: 'mongoid/mongoid'
+
+gem 'thin', '~> 1.5.0'
+
+gem "parsley-rails"

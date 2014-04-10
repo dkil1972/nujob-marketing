@@ -9,4 +9,7 @@ function moveTopBlue(){
     $("#top-blue").width($("#header .active").width());
     $("#top-blue").css("left",$("#header .active").position().left);
   });
-}
+};
+$(function(){
+  custome_placeholder();
+})

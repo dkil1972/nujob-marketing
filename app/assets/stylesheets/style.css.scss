@@ -160,11 +160,20 @@ body {
 .mt-10{
   margin-top: 10px;
 }
+.mt-30{
+  margin-top: 30px;
+}
 .mt-50{
   margin-top: 50px;
 }
+.mt-60{
+  margin-top: 60px;
+}
 .mt-70{
   margin-top: 70px!important;
+}
+.mt-90{
+  margin-top: 90px;
 }
 .mt-100{
   margin-top: 100px;
@@ -238,6 +247,33 @@ body {
   margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 7px;
+}
+.icon-small-in{
+  width: 15px;
+  height: 15px;
+  padding-right: 25px;
+  background: url('smallIn.png') no-repeat;
+}
+.icon-small-in:hover{
+  background: url('smallInHover.png') no-repeat;
+}
+.icon-small-twitter{
+  width: 15px;
+  height: 15px;
+  padding-right: 25px;
+  background: url('smallTwitter.png') no-repeat;
+}
+.icon-small-twitter:hover{
+  background: url('smallTwitterHover.png') no-repeat;
+}
+.icon-small-email{
+  width: 15px;
+  height: 15px;
+  padding-right: 25px;
+  background: url('smallEmail.png') no-repeat;
+}
+.icon-small-email:hover{
+  background: url('smallEmailHover.png') no-repeat;
 }
 .icon-dev{
   background: url('Dev.png') no-repeat;
@@ -348,6 +384,12 @@ body {
 }
 .mb-40{
   margin-bottom: 40px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mb-15{
+  margin-bottom: 15px;
 }
 .text-red{
   color: red;
@@ -888,4 +930,86 @@ body {
   left: 50%;
   top: 50%;
   display: none;
+}
+.contact-box-1{
+  height: 180px;
+  width: 1340px;
+  color: white;
+  text-align: center;
+  background-image: url(contactBase.png);
+  background-repeat:no-repeat;
+  padding-top: 65px;
+  font-size: 38px;
+  p{
+    font-weight: bold;
+  }
+}
+.contact-box-2{
+  width: 1340px;
+  padding: 100px 160px;
+  .btn{
+    font-size: 20px;
+    color: white;
+    background-color: #C9D0D3;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn:hover{
+    background-color: #00AEEF;
+  }
+}
+.contact-info{
+  .circle-image{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+  .info{
+    padding-left: 100px;
+    font-size: 20px;
+  }
+  .one-line{
+    padding-top: 15px;
+  }
+}
+ul.parsley-error-list{
+  list-style-type: none;
+  padding-left: 2px;
+  li{
+    margin: 5px;
+    color: #b94a48;
+    font-size: smaller;
+    text-align: left!important;
+  }
+}
+
+input.parsley-error{
+  border-color: #953b39;
+}
+.contact-box-3{
+  text-align: center;
+  background-color: #F3F3F3;
+  height: 380px;
+  width: 1340px;
+  padding-top: 60px;
+  .our-team{
+    display: inline-block;
+    width: 720px;
+    margin-top: 60px;
+  }
+  .member{
+    width: 300px;
+    position: relative;
+  }
+  .member-avatar{
+    position: absolute;
+  }
+  .member-info{
+    margin-left: 140px;
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+.text-bold{
+  font-weight: bold;
 }

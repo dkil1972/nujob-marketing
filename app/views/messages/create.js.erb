@@ -1,0 +1,12 @@
+<% if @notice.present? %>
+  var content = [<%= raw @notice.to_json %>];
+  $(".main-content").prepend(build_message_div("success",content));
+<% else %>
+  var content = [<%= raw @error.to_json %>];
+  $(".main-content").prepend(build_message_div("danger",content));
+<% end %>
+$('html,body').scrollTop(0);
+$("input[type='text'], textarea, input[type='email']").val("");
+$(".custom-placeholder input,.custom-placeholder textarea").each(function(){
+  $(this).focusout();
+})

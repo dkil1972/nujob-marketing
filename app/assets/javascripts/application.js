@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require jquery.bxslider
+//= require jquery.form
 //= require bootstrap
 //= require angular
 //= require home
+//= require parsley
 //= require_tree .

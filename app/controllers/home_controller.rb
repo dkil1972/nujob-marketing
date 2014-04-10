@@ -54,4 +54,7 @@ class HomeController < ApplicationController
         format.js
       end
   end    
+
+  def contact
+  end
 end

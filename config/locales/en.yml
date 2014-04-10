@@ -100,7 +100,22 @@ en:
       team_members: "team members"
       choose_plan: "CHOOSE PLAN"
     blog:
-      journal: "NuJob Journal"
+      journal: "Nujob Journal"
       newer: "Newer"
       older: "Older"
       has_no_items: "Has no blog's items"
+    contact:
+      let_talk: "Let's talk"
+      submit: "SUBMIT"
+      name: "Name"
+      email: "Email"
+      phone: "Phone (Optional)"
+      content: "Message"
+      our_team: "Our Team"
+      member1_name: "Andy"
+      member1_description: "Co-founder & CEO"
+      member2_name: "Dermot"
+      member2_description: "Co-founder & CEO"      
+  messages:
+    create_success: "Your message has been sent successfully"
+    message_contact: "You have a new message from customers"
