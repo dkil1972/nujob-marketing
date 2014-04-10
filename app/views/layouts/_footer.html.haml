@@ -20,8 +20,8 @@
         %br
         .copyright.font-14.mt-10=t('.copyright').html_safe
     .col-50-percent
-      %nav.navbar
-        %ul.nav.nav-justified.ul-footer
+      %nav
+        %ul.nav.ul-footer
           %li{class: active_link("home", params[:controller],params[:action])}
             %a{:href => root_path}= t('.home')
           %li{class: active_link("testimonials", params[:controller],params[:action])}
@@ -34,4 +34,9 @@
             %a{:href => blog_path}= t('.blog')
           %li{class: active_link("contact", params[:controller],params[:action])}
             %a{:href => contact_path}= t('.contact')
+      .pl-115.font-white
+        .icon-footer.icon-phone
+        %span.mr-45= Constants::TELL
+        .icon-footer.icon-email
+        %span= Constants::EMAIL
   %i.icon-search.icon-large.icon-white

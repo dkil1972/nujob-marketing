@@ -83,7 +83,7 @@
           %img{:src => "/assets/Badprice.png", :size => "84x84"}
           %p= t(".bad_hire_title")
           %div
-            %span £
+            %b.font-24 £
             %b.font-42 {{total_cost_bad | number:0}}
       .col-xs-6.pr-0
         .pricing-good-hire
@@ -94,6 +94,7 @@
             %b.font-24 {{total_cost_good | number:0}}
           %p.font-32
             %b= t(".saving")
+            %b.font-24 £
             %b {{saving_with_nujob_per_month | number:0}}
             %span.font-24= t(".per_month")
           %p.font-20

@@ -59,6 +59,9 @@ body {
 .pl-100{
   padding-left: 100px;
 }
+.pl-115{
+  padding-left: 115px;
+}
 .pr-0{
   padding-right: 0!important;
 }
@@ -183,6 +186,9 @@ body {
 }
 .mr-10{
   margin-right: 10px;
+}
+.mr-45{
+  margin-right: 45px;
 }
 .font-18{
   font-size: 18px;
@@ -620,7 +626,14 @@ body {
 .icon-in{
   background-image: url("/assets/In.png");
 }
-
+.icon-phone{
+  background-image: url("/assets/footerPhone.png");
+  margin-bottom: -11px;
+}
+.icon-email{
+  background-image: url("/assets/footerEmail.png");
+  margin-bottom: -11px;
+}
 .logo{
   margin-top: -25px;
 }
@@ -628,7 +641,11 @@ body {
 .copyright{
   color: #777B8D;
 }
-
+.ul-footer{
+  li{
+    display: table-cell;
+  }
+}
 .ul-footer > li:hover > a{
   background-color: #333645!important;
   color: #777B8D;
