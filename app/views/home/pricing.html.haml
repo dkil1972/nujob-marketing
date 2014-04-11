@@ -105,10 +105,10 @@
 :javascript
   $(".selectpicker").selectpicker();
   $('#developers').slider({
-    min: 0,
+    min: 1,
     max: 30,
     step: 1,
-    value: 0,
+    value: 1,
     handle: 'square',
     placeHolder: "#{t('.developers_number')}"
   });
@@ -125,9 +125,9 @@
     return !(charCode > 31 && (charCode < 48 || charCode > 57));
   };
   function pricing($scope) {
-    $scope.number_of_hires = 0;
+    $scope.number_of_hires = 1;
     $scope.number_of_months = 1;
-    $scope.average_salary = 4500;
+    $scope.average_salary = 45000;
     $scope.recruiter_percentage = 15;
     $scope.plan_price = 99;
     
