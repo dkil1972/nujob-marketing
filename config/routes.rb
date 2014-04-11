@@ -6,8 +6,8 @@ NujobMarketing::Application.routes.draw do
   get "/testimonials" => "home#testimonials"
   get "/tour" => "home#tour"
   get "/pricing" => "home#pricing"
-  get "/blog" => "home#blog"
   get "/contact" => "home#contact"
 
   resources :messages, :only => [:create]
+  resources :blogs, :only => [:index,:show]
 end

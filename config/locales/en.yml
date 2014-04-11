@@ -82,7 +82,7 @@ en:
       developers_number: "Number of developers you need to hire"
       month_number: "Number of months it might take"
       bad_hire_title: "Total cost with a Recruiter"
-      good_hire_title: "Total cost with NuJob -"
+      good_hire_title: "Total cost with NuJob "
       saving: "Saving of "
       per_month: "per month"
       total: "total £"
@@ -99,11 +99,6 @@ en:
       hires: "hires"
       team_members: "team members"
       choose_plan: "CHOOSE PLAN"
-    blog:
-      journal: "Nujob Journal"
-      newer: "Newer"
-      older: "Older"
-      has_no_items: "Has no blog's items"
     contact:
       let_talk: "Let's talk"
       submit: "SUBMIT"
@@ -115,7 +110,18 @@ en:
       member1_name: "Andy"
       member1_description: "Co-founder & CEO"
       member2_name: "Dermot"
-      member2_description: "Co-founder & CEO"      
+      member2_description: "Co-founder & CEO"    
+    blog_item:
+      read_more: "Read More"
   messages:
     create_success: "Your message has been sent successfully"
     message_contact: "You have a new message from customers"
+  blogs:
+    show:
+      journal: "Nujob Journal"
+      has_no_post: "Has no post with this ID"
+    index:
+      journal: "Nujob Journal"
+      newer: "Newer"
+      older: "Older"
+      has_no_items: "Has no blog's items"          

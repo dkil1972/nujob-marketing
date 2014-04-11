@@ -137,10 +137,15 @@
       $scope.total_cost_good = $scope.plan_price * $scope.number_of_months;
       $scope.saving_with_nujob = $scope.total_cost_bad - $scope.total_cost_good;
       $scope.saving_with_nujob_per_month = $scope.saving_with_nujob / $scope.number_of_months;
+      if ($scope.saving_with_nujob < 0) {
+        $scope.saving_with_nujob = 0;
+      };
+      if ($scope.saving_with_nujob_per_month < 0) {
+        $scope.saving_with_nujob_per_month = 0;
+      };
       if ($scope.saving_with_nujob_per_month == NaN) {
         $scope.saving_with_nujob_per_month = 0;
       };
-      console.log($scope.saving_with_nujob_per_month);
     };
     $scope.$watchCollection('[number_of_hires, number_of_months, average_salary, recruiter_percentage, plan_price]',function(){
       $scope.change();

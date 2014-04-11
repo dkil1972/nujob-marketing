@@ -1,0 +1,36 @@
+.blog-box-1
+  %p= t(".journal")
+.blog-box-2.over-hidden
+  - if @error.present?
+    %p.text-center.font-20= @error
+  -elsif @item.nil?
+    %p.text-center.font-20= t(".has_no_post")
+    
+  -else 
+    .blog-item
+      %p.font-38= @item['title']
+      %p
+        %span.icon.icon-clock
+        %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
+      .font-20
+        = @item['postbody'].html_safe
+      %br
+      #disqus_thread
+      :javascript
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nujob';
+        var disqus_identifier = "#{@item['id']}";
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+
+      %noscript
+        Please enable JavaScript to view the
+        %a{:href => "http://disqus.com/?ref_noscript"} comments powered by Disqus.
+      %a.dsq-brlink{:href => "http://disqus.com"}
+        comments powered by
+        %span.logo-disqus Disqus
