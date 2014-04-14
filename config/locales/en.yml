@@ -113,6 +113,9 @@ en:
       member2_description: "Co-founder & CEO"    
     blog_item:
       read_more: "Read More"
+    not_found_error:
+      content: "Don't leave empty handed.... get a free mini course"    
+      submit: "Submit"
   messages:
     create_success: "Your message has been sent successfully"
     message_contact: "You have a new message from customers"
@@ -124,4 +127,5 @@ en:
       journal: "Nujob Journal"
       newer: "Newer"
       older: "Older"
-      has_no_items: "Has no blog's items"          
+      has_no_items: "Has no blog's items"
+ 

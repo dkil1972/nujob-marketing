@@ -1,0 +1,7 @@
+- [:success, :info, :warning, :danger].each do |level|
+  - unless flash[level].blank?
+    .row
+      .col-md-12
+        %div{class: "alert alert-dismissable alert-#{level} margin-0"}
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} ×
+          = flash[level]

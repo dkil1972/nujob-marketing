@@ -1,0 +1,14 @@
+.text-center
+  %img{:src => "/assets/404.png"}
+  %br
+  %p.font-42= t(".content")
+  %br
+  = simple_form_for(Course.new, :html => {"data-validate" => "parsley", class: 'form-horizontal' }) do |f|
+    .row
+      .col-md-6.col-md-offset-3.mb-30
+        .col-md-10
+          .custom-placeholder
+            = f.label :email, t(".email")
+            = f.text_field :email, :class => "form-control mb-15 required", :type=>"email"
+        .col-md-2
+          = f.submit t(".submit"), :class => "btn w-full"  
