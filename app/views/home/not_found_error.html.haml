@@ -9,6 +9,6 @@
         .col-md-10
           .custom-placeholder
             = f.label :email, t(".email")
-            = f.text_field :email, :class => "form-control mb-15 required", :type=>"email"
+            = f.text_field :email, :class => "form-control mb-15 required", :type=>"email", :autofocus => true
         .col-md-2
           = f.submit t(".submit"), :class => "btn w-full"  

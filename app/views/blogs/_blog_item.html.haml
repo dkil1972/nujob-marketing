@@ -4,7 +4,7 @@
     %span.icon.icon-clock
     %span.text-grey= item['date_added'].to_date.strftime("%b %d, %Y")
     %span.icon.icon-comment
-    %a{:href=> "#{blog_url(:id => item['id'])}#disqus_thread"}
+    %a{:href=> "#{blog_url(:id => item['id'])}#disqus_thread", "data-disqus-identifier" => "#{item['id']}"}
       0 comments
   .font-20
     = item['postbody'].html_safe
