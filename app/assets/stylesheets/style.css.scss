@@ -117,11 +117,16 @@ body {
   background: #00aeef;
   color: #fff;
 }
-.btn-orange{
-  background-color: #F47838;
+
+.main-call {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #F47838; //orange
   color: #fff;
 }
-.btn-orange:hover, .btn-orange:focus{
+.main-call:hover, .main-call:focus{
   background: #E36727;
   color: #fff;
 }
@@ -343,14 +348,6 @@ body {
   margin-right: 5px;
   margin-left: 30px;
   background-size: 20px 20px;
-}
-.ph-35{
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.pv-14{
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 .h-500{
   height: 500px;

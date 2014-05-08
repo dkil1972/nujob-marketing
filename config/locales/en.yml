@@ -24,12 +24,11 @@ en:
       title: "NujobMarketing"
   home:
     index:
-      title1: "Hire great candidates"
-      title2: "your team recommends"
-      line1: "Announce available roles to your IT team"
-      line2: "Manage your talent pool filled with referrals"
-      line3: "Guide your team, turning referrals into hires"
-      line4: "Never miss out on a direct hire again"
+      title1: "Hire great candidates your team recommends"
+      line1: "Never miss out on a direct hire again"
+      line2: "Never have to rely on external recruiters"
+      line3: "Easily build a pool of IT talent"
+      line4: "Guide your team, turning referrals into hires"
       request_free_trial: "REQUEST A FREE TRIAL"
       line5: "Why the recruitment process is broken?"
       bad_hire1: "Unknown cadidate supplied by agent"
@@ -70,7 +69,7 @@ en:
       tour4b: "Know the stage they are"
       tour4c: "See everything"
     pricing:
-      pricing_base_title: "Start your 60-days free trial today"
+      pricing_base_title: "Start your 30-days free trial today"
       pricing_base_sub: "No sign-up fees. No credit card required. No long-term contracts. 100% money back."
       plan1_title: "CONSULTANT"
       plan2_title: "TEAM"

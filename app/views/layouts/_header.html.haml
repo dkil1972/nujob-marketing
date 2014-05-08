@@ -15,8 +15,8 @@
         %li.default-active{class: active_link("home", params[:controller],params[:action])}
           %a{:href => root_path}= t('.home')
 
-        %li{class: active_link("testimonials", params[:controller],params[:action])}
-          %a{:href => testimonials_path}= t('.testimonials')
+        /%li{class: active_link("testimonials", params[:controller],params[:action])}
+        /%a{:href => testimonials_path}= t('.testimonials')
         %li{class: active_link("tour", params[:controller],params[:action])}
           %a{:href => tour_path}= t('.tour')
         %li{class: active_link("pricing", params[:controller],params[:action])}

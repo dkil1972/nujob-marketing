@@ -1,8 +1,8 @@
 .homepage-box-1
   .col-xs-5.font-white
     .ml-155.mt-100
-      %b.font-38= t ".title1"
-      %p.font-36= t ".title2"
+      %h1
+        %b= t ".title1"
       %p
         %span.icon.icon-tick
         %span= t ".line1"
@@ -16,9 +16,9 @@
         %span.icon.icon-tick
         %span= t ".line4"
       %br
-      %button.btn.btn-orange.ph-35.pv-14
+      =link_to(contact_url, {:class => 'btn main-call' }) do 
         %span.icon.icon-request
-        %b= t ".request_free_trial"
+        %b=t(".request_free_trial")
   .col-xs-7
     .mt-100
       %img{:src => '/assets/Take_Tour.png'}
@@ -97,7 +97,7 @@
         %p
           %span#slider-prev
           %span#slider-next
-= render "good_companies"
+/= render "good_companies"
 %br
 %br
 %br
