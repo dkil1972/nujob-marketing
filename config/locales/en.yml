@@ -18,7 +18,7 @@ en:
       contact: "Contact"
       login: "Login"
       start_trial: "Start your free trial now!"
-      60_days: "60-days full-features and FREE, no obligations."
+      trial_period: "30-days full-features and FREE, no obligations."
       request_trial: "REQUEST A FREE TRIAL"
     application:
       title: "NujobMarketing"
@@ -46,11 +46,25 @@ en:
       feedback_title: "What our clients are saying"
       more_benefits: "More benefits"
       for_you: "for you"
-      place_holder: "This is place holder text. "
       refer: "Referral made by team member"
-      other: "Other team member builds rapport and evaluates"
-      multiple: "Multiple people in team recommend"
+      refer_text: "Your team are going to meetups, conferences and social networking with their peers, 
+                  NuJob allows you to tap into this endless source of great talent. 
+                  You'll be amazed at how quickly your team build up a talent pool!"
+      build_rapport: "Team members build rapport"
+      build_rapport_text: "NuJob incentivises your team to build rapport within the IT community. 
+                          Each interaction with potential candidates is an opportunity for team members to assess against
+                          role criteria you define. You get an overview of activity between your team and potential candidates, 
+                          making it easy to focus effort on leads with a high suitability rating."
+      collaborate: "Multiple people in team recommend"
+      collaborate_text: "NuJob makes it easy to collaboratively keep in contact with potential candidates.
+                        Every interaction with a lead is recorded in the system, building up a history that can be constantly reviewed.
+                        Team members can set reminders to contact leads in the future in order to keep the relationship warm and your
+                        company in the mind of the lead."
       hire: "Hire"
+      hire_text: "NuJob makes it easy for you to guide the interactions with potential candidates toward hiring. By collaborating with team members 
+                  you can decide when the time is right to turn a lead into an applicant. With the benfit of 
+                  constant assessment during the rapport building, the application process can be tailored to the leads suitability rating.
+                  At the point of hiring NuJob sends you a report of the team members involved so that they can be recognised for their effort."
     testimonials:
       featured_customer: "FEATURED CUSTOMER STORY"
     tour:
