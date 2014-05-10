@@ -2,19 +2,19 @@
   .col-xs-5.font-white
     .ml-155.mt-100
       %h1
-        %b= ContentItem.find_by(:key => 'main_title').text
+        %b= t ".title1"
       %p
         %span.icon.icon-tick
-        %span= ContentItem.find_by(:key => 'benefit_1').text
+        %span= t ".line1"
       %p
         %span.icon.icon-tick
-        %span= ContentItem.find_by(:key => 'benefit_2').text
+        %span= t ".line2"
       %p
         %span.icon.icon-tick
-        %span= ContentItem.find_by(:key => 'benefit_3').text
+        %span= t ".line3"
       %p
         %span.icon.icon-tick
-        %span= ContentItem.find_by(:key => 'benefit_4').text
+        %span= t ".line4"
       %br
       =link_to(contact_url, {:class => 'btn main-call' }) do 
         %span.icon.icon-request
