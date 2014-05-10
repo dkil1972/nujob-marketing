@@ -1,7 +1,21 @@
 .homepage-box-1
   .col-xs-5.font-white
     .ml-155.mt-100
-      
+      %h1
+        %b= ContentItem.find_by(:key => 'main_title').text
+      %p
+        %span.icon.icon-tick
+        %span= ContentItem.find_by(:key => 'benefit_1').text
+      %p
+        %span.icon.icon-tick
+        %span= ContentItem.find_by(:key => 'benefit_2').text
+      %p
+        %span.icon.icon-tick
+        %span= ContentItem.find_by(:key => 'benefit_3').text
+      %p
+        %span.icon.icon-tick
+        %span= ContentItem.find_by(:key => 'benefit_4').text
+      %br
       =link_to(contact_url, {:class => 'btn main-call' }) do 
         %span.icon.icon-request
         %b=t(".request_free_trial")
