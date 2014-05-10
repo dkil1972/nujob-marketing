@@ -15,6 +15,10 @@ class HomeController < ApplicationController
 
   def contact
   end
+  
+  def test
+    puts xxxx
+  end
 
   def page_not_found
     respond_to do |format|

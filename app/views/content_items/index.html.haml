@@ -1,0 +1,23 @@
+%h1 Listing content_items
+
+%table{:class => "table"}
+  %tr
+    %th Key
+    %th Text
+    %th Page
+    %th
+    %th
+    %th
+
+  - @content_items.each do |content_item|
+    %tr
+      %td= content_item.key
+      %td= content_item.text
+      %td= content_item.page
+      %td= link_to 'Show', content_item
+      %td= link_to 'Edit', edit_content_item_path(content_item)
+      %td= link_to 'Destroy', content_item, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Content item', new_content_item_path
