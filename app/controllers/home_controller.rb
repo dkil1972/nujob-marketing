@@ -8,7 +8,7 @@ class HomeController < ApplicationController
        return item.text
      end
      
-     first_time_edit_link = "<a href='/content_items/" + item._id + "/edit'>CLick to replace</a>" 
+     first_time_edit_link = "<a href='/content_items/" + item._id + "/edit'>Click to replace</a>" 
      return first_time_edit_link.html_safe
   end
   
@@ -25,10 +25,6 @@ class HomeController < ApplicationController
   end  
 
   def contact
-  end
-  
-  def test
-    puts xxxx
   end
 
   def page_not_found
