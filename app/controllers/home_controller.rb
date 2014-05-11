@@ -1,9 +1,20 @@
 class HomeController < ApplicationController
+  helper_method :homepage_item
 
-
+  def homepage_item(key)
+     item = ContentItem.find_or_create_by(:key => key, :page => 'Home')
+     
+     if (item.text != nil)
+       return item.text
+     end
+     
+     first_time_edit_link = "<a href='/content_items/" + item._id + "/edit'>CLick to replace</a>" 
+     return first_time_edit_link.html_safe
+  end
+  
   def index
   end
-
+  
   def testimonials
   end
 
