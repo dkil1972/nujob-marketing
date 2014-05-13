@@ -15,6 +15,10 @@
     url('PTS75F_W.ttf') format('truetype'),
     url('PTS75F_W.svg#PTSans-Bold') format('svg');
 }
+@mixin font_and_line_height($some-number) {
+  font-size: $some-number;
+  line-height: $some-number;
+}
 body {
   font-family: 'PT Sans';
   font-size: 16px;
@@ -196,28 +200,28 @@ body {
   margin-right: 45px;
 }
 .font-15{
-  font-size: 18px;
+  @include font_and_line_height(15px);
 }
 .font-18{
-  font-size: 18px;
+  @include font_and_line_height(18px);
 }
 .font-20{
-  font-size: 20px;
+  @include font_and_line_height(20px);
 }
 .font-24{
-  font-size: 24px;
+  @include font_and_line_height(24px);
 }
 .font-32{
-  font-size: 32px;
+  @include font_and_line_height(32px);
 }
 .font-38{
-  font-size: 38px;
+   @include font_and_line_height(38px);
 }
 .font-36{
-  font-size: 36px;
+  @include font_and_line_height(36px);
 }
 .font-42{
-  font-size: 42px;
+  @include font_and_line_height(42px);
 }
 .font-white{
   color: white;
@@ -245,7 +249,7 @@ body {
   width: 84px;
   height: 84px;
   position: relative;
-  padding-top: 16px;
+  padding-top: 30px;
   font-size: 32px;
   margin: 0 auto 22px;
   display: block;
