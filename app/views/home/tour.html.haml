@@ -1,14 +1,14 @@
 .tour-box-1.text-center.font-white
   %p.font-38.w-410.div-center
-    = t(".tour1")
+    = content_item('Tour', 'tour_title')
   %br
   = image_tag('/assets/Hero.png')
 .tour-box-2.pt-80.text-center
   .row
     %p.font-38
-      = t(".tour2")
+      = content_item('Tour', 'tour_item_1_title')
     %p.font-24.w-680.div-center
-      = t(".place_holder")  
+      = content_item('Tour', 'tour_item_1_subtitle')
     %br
     %br
     .col-xs-6
@@ -19,10 +19,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour2a")
+              = content_item('Tour', 'tour_item_1a_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_1a_text')
       .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -30,10 +29,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour2b")
+              = content_item('Tour', 'tour_item_1b_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_1b_text')
       .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -41,10 +39,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour2c")
+              = content_item('Tour', 'tour_item_1c_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_1c_text')
     .col-xs-6
       .div-inline.pull-left.tour-slider
         %ul.tour-bxslider
@@ -57,9 +54,9 @@
   %br
   .row
     %p.font-38
-      = t(".tour3")
+      = content_item('Tour', 'tour_item_2_title')
     %p.font-24.w-680.div-center
-      = t(".place_holder")  
+      = content_item('Tour', 'tour_item_2_subtitle')
     %br
     %br
     .col-xs-6
@@ -79,10 +76,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour3a")
+              = content_item('Tour', 'tour_item_2a_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_2a_text')
       .w-550.pull-left.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -90,10 +86,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour3b")
+              = content_item('Tour', 'tour_item_2b_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_2b_text')
       .w-550.pull-left.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -101,17 +96,16 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour3c")
+              = content_item('Tour', 'tour_item_2c_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_2c_text')
 
   %br
   .row
     %p.font-38
-      = t(".tour4")
+      = content_item('Tour', 'tour_item_3_title')
     %p.font-24.w-680.div-center
-      = t(".place_holder")  
+      = content_item('Tour', 'tour_item_3_subtitle')
     %br
     %br
     .col-xs-6
@@ -122,10 +116,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour4a")
+              = content_item('Tour', 'tour_item_3a_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_3a_text')
       .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -133,10 +126,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour4b")
+              = content_item('Tour', 'tour_item_3b_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_3b_text')
       .w-550.pull-right.mb-40
         .col-5-percent.mt-10
           .col-95-percent.circle-image
@@ -144,10 +136,9 @@
         .col-95-percent.text-left
           .font-20
             %strong.text-blue
-              = t(".tour4c")
+              = content_item('Tour', 'tour_item_3c_title')
           .padding-top-10
-            - 10.times do
-              = t(".place_holder")
+            = content_item('Tour', 'tour_item_3c_text')
     .col-xs-6
       .div-inline.pull-left.tour-slider
         %ul.tour-bxslider

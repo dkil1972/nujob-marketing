@@ -2,28 +2,28 @@
   .col-xs-5.font-white
     .ml-155.mt-100
       %h1
-        %b= homepage_item('main_title_text')
+        %b= content_item('Home', 'main_title_text')
       %p
         %span.icon.icon-tick
-        %span= homepage_item('benefit_1')
+        %span= content_item('Home', 'benefit_1')
       %p
         %span.icon.icon-tick
-        %span= homepage_item('benefit_2')
+        %span= content_item('Home', 'benefit_2')
       %p
         %span.icon.icon-tick
-        %span= homepage_item('benefit_3')
+        %span= content_item('Home', 'benefit_3')
       %p
         %span.icon.icon-tick
-        %span= homepage_item('benefit_4')
+        %span= content_item('Home', 'benefit_4')
       %br
       =link_to(contact_url, {:class => 'btn main-call' }) do 
         %span.icon.icon-request
-        %b= homepage_item('free_trial_button')
+        %b= content_item('Home', 'free_trial_button')
   .col-xs-7
     .mt-100
       %img{:src => '/assets/Take_Tour.png'}
 .h-500.text-center
-  %p.font-38.pt-75.mb-70= homepage_item('bad_hire_title')
+  %p.font-38.pt-75.mb-70= content_item('Home', 'bad_hire_title')
   .bad-hire
     .bad-hire-step
       .colons-div

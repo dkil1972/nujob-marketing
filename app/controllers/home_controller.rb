@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
-  helper_method :homepage_item
+  helper_method :content_item
 
-  def homepage_item(key)
-     item = ContentItem.find_or_create_by(:key => key, :page => 'Home')
+  def content_item(page, key)
+     item = ContentItem.find_or_create_by(:key => key, :page => page)
      
      if (item.text != nil)
        return item.text
