@@ -9,7 +9,7 @@ module ApplicationHelper
     } ,
     {
      content: "It's been a real eye opener to see how many potential candidates our IT teams actually know. Managing a talent pool has never been easier!",
-      icon: "Client2.png",
+      
       user: "Nicola Cottingham",
       role: "HR Recruiter comparethemarket.com"
     }

@@ -18,13 +18,13 @@
         /%a{:href => testimonials_path}= content_item("Header", "testimonials_nav")
         %li{class: active_link("tour", params[:controller],params[:action])}
           %a{:href => tour_path}= content_item("Header", "tour_nav")
-        %li{class: active_link("blog", params[:controller],params[:action])}
-          %a{:href => blogs_path}= content_item("Header", "blog_nav")
-        %li{class: active_link("contact", params[:controller],params[:action])}
-          %a{:href => contact_path}= content_item("Header", "contact_nav")
+        /%li{class: active_link("blog", params[:controller],params[:action])}
+        /%a{:href => blogs_path}= content_item("Header", "blog_nav")
+        /%li{class: active_link("contact", params[:controller],params[:action])}
+        /%a{:href => contact_path}= content_item("Header", "contact_nav")
         %li{:class => 'active_link("pricing", params[:controller],params[:action])'}
-          %a{:href => pricing_path}= content_item("Header", "signup_nav")
+          %a{:href => pricing_path, :style => "text-shadow: 0 0 1px gray;"}= content_item("Header", "signup_nav")
         %li        
-          %button.btn.btn-grey{:type => "submit"}= t('.login')         
+          %button.btn.btn-grey{:type => "submit"}= content_item("Header", "login")    
 :javascript
   moveTopBlue();
