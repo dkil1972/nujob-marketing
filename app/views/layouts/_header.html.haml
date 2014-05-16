@@ -13,16 +13,15 @@
       %ul.nav.navbar-nav
         #top-blue
         %li.default-active{class: active_link("home", params[:controller],params[:action])}
-          %a{:href => root_path}= t('.home')
-
+          %a{:href => root_path}= content_item("Header", "home_nav")
         /%li{class: active_link("testimonials", params[:controller],params[:action])}
         /%a{:href => testimonials_path}= content_item("Header", "testimonials_nav")
         %li{class: active_link("tour", params[:controller],params[:action])}
-          %a{:href => tour_path}=  content_item("Header", "tour_nav")
+          %a{:href => tour_path}= content_item("Header", "tour_nav")
         %li{class: active_link("blog", params[:controller],params[:action])}
-          %a{:href => blogs_path}= t('.blog')
+          %a{:href => blogs_path}= content_item("Header", "blog_nav")
         %li{class: active_link("contact", params[:controller],params[:action])}
-          %a{:href => contact_path}= t('.contact')  
+          %a{:href => contact_path}= content_item("Header", "contact_nav")
         %li{:class => 'active_link("pricing", params[:controller],params[:action])'}
           %a{:href => pricing_path}= content_item("Header", "signup_nav")
         %li        
