@@ -34,6 +34,8 @@
             %a{:href => blogs_path}= t('.blog')
           %li{class: active_link("contact", params[:controller],params[:action])}
             %a{:href => contact_path}= t('.contact')
+          %li{class: active_link("login", params[:controller],params[:action])}
+            %a{:href => 'https://app.nujob.co.uk'}= content_item("Footer", "login")
       .pl-115.font-white
         .icon-footer.icon-phone
         %span.mr-45= Constants::TELL
