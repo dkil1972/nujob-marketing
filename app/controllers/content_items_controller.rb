@@ -1,5 +1,6 @@
 class ContentItemsController < ApplicationController
   before_action :set_content_item, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with name: "admin", password: "andydermot"
 
   # GET /content_items
   # GET /content_items.json
