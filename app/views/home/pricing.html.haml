@@ -48,13 +48,13 @@
     %p.font-38= t(".recruiters_vs_nujob").html_safe
     .input-info
       .div-inline
-        %p.text-left.font-20= t(".salary")
+        %p.text-left.font-20= content_item("Pricing", "salary")
         .input-with-addon
           %span £
           %hr
           = text_field_tag :salary, 4500, :class => "form-control", :onkeypress=>"return isNumberKey(event)","ng-model"=>"average_salary"
       .div-inline
-        %p.text-left.font-20= t(".recruiter_margin")
+        %p.text-left.font-20= content_item("Pricing", "recruiter_margin")
         .input-with-addon
           %span %
           %hr
@@ -62,22 +62,25 @@
       .div-inline
         %div
           %p.text-left.font-20= t(".plan")
-          = select_tag :plan, options_for_select([ 99, 299, 499, 1599 ], 99), {:class => "selectpicker", "ng-model"=>"plan_price"}
+          = select_tag :plan, options_for_select([ 49, 299, 499, 1599 ], 299), {:class => "selectpicker", "ng-model"=>"plan_price"}
     .div-inline.div-vs
-      .col-xs-6.pl-0
-        %slider#developers{"model"=>"number_of_hires"}
-        .slider-range
-          %span.range.dev1 5
-          %span.range.dev2 10
-          %span.range.dev3 15
-          %span.range.dev4 20
-          %span.range.dev5 25
-      .col-xs-6.pr-0
-        %slider#months{"model"=>"number_of_months"}
-        .slider-range
-          %span.range.month1 3
-          %span.range.month2 6
-          %span.range.month3 9
+      .col-xs-2.pl-0
+      .col-xs-8.pl-0
+        %div{:style => 'height:100px'}
+          %slider#developers{"model"=>"number_of_hires"}
+          /.slider-range
+          /%span.range.dev1 5
+          /%span.range.dev2 10
+          /%span.range.dev3 15
+          /%span.range.dev4 20
+          /%span.range.dev5 25
+        %div{:style => 'height:100px'}
+          %slider#months{"model"=>"number_of_months"}
+          /.slider-range
+          /%span.range.month1 3
+          /%span.range.month2 6
+          /%span.range.month3 9
+      .col-xs-8.pl-0
       .col-xs-6.pl-0
         .pricing-bad-hire
           %img{:src => "/assets/Badprice.png", :size => "84x84"}
@@ -89,19 +92,15 @@
         .pricing-good-hire
           %img{:src => "/assets/Goodprice.png", :size => "84x84"}
           %p
-            %span= t(".good_hire_title")
-            %b.font-24 £
-            %b.font-24 {{total_cost_good | number:0}}
-          %p.font-32
-            %b= t(".saving")
-            %b.font-24 £
-            %b {{saving_with_nujob_per_month | number:0}}
-            %span.font-24= t(".per_month")
-          %p.font-20
-            %span (
-            %span= t(".total")
-            %span {{saving_with_nujob | number:0}}
-            %span )
+            %span= content_item("Pricing", "total_cost_with_nujob")
+            %div
+              %b.font-24 £
+              %b.font-42 {{total_cost_good | number:0}}
+          %p.font-24 
+            %b (
+            %b= content_item("Pricing", "total_saving_text")
+            %b.font-24 £ {{saving_with_nujob | number:0}}
+            %b )
 :javascript
   $(".selectpicker").selectpicker();
   $('#developers').slider({
@@ -129,11 +128,11 @@
     $scope.number_of_months = 1;
     $scope.average_salary = 45000;
     $scope.recruiter_percentage = 15;
-    $scope.plan_price = 99;
+    $scope.plan_price = 299;
     
     $scope.change = function() {
       $scope.recruiter_cost_per_hire = $scope.average_salary * $scope.recruiter_percentage / 100;
-      $scope.total_cost_bad = $scope.number_of_hires * $scope.number_of_months * $scope.recruiter_cost_per_hire;
+      $scope.total_cost_bad = $scope.number_of_hires * $scope.recruiter_cost_per_hire;
       $scope.total_cost_good = $scope.plan_price * $scope.number_of_months;
       $scope.saving_with_nujob = $scope.total_cost_bad - $scope.total_cost_good;
       $scope.saving_with_nujob_per_month = $scope.saving_with_nujob / $scope.number_of_months;
