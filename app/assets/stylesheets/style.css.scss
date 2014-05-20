@@ -424,7 +424,7 @@ body {
   color: #535765;
 }
 .good-hire-div-1{
-  font-size: 24px;
+  @include font_and_line_height(24px);
   width: 200px;
   margin: auto;
 }
