@@ -1,10 +1,10 @@
 .testimonials-box-1.text-center
   %p.font-38.font-white.pb-60
-    %b= t(".featured_customer")
+    %b= content_item("Testimonials", "featured_customer_title")
   .featured_customer.div-inline
-    = render partial: "feedback", locals: {feedback: featured_customer,length: 330}
+    = render partial: "feedback", locals: {customer: "customer_1",length: 630}
 = render "good_companies"
-.text-center
-  .feedback-list.div-inline
-    - dummy_feedback.each do |fb|
-      = render partial: "feedback", locals: {feedback: fb,length: 200}
+/.text-center
+/.feedback-list.div-inline
+/- dummy_feedback.each do |fb|
+/= render partial: "feedback", locals: {feedback: fb,length: 200}

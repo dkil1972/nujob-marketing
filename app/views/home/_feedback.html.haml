@@ -1,11 +1,12 @@
 %li.feedback-item
   .feedback-content
-    = feedback[:content].truncate(length, separator: ' ')
+    = content_item("Testimonials", customer + "_quote") 
+    /feedback[:content].truncate(length, separator: ' ')
     .feedback-arrow
   .feedback-author
     .feedback-icon
-      = image_tag(feedback[:icon])
+      = image_tag(customer +".png")
     .feedback-name.font-24
-      = feedback[:user]
+      = content_item("Testimonials", customer + "_name") 
     .feedback-role
-      = feedback[:role]
+      = content_item("Testimonials", customer + "_role") 
