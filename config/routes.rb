@@ -15,6 +15,6 @@ NujobMarketing::Application.routes.draw do
   get "/cms" => "content_items#index"
 
   resources :messages, :only => [:create]
-  resources :blogs, :only => [:index,:show]
+  resource :blog, :controller => "blogs", :only => [:index,:show]
   resources :courses, :only => [:create]
 end
