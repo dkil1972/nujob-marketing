@@ -954,9 +954,16 @@ body {
   .blog-item{
     overflow: hidden;
   }
+  p, ol{
+    margin-bottom: 1.7em;
+    line-height: 1.5em;
+    font-size: 18px;
+  }
   img{
     max-width: 100%;
     height: auto;
+    margin-right: 10px;
+    float: left;
   }
 }
 #loading-indicator{
