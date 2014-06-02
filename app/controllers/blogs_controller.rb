@@ -23,6 +23,7 @@ class BlogsController < ApplicationController
       :start => start
       }
     )
+
     @status = JSON.parse(response[/{.+}/])["status"]
     if @status != "fail"
       @first_item_id = JSON.parse(response_first[/{.+}/])["items"][0]["id"]

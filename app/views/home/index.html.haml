@@ -1,28 +1,34 @@
-.homepage-box-1
-  .col-xs-5.font-white
+.homepage-box-0
+  .col-xs-10.font-white
     .ml-155.mt-30
-      %h1
-        %b= content_item('Home', 'main_title_text')
-      %p
+      %p.font-36{:style => 'text-align:center'}
+        = content_item('Home', 'main_title_text')
+  .col-xs-2
+.homepage-box-1
+  .col-xs-6.font-white
+    .ml-155.mt-50
+      .p.font-18
         %span.icon.icon-tick
         %span= content_item('Home', 'benefit_1')
-      %p
+      .p.font-18
         %span.icon.icon-tick
         %span= content_item('Home', 'benefit_2')
-      %p
+      .p.font-18
         %span.icon.icon-tick
         %span= content_item('Home', 'benefit_3')
-      %p
+      .p.font-18
         %span.icon.icon-tick
         %span= content_item('Home', 'benefit_4')
+      %br
+      %br
       %br
       =link_to(contact_url, {:class => 'btn main-call' }) do 
         %span.icon.icon-request
         %b= content_item('Home', 'free_trial_button')
-  .col-xs-7
-    .mt-70
-      %img{:src => '/assets/Take_Tour.png'}
-.h-500.text-center
+  .col-xs-5
+    .mt-50
+      %img{:src => '/assets/Take_Tour.png', :width => '95%'}
+.h-400.text-center
   %p.font-38.pt-75.mb-70= content_item('Home', 'bad_hire_title')
   .bad-hire
     .bad-hire-step

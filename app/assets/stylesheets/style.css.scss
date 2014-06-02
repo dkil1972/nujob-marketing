@@ -1,27 +1,12 @@
-@font-face {
-  font-family: 'PT Sans';
-  src: url('pts55f_w.eot');
-  src: local('PT Sans'),
-    url('PTS55F_W.woff') format('woff'),
-    url('PTS55F_W.ttf') format('truetype'),
-    url('PTS55F_W.svg#PTSans-Regular') format('svg');
-}
-@font-face {font-family: 'PT Sans';
-  src: url('pts75f_w.eot');
-  font-style: normal;
-  font-weight: bold;
-  src: local('PT Sans Bold'),
-    url('PTS75F_W.woff') format('woff'),
-    url('PTS75F_W.ttf') format('truetype'),
-    url('PTS75F_W.svg#PTSans-Bold') format('svg');
-}
 @mixin font_and_line_height($some-number) {
   font-size: $some-number;
-  line-height: $some-number;
+  line-height: 150%;
+  margin-bottom: 5px;
 }
 body {
-  font-family: 'PT Sans';
+  font-family: 'Roboto', serif;
   font-size: 16px;
+  line-height: 130%;
 }
 .w-410{
   width: 410px;
@@ -105,7 +90,7 @@ body {
     line-height: 100px;
     padding: 0;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     color: #000;
   }
   .active > a, a:hover{
