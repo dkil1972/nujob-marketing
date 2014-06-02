@@ -4,7 +4,7 @@
     %title= t(".title")
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{charset: "utf-8"}
-    %meta{content: "width=1340", name: "viewport"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -12,23 +12,22 @@
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300'
 
   %body
-    .container.w-1340.ph-0
-      = render 'layouts/header'
-      = render "layouts/flash_message"
-      .main-content
-        = yield
-      = render 'layouts/footer'
-      <!-- Drip -->
-      :javascript
-        var _dcq = _dcq || [];
-        var _dcs = _dcs || {}; 
-        _dcs.account = '2749632';
+    = render 'layouts/header'
+    = render "layouts/flash_message"
+    .main-content
+      = yield
+    = render 'layouts/footer'
+    <!-- Drip -->
+    :javascript
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {}; 
+      _dcs.account = '2749632';
 
-        (function() {
-          var dc = document.createElement('script');
-          dc.type = 'text/javascript'; dc.async = true; 
-          dc.src = '//tag.getdrip.com/2749632.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(dc, s);
-        })();
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true; 
+        dc.src = '//tag.getdrip.com/2749632.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
 
