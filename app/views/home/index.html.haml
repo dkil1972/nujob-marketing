@@ -1,32 +1,33 @@
-.homepage-box-1
-  .col-xs-1
-  .col-xs-5.font-white
+.row.homepage-box-1
+  .col-md-1
+  .col-md-5.font-white
     .mt-30
       %p.font-36{:style => 'text-align:center'}
         = content_item('Home', 'main_title_text')
     .mt-50
-      .p.font-18
-        %span.icon.icon-tick
-        %span= content_item('Home', 'benefit_1')
-      .p.font-18
-        %span.icon.icon-tick
-        %span= content_item('Home', 'benefit_2')
-      .p.font-18
-        %span.icon.icon-tick
-        %span= content_item('Home', 'benefit_3')
-      .p.font-18
-        %span.icon.icon-tick
-        %span= content_item('Home', 'benefit_4')
-      %br
-      %br
-      %br
-      =link_to(contact_url, {:class => 'btn main-call' }) do 
-        %span.icon.icon-request
-        %b= content_item('Home', 'free_trial_button')
-  .col-xs-5
+      .benefits
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_1')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_2')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_3')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_4')
+  .col-md-5
     .mt-50
-      %img{:src => '/assets/Take_Tour.png', :width => '95%'}
-  .col-xs-1
+      %img{:src => '/assets/Take_Tour.png', :width => '400px'}  
+      .mt-50
+        =link_to(contact_url, {:class => 'btn main-call' }) do 
+          %span.icon.icon-request
+          %b= content_item('Home', 'free_trial_button')
+      .mt-50
+  .col-md-1
+
 .h-400.text-center
   %p.font-38.pt-75.mb-70= content_item('Home', 'bad_hire_title')
   .bad-hire

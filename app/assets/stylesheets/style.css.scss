@@ -128,16 +128,17 @@ body {
   color: #fff;
 }
 .homepage-box-1{
-  height: 520px;
   background-image: url(homebg1.png);
-  
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
 }
 .homepage-box-2{
   height: 850px;
   background-image: url(homebg2.png);
   background-repeat:no-repeat;
   padding-top: 78px;
+}
+.benefits{
+  text-align:left;
 }
 @media (max-width: 992px){
   .navbar-custom{
@@ -151,6 +152,12 @@ body {
   }
   .pl-100 {
     padding-left:30px;
+  }
+  .homepage-box-1{
+    text-align:center;
+  }
+  .benefits{
+    padding-left:20px;
   }
 }
 @media (max-width: 768px){
