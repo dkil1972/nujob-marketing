@@ -137,9 +137,7 @@ body {
   background-repeat:no-repeat;
   padding-top: 78px;
 }
-.benefits{
-  text-align:left;
-}
+
 @media (max-width: 992px){
   .navbar-custom{
     min-height: 0;
@@ -581,6 +579,10 @@ body {
 
 .benefit-section{
   padding: 0% 10%;
+}
+.benefits{
+  text-align:left;
+  color:#ccc;
 }
 .margin-left-30{
   margin-left: 30px;
