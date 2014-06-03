@@ -7,9 +7,10 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %img{:alt => "nujob", :height => "100",:src => "/assets/Logo_D.png", :class=> "pr-200"}
+      %a{:href => root_path} 
+        %img{:alt => "nujob", :height => "100",:src => "/assets/Logo_D.png", :id => "logo" }
     / Collect the nav links, forms, and other content for toggling
-    #header.collapse.navbar-collapse
+    #header.collapse.navbar-collapse.pull-right
       %ul.nav.navbar-nav
         #top-blue
         %li.default-active{class: active_link("home", params[:controller],params[:action])}
