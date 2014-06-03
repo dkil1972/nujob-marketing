@@ -144,7 +144,10 @@ body {
     min-height: 0;
   }
   #header li {
-    margin-right: 30px;
+    margin-right: 25px;
+  }
+  #header a{
+    font-size:16px
   }
   .pl-100 {
     padding-left:30px;
@@ -152,7 +155,16 @@ body {
 }
 @media (max-width: 768px){
   #logo {
-   height:55px;
+   height:65px;
+  }
+  .navbar-custom{
+    min-height: 0;
+  }
+  #header a{
+    line-height: 30px;
+  }
+  #top-blue{
+    display: none;
   }
 }
 .ml-155{
