@@ -30,69 +30,82 @@
   .col-md-1
 
 .h-400.text-center
-  %p.font-38.pt-75.mb-70= content_item('Home', 'bad_hire_title')
+  %p.font-38.pt-75.mb-30= content_item('Home', 'bad_hire_title')
   .bad-hire
     .bad-hire-step
       .colons-div
-        %span.icon.icon-colon
-        %span.icon.icon-colon
-        %span.icon.icon-colon
-        %span.icon.icon-colon
+        %span.icon.icon-colon.colon-1
+        %span.icon.icon-colon.colon-2
+        %span.icon.icon-colon.colon-3
       %b.icon.icon-base.text-center= 1
       %span.font-18= content_item("Home", "bad_hire_step_1")
     .bad-hire-step
       .colons-div
-        %span.icon.icon-colon
-        %span.icon.icon-colon
+        %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 2
       %span.font-18= content_item("Home", "bad_hire_step_2")
     .bad-hire-step
       .colons-div
-        %span.icon.icon-colon
-        %span.icon.icon-colon
+        %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 3
       %span.font-18= content_item("Home", "bad_hire_step_3")
     .bad-hire-step
       .colons-div
-        %span.icon.icon-colon
-        %span.icon.icon-colon
+        %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 4
-      %span.font-18= content_item("Home", "bad_hire_step_4")
-    .bad-hire-step.text-red
+      %span= content_item("Home", "bad_hire_step_4")
+    .bad-hire-step.text-red.bad_hire_result
       %b.icon.icon-bad-hire
-      %b.font-20= content_item("Home", "bad_hire_step_5")
+      %b= content_item("Home", "bad_hire_step_5")
 .homepage-box-2.font-white.text-center
   %p.font-38.mb-50
     %span= t ".happy_hire_title"
     %b= t ".happy_hire_steps"
-  .good-hire-div-1.mb-70
-    %span= content_item("Home", "good_hire_step_1")
-    .icon.icon-dev.icon-86.has-background
-  .div-inline.div-center
-    .good-hire-div-2.float-left.text-right
-      %span= content_item("Home", "good_hire_step_2")
-      %span= "&nbsp;&nbsp;".html_safe
-      %span.icon.icon-hand-shake.icon-86.has-background
-    .happy-hire-div
+  .good-hire-large-screen
+    .good-hire-div-1
+      %span= content_item("Home", "good_hire_step_1")
+      .icon.icon-dev.icon-86.has-background
+    .div-inline.div-center
+      .good-hire-div-2.float-left.text-right
+        %span= content_item("Home", "good_hire_step_2")
+        %span= "&nbsp;&nbsp;".html_safe
+        %span.icon.icon-hand-shake.icon-86.has-background
+      .happy-hire-div
+        .icon.icon-happy-hire
+        %p
+          %b.font-20= content_item("Home", "good_hire_result")
+      .good-hire-div-2.float-left.text-left
+        %span.icon.icon-list.icon-86.has-background
+        %span= "&nbsp;&nbsp;".html_safe
+        %span= content_item("Home", "good_hire_step_3")
+    .good-hire-div-1.w-260
+      .icon.icon-relationship.icon-86.has-background
+      .good-hire-step4-text= content_item("Home", "good_hire_step_4")
+  .good-hire-small-screen{:style => 'display:none'}
+    .good-hire-div-1
+      .icon.icon-dev.icon-86.has-background
+      .good-step-1-text= content_item("Home", "good_hire_step_1")
+    .good-hire-div-1
+      .icon.icon-list.icon-86.has-background
+      .good-step-2-text= content_item("Home", "good_hire_step_3")
+    .good-hire-div-1
+      .icon.icon-relationship.icon-86.has-background
+      .good-step-4-text= content_item("Home", "good_hire_step_4")
+    .good-hire-div-1
+      .icon.icon-hand-shake.icon-86.has-background
+      .good-step-3-text= content_item("Home", "good_hire_step_2")
+    .good-hire-div-1
       .icon.icon-happy-hire
-      %p
-        %b.font-20= content_item("Home", "good_hire_result")
-    .good-hire-div-2.float-left.text-left
-      %span.icon.icon-list.icon-86.has-background
-      %span= "&nbsp;&nbsp;".html_safe
-      %span= content_item("Home", "good_hire_step_3")
-  .good-hire-div-1.mt-70.w-260
-    .icon.icon-relationship.icon-86.has-background
-    %p= content_item("Home", "good_hire_step_4")
-%br
-%br
-%br
+      .good-hire-result-text= content_item("Home", "good_hire_result")
+    %br
+
+.mt-50
 .h-450.text-center
   %p.font-38= t ".feedback_title"
   .div-inline

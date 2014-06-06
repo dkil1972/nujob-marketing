@@ -132,13 +132,36 @@ body {
   background-repeat:repeat-y;
 }
 .homepage-box-2{
-  height: 850px;
   background-image: url(homebg2.png);
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   padding-top: 78px;
 }
-
+@media (max-width: 1199px){
+  .colon-1{
+    display: none !important;
+  }
+  .colons-div {
+      width: 35px !important;
+      left: 147px !important;
+  }
+  .bad-hire-step {
+    width: 160px !important;
+  }
+  .happy-hire-div {
+    margin: auto 40px !important;
+  }
+  .good-hire-div-1{
+    margin-bottom:50px !important;
+    margin-top:40px !important;
+  }
+}
 @media (max-width: 992px){
+  .good-hire-large-screen {
+    display: none;
+  }
+  .good-hire-small-screen {
+    display: inherit !important;
+  }
   .navbar-custom{
     min-height: 0;
   }
@@ -157,6 +180,13 @@ body {
   .benefits{
     padding-left:20px;
   }
+  .bad-hire-step{
+    float: inherit !important;
+    margin-top:25px;
+  }
+  .colons-div {
+      display: none !important;
+  }
 }
 @media (max-width: 768px){
   #logo {
@@ -171,6 +201,8 @@ body {
   #top-blue{
     display: none;
   }
+
+  
 }
 .ml-155{
   margin-left: 155px;
@@ -310,11 +342,9 @@ body {
 }
 .icon-hand-shake{
   background: url('Hand_Shake.png') no-repeat;
-  margin-bottom: -34px;
 }
 .icon-list{
   background: url('List.png') no-repeat;
-  margin-bottom: -34px;
 }
 .icon-86{
   width: 86px;
@@ -433,6 +463,8 @@ body {
   @include font_and_line_height(24px);
   width: 200px;
   margin: auto;
+  margin-bottom:70px;
+  margin-top:70px;
 }
 .good-hire-div-2{
   font-size: 24px;
