@@ -791,6 +791,12 @@ body {
   background-image: url(pricingBase.png);
   background-repeat:no-repeat;
   padding-top: 50px;
+
+  .strap-line {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 70px!important;
+  }
 }
 .div-plan{
   width: 1020px;
@@ -811,13 +817,6 @@ body {
     -o-transition: 0.3s left ease,0.3s width ease;
     -webkit-transition: 0.3s left ease,0.3s width ease;
     transition: 0.3s left ease,0.3s width ease;
-    .not-expand{
-      width: 213px;
-    }
-    button{
-      text-align: left!important;
-      padding-left: 60px;
-    }
     span{
       vertical-align: middle;
     }
@@ -845,12 +844,6 @@ body {
     left: -10%;
     top: -14px;
     z-index:1;
-    button{
-      padding-left: 90px;
-    }
-    .not-expand{
-      margin-left: 15%;
-    }
     .font-42{
       font-size: 60px;
     }

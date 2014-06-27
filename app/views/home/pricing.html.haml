@@ -1,18 +1,18 @@
 .pricing-box.text-center
   %p.font-38.font-white
     %b= content_item("Pricing", "pricing_main_title")
-  %p.font-24.text-grey.mb-70= content_item("Pricing", "pricing_sub_title")
+  %p.strap-line= content_item("Pricing", "pricing_sub_title")
   .div-inline.div-plan
-    .col-xs-3
+    .col-xs-4
       .plan.plan-first
         = render "plan",
           :title => content_item("Pricing", "plan_1_title"),
-          :price => 49,
+          :price => 79,
           :manager => "1",
-          :team_member => "3",
-          :roles => "3",
+          :team_member => "7",
+          :roles => "5",
           :hires => "∞"
-    .col-xs-3
+    .col-xs-4
       .plan.plan-second
         = render "plan",
           :title => content_item("Pricing", "plan_2_title"),
@@ -21,7 +21,7 @@
           :team_member => "15",
           :roles => "10",
           :hires => "∞"
-    .col-xs-3
+    .col-xs-4
       .plan
         = render "plan",
           :title => content_item("Pricing", "plan_3_title"),
@@ -29,15 +29,6 @@
           :manager => "3",
           :team_member => "40",
           :roles => "30",
-          :hires => "∞"
-    .col-xs-3
-      .plan.plan-last
-        = render "plan",
-          :title => content_item("Pricing", "plan_4_title"),
-          :price => 1599,
-          :manager => "∞",
-          :team_member => "∞",
-          :roles => "∞",
           :hires => "∞"
 %div{"ng-app" => "iFind"}
   .pricing-vs-div.mt-120.text-center{"ng-controller" => "pricing"}
