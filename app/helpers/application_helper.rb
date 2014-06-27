@@ -12,6 +12,12 @@ module ApplicationHelper
       
       user: "Nicola Cottingham",
       role: "HR Recruiter comparethemarket.com"
+    },
+    {
+     content: "something pete says",
+      
+      user: "Pete Bailey",
+      role: "HR Recruiter comparethemarket.com"
     }
     ]
   end

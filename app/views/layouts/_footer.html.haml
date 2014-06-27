@@ -14,9 +14,9 @@
       %div
         = image_tag("/assets/FLogo.png", class: 'logo')
         = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".html_safe
-        .icon-footer.icon-fb
-        .icon-footer.icon-tw
-        .icon-footer.icon-in
+        %a{href: "http://facebook.com/nujobnetwork", class: "icon-footer icon-fb" }
+        %a{href: "https://twitter.com/nujobuk", class: "icon-footer icon-tw" }
+        %a{href: "https://www.linkedin.com/company/nujob", class: "icon-footer icon-in" }
         %br
         .copyright.font-14.mt-10=t('.copyright').html_safe
     .col-50-percent
@@ -36,7 +36,7 @@
             %a{:href => contact_path}= t('.contact')
           %li{class: active_link("login", params[:controller],params[:action])}
             %a{:href => 'https://app.nujob.co.uk'}= content_item("Footer", "login")
-      .pl-115.font-white
+      .contact-details
         .icon-footer.icon-phone
         %span.mr-45= Constants::TELL
         .icon-footer.icon-email

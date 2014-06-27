@@ -655,6 +655,11 @@ body {
     background-color: transparent!important;
     color: #24B9F1!important;
   }
+
+  .contact-details{
+    padding-left: 15px;
+    color: white;
+  }
 }
 
 .icon-footer{
@@ -675,6 +680,9 @@ body {
   background-color: #919399;
 }
 .icon-fb{
+  background-image: url("/assets/Fb.png");
+}
+.icon-fb:hover{
   background-image: url("/assets/Fb.png");
 }
 
@@ -727,7 +735,6 @@ body {
 }
 .testimonials-box-1{
   height: 580px;
-  width: 1340px;
   background-image: url(testimonials1.png);
   background-repeat:no-repeat;
   padding-top: 85px;
@@ -763,7 +770,6 @@ body {
 
 .tour-box-1{
   height: 580px;
-  width: 1340px;
   background-image: url(tourBase.png);
   background-repeat:no-repeat;
   padding-top: 40px;
@@ -782,7 +788,6 @@ body {
 }
 .pricing-box{
   height: 580px;
-  width: 1340px;
   background-image: url(pricingBase.png);
   background-repeat:no-repeat;
   padding-top: 50px;
