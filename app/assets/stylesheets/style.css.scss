@@ -1,3 +1,6 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
 @mixin font_and_line_height($some-number) {
   font-size: $some-number;
   line-height: 150%;
@@ -799,15 +802,14 @@ body {
   }
 }
 .div-plan{
-  width: 1020px;
+  width: 95%;
   .col-xs-3{
     padding: 0;
   }
   .plan{
+    @include make-xs-column(4);
     background-color: white;
     padding: 20px 20px 30px;
-    width: 100%;
-    position: absolute;
     border: 1px solid #D2D5D6;
     z-index: 0;
     left: 0;
@@ -840,16 +842,12 @@ body {
   }
   .plan:hover{
     border-radius:5px;
-    width: 120%;
-    left: -10%;
-    top: -14px;
-    z-index:1;
     .font-42{
       font-size: 60px;
     }
     .plan-title{
       background-color: #00AEEF;
-      margin: -20px -20px 0;
+      margin: -15px -15px 0;
       padding-top: 20px;
     }
     .text-blue{
