@@ -204,8 +204,21 @@ body {
   #top-blue{
     display: none;
   }
-
-  
+  .pricing-vs-div{
+    .input-info {
+      width: 100% !important;
+      .div-inline {
+        display: block;
+        width: 100% !important;
+        float: none !important;
+      }
+    }
+    .div-vs {
+      .comparison-slider {
+        padding-left: 30px;
+      }
+    }
+  }
 }
 .ml-155{
   margin-left: 155px;
@@ -856,6 +869,7 @@ body {
   }
 }
 .pricing-vs-div{
+  width: 100%;
   .circle-image{
     padding: 12px 5px;
     position: relative;
@@ -874,7 +888,7 @@ body {
     width: 780px;
     display: inline-block;
     .div-inline{
-      width: 256px;
+      width: 30%;
       padding-right: 8px;
       padding-left: 8px;
       float: left;
@@ -898,10 +912,14 @@ body {
     }
   }
   .div-vs{
-    width: 1020px;
+    width: 100%;
     margin-bottom: 60px;
     .col-xs-6{
       padding: 30px;
+    }
+    .comparison-slider {
+      height: 100px;
+      padding-left: 30px;
     }
     .slider-range{
       margin-top: 45px;

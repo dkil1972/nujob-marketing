@@ -54,9 +54,8 @@
           %p.text-left.font-20= t(".plan")
           = select_tag :plan, options_for_select([ 49, 299, 499, 1599 ], 299), {:class => "selectpicker", "ng-model"=>"plan_price"}
     .div-inline.div-vs
-      .col-xs-2.pl-0
-      .col-xs-8.pl-0
-        %div{:style => 'height:100px'}
+      .col-xs-12.pl-0
+        .comparison-slider
           %slider#developers{"model"=>"number_of_hires"}
           /.slider-range
           /%span.range.dev1 5
@@ -64,7 +63,7 @@
           /%span.range.dev3 15
           /%span.range.dev4 20
           /%span.range.dev5 25
-        %div{:style => 'height:100px'}
+        .comparison-slider
           %slider#months{"model"=>"number_of_months"}
           /.slider-range
           /%span.range.month1 3
