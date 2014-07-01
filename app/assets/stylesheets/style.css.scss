@@ -995,8 +995,8 @@ body {
   }
 }
 .blog-box-1{
+  margin: 0px 100px;
   height: 180px;
-  width: 1340px;
   color: white;
   text-align: center;
   background-image: url(blogBase.png);
@@ -1008,10 +1008,27 @@ body {
   }
 }
 .blog-box-2{
-  width: 1340px;
-  padding: 100px 160px;
+  padding: 0px 100px;
   .blog-item{
     overflow: hidden;
+    p {font-size: 1em; line-height: 1.2em}
+    /* Maximum height math is:
+       line-height * #oflines - 0.4
+          the 0.4 offset is to make the cutoff  look nicer */
+    .lines-3{height: 3.2em;}
+    .lines-6{height: 6.8em;}
+    .lines-12{height: 13.6em;}
+    .truncate {overflow: hidden; position:relative}
+    .truncate:after{
+      content:""; 
+      height: 1em; 
+      display: block; 
+      width: 100%; 
+      position:absolute;
+      background-color:white; 
+      opacity: 0.8; 
+      bottom: -0.3em
+                              }
   }
   p, ol{
     margin-bottom: 1.7em;

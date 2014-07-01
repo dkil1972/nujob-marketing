@@ -10,11 +10,13 @@ NujobMarketing::Application.routes.draw do
   get "/pricing" => "home#pricing"
   get "/contact" => "home#contact"
   get '404', :to => 'home#page_not_found'
+
+  get '/blog/', :to => 'blogs#index', :as => 'blogs'
+  get '/blog/:id', :to => 'blogs#show', :as => 'blog'
   
   get "/content_items" => "content_items#index"
   get "/cms" => "content_items#index"
 
   resources :messages, :only => [:create]
-  resources :blogs, :controller => "blogs", :only => [:index,:show]
   resources :courses, :only => [:create]
 end

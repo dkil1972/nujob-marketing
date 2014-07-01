@@ -1,5 +1,5 @@
 .blog-box-1
-  %p= t(".journal")
+  %p.font-20= @item['title']
 .blog-box-2.over-hidden
   - if @error.present?
     %p.text-center.font-20= @error
@@ -8,7 +8,6 @@
     
   -else 
     .blog-item
-      %p.font-38= @item['title']
       %p
         %span.icon.icon-clock
         %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
