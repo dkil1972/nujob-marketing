@@ -158,7 +158,7 @@ body {
     margin-top:40px !important;
   }
 }
-@media (max-width: 992px){
+@media (min-width: 768px) and (max-width: 992px){
   .good-hire-large-screen {
     display: none;
   }
@@ -167,6 +167,12 @@ body {
   }
   .navbar-custom{
     min-height: 0;
+  }
+  .blog-box-2{
+    padding: 0px 100px;
+  }
+  .blog-box-1 {
+    margin: 0px 100px;
   }
   #header li {
     margin-right: 25px;
@@ -203,6 +209,12 @@ body {
   }
   #top-blue{
     display: none;
+  }
+  .blog-box-2 {
+    padding: 0px;
+  }
+  .blog-box-1 {
+    margin: 0px;
   }
   .pricing-vs-div{
     .input-info {
@@ -995,7 +1007,6 @@ body {
   }
 }
 .blog-box-1{
-  margin: 0px 100px;
   height: 180px;
   color: white;
   text-align: center;
@@ -1008,7 +1019,6 @@ body {
   }
 }
 .blog-box-2{
-  padding: 0px 100px;
   .blog-item{
     overflow: hidden;
     p {font-size: 1em; line-height: 1.2em}
