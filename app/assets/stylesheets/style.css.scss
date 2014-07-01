@@ -250,6 +250,9 @@ body {
 .mr-10{
   margin-right: 10px;
 }
+.mr-5{
+  margin-right: 5px;
+}
 .mr-45{
   margin-right: 45px;
 }
@@ -1030,7 +1033,6 @@ body {
 }
 .contact-box-1{
   height: 180px;
-  width: 1340px;
   color: white;
   text-align: center;
   background-image: url(contactBase.png);
@@ -1042,7 +1044,6 @@ body {
   }
 }
 .contact-box-2{
-  width: 1340px;
   padding: 100px 160px;
   .btn{
     font-size: 20px;
@@ -1087,7 +1088,6 @@ input.parsley-error{
   text-align: center;
   background-color: #F3F3F3;
   height: 380px;
-  width: 1340px;
   padding-top: 60px;
   .our-team{
     display: inline-block;

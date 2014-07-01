@@ -6,16 +6,12 @@
       .circle-image
         = image_tag('/assets/Address.png', :size => "38x38")
       .info
-        %p= Constants::ADDRESS
+        %p.one-line= Constants::ADDRESS
     .col-md-4.contact-info
       .circle-image
         = image_tag('/assets/Phone.png', :size => "38x38")
       .info
-        %span T
-        %span= Constants::TELL
-        %br
-        %span F
-        %span= Constants::FAX
+        %p.one-line= Constants::TELL
     .col-md-4.contact-info
       .circle-image
         = image_tag('/assets/Email.png', :size => "38x38")
