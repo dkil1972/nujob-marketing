@@ -139,7 +139,7 @@ body {
   background-repeat:repeat-y;
   padding-top: 78px;
 }
-@media (max-width: 1199px){
+@media (max-width: 1300px){
   .colon-1{
     display: none !important;
   }
@@ -153,6 +153,20 @@ body {
   .happy-hire-div {
     margin: auto 40px !important;
   }
+  .blog-box-1 {
+    p {
+      font-size: 30px;
+      line-height: 1.2em;
+    }
+  }
+  .blog-box-2 {
+    .blog-item {
+      .blog-title {
+        font-size: 38px;
+        font-weight: bold;
+      }
+    }
+   } 
   .good-hire-div-1{
     margin-bottom:50px !important;
     margin-top:40px !important;
@@ -169,10 +183,18 @@ body {
     min-height: 0;
   }
   .blog-box-2{
-    padding: 0px 100px;
+    .blog-item {
+      .blog-title {
+        font-size: 38px;
+        font-weight: bold;
+      }
+    }
   }
   .blog-box-1 {
-    margin: 0px 100px;
+    p {
+      font-size: 30px;
+      line-height: 1.2em;
+    }
   }
   #header li {
     margin-right: 25px;
@@ -211,10 +233,18 @@ body {
     display: none;
   }
   .blog-box-2 {
-    padding: 0px;
+    .blog-item {
+      .blog-title {
+        font-size: 28px;
+        font-weight: bold;
+      }
+    }
   }
   .blog-box-1 {
-    margin: 0px;
+    p {
+      font-size: 20px;
+      padding: 0px 7px;
+    }
   }
   .pricing-vs-div{
     .input-info {
@@ -1007,21 +1037,25 @@ body {
   }
 }
 .blog-box-1{
+  margin: 0px 5%;
   height: 180px;
   color: white;
   text-align: center;
   background-image: url(blogBase.png);
   background-repeat:no-repeat;
   padding-top: 65px;
-  font-size: 38px;
   p{
     font-weight: bold;
   }
 }
 .blog-box-2{
+    padding: 0px 5%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    strong {
+      font-weight: 900;
+    }
   .blog-item{
     overflow: hidden;
-    p {font-size: 1em; line-height: 1.2em}
     /* Maximum height math is:
        line-height * #oflines - 0.4
           the 0.4 offset is to make the cutoff  look nicer */
@@ -1038,7 +1072,15 @@ body {
       background-color:white; 
       opacity: 0.8; 
       bottom: -0.3em
-                              }
+    }
+    ul {
+      font-size: 18px;
+      line-height: 1.5em;
+      margin-top: -20px;
+      li {
+        list-style-type: none;
+      }
+    }
   }
   p, ol{
     margin-bottom: 1.7em;
