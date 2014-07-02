@@ -259,6 +259,16 @@ body {
   #top-blue{
     display: none;
   }
+  .good-hire-large-screen {
+    display: none;
+  }
+  .good-hire-small-screen {
+    display: inherit !important;
+    .good-hire-div-1 {
+      font-size: 16px;
+      padding-bottom: 12px;
+    }
+  }
   .bad-hire-step {
     float: none;
     width: 100%;
@@ -562,7 +572,6 @@ body {
   color: #535765;
 }
 .good-hire-div-1{
-  @include font_and_line_height(24px);
   width: 200px;
   margin: auto;
 }
