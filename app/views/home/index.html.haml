@@ -132,55 +132,38 @@
 %br
 %br
 .bad-hire.benefit-section
-  %div
-    .col-50-percent
-      %div
-        .col-5-percent.mt-10
-          .col-95-percent.circle-image
-            = image_tag('/assets/Referal.png')
-        .col-95-percent
-          .font-24
-            %strong
-              = content_item('Home','more_benefits_1_title')
-          .padding-top-10
-            = content_item('Home','more_benefits_1_text')
-    .col-50-percent.margin-left-30
-      %div
-        .col-5-percent.mt-10
-          .col-95-percent.circle-image
-            = image_tag('/assets/Rapport.png')
-        .col-95-percent
-          .font-24
-            %strong
-              = t(".build_rapport")
-          .padding-top-10
-            = t(".build_rapport_text")
-  %br{style: 'clear: both'}
-  %br
-  %br
-  %div
-    .col-50-percent
-      %div
-        .col-5-percent.mt-10
-          .col-95-percent.circle-image
-            = image_tag('/assets/People.png')
-        .col-95-percent
-          .font-24
-            %strong
-              = t(".collaborate")
-          .padding-top-10
-            = t(".collaborate_text")
-    .col-50-percent.margin-left-30
-      %div
-        .col-5-percent.mt-10
-          .col-95-percent.circle-image
-            = image_tag('/assets/Hire.png')
-        .col-95-percent
-          .font-24
-            %strong
-              = t(".hire")
-          .padding-top-10
-            = t(".hire_text")
+  .another-benefit
+    .title
+      .circle-image
+        = image_tag('/assets/Referal.png')
+      %span.title-text
+        = content_item('Home','more_benefits_1_title')
+    .description
+      = content_item('Home','more_benefits_1_text')
+  .another-benefit
+    .title
+      .circle-image
+        = image_tag('/assets/Rapport.png')
+      %span.title-text
+        = t(".build_rapport")
+    .description
+      = t(".build_rapport_text")
+  .another-benefit
+    .title
+      .circle-image
+        = image_tag('/assets/People.png')
+      %span.title-text
+        = t(".collaborate")
+    .description
+      = t(".collaborate_text")
+  .another-benefit
+    .title
+      .circle-image
+        = image_tag('/assets/Hire.png')
+      %span.title-text
+        = t(".hire")
+    .description
+      = t(".hire_text")
 %br
 %br
 %br

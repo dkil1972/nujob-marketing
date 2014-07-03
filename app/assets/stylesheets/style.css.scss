@@ -140,6 +140,15 @@ body {
   padding-top: 78px;
 }
 @media (max-width: 1300px){
+  .benefit-section {
+    .another-benefit {
+      float: left;
+      width: 45%;
+      .description {
+        padding-left: 80px;
+      }
+    }
+  }
   .colon-1{
     display: none !important;
   }
@@ -716,6 +725,7 @@ body {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  display: inline-block;
 }
 
 .benefit-section{
