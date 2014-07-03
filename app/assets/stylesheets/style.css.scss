@@ -141,9 +141,10 @@ body {
 }
 @media (max-width: 1300px){
   .benefit-section {
+    padding: 0% 5%;
     .another-benefit {
       float: left;
-      width: 45%;
+      width: 49%;
       .description {
         padding-left: 80px;
       }
@@ -202,6 +203,9 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 992px){
+  .benefit-section {
+    padding: 0%;
+  }
   .good-hire-large-screen {
     display: none;
   }
@@ -256,6 +260,16 @@ body {
   }
 }
 @media (max-width: 768px){
+  .benefit-section {
+    padding: 0;
+    .another-benefit {
+      float: none;
+      width: 100%;
+      .description {
+        padding-left: 80px;
+      }
+    }
+  }
   #logo {
    height:65px;
   }
@@ -717,20 +731,26 @@ body {
   float: left;
 }
 
-.circle-image{
-  width: 80px;
-  height: 80px;
-  padding: 20px;
-  background-color: #333645;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  display: inline-block;
+.benefit-section {
+  .another-benefit {
+    .title { 
+      .title-text {
+        font-weight: 900;
+      }
+      .circle-image{
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        background-color: #333645;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        display: inline-block;
+      }
+    }
+  }
 }
 
-.benefit-section{
-  padding: 0% 10%;
-}
 .benefits{
   text-align:left;
   color:#ccc;
