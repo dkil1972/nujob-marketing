@@ -209,6 +209,13 @@ body {
   .happy-hire-div{
     margin: 15px 30px;
   }
+ .good-hire-div-1{
+    padding-top: 0px;
+  }
+  .good-hire-div-2 {
+    margin-top: 30px;
+    padding-top: 0px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px){
   .benefit-section {
@@ -619,9 +626,9 @@ body {
 }
 .good-hire-div-2{
   font-size: 24px;
-  padding-top: 75px;
   display: inline-block;
   width: 330px;
+  padding-top: 65px;
 }
 .happy-hire-div{
   font-size: 24px;
