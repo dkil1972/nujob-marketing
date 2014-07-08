@@ -139,7 +139,7 @@ body {
   background-repeat:repeat-y;
   padding-top: 78px;
 }
-@media (max-width: 1300px){
+@media (max-width: 3300px){
   .benefit-section {
     padding: 0% 5%;
     .another-benefit {
@@ -168,7 +168,6 @@ body {
     }
   }
   .happy-hire-div {
-    margin: auto 40px !important;
   }
   .blog-box-1 {
     p {
@@ -185,8 +184,10 @@ body {
     }
    } 
  .good-hire-div-1{
-   span {
-     display: block;
+   p {
+    font-size: 24px;
+    line-height: 1.1em;
+    padding: 10px;
     }
   }
   .good-hire-div-2{
@@ -268,6 +269,15 @@ body {
       .description {
         padding-left: 80px;
       }
+    }
+  }
+  .pricing-box{
+    height: 750px !important;
+    background-color: black;
+    padding-top: 10px !important;
+    .strap-line {
+      line-height: 1.2em;
+      margin-bottom: 30px!important;
     }
   }
   #logo {
@@ -597,10 +607,11 @@ body {
 .good-hire-div-1{
   width: 200px;
   margin: auto;
+  padding-bottom: 25px;
 }
 .good-hire-div-2{
   font-size: 24px;
-  padding-top: 25px;
+  padding-top: 75px;
   display: inline-block;
   width: 330px;
 }
@@ -609,7 +620,7 @@ body {
   color: #00AEEF;
   float: left;
   text-align: center;
-  margin: auto 90px;
+  margin: 65px 90px;
 }
 .feedback-div{
   height: 300px;
@@ -737,18 +748,18 @@ body {
       .title-text {
         font-weight: 900;
       }
-      .circle-image{
-        width: 80px;
-        height: 80px;
-        padding: 20px;
-        background-color: #333645;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        display: inline-block;
-      }
     }
   }
+}
+.circle-image{
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  background-color: #333645;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: inline-block;
 }
 
 .benefits{
