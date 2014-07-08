@@ -185,18 +185,19 @@ body {
    } 
  .good-hire-div-1{
    p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.1em;
     padding: 10px;
     }
   }
   .good-hire-div-2{
     p {
-      font-size: 24px;
+      font-size: 18px;
       width: 65%;
       float: left;
       line-height: 1.0em;
       text-align: left;
+      padding-top: 5px;
     }
     p.right {
       float: right;
@@ -568,6 +569,7 @@ body {
 .bad-hire{
   display: inline-block;
   margin: 0 auto;
+  padding-bottom: 75px;
 }
 .colons-div{
   position: absolute;
