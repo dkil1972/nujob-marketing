@@ -204,6 +204,60 @@ body {
       float: right;
     }
   }
+  .div-plan{
+    width: 95%;
+    .col-xs-3{
+      padding: 0;
+    }
+    .plan{
+      @include make-xs-column(4);
+      background-color: white;
+      padding: 20px 20px 30px;
+      border: 1px solid #D2D5D6;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      -moz-transition: 0.3s left ease,0.3s width ease;
+      -ms-transition: 0.3s left ease,0.3s width ease;
+      -o-transition: 0.3s left ease,0.3s width ease;
+      -webkit-transition: 0.3s left ease,0.3s width ease;
+      transition: 0.3s left ease,0.3s width ease;
+      span{
+        vertical-align: middle;
+      }
+      td{
+        padding-bottom: 10px;
+      }
+      table{
+        margin: auto;
+      }
+    }
+    .plan-first{
+      border-bottom-left-radius:5px;
+      border-top-left-radius:5px;
+    }
+    .plan-last{
+      border-bottom-right-radius:5px;
+      border-top-right-radius:5px;
+    }
+    .plan-second{
+      border-bottom-left-radius:5px;
+    }
+    .plan:hover{
+      border-radius:5px;
+      .font-42{
+        font-size: 60px;
+      }
+      .plan-title{
+        background-color: #00AEEF;
+        margin: -15px -15px 0;
+        padding-top: 20px;
+      }
+      .text-blue{
+        color: white;
+      }
+    }
+  }
 }
 @media (min-width: 993px) and (max-width: 1300px){
   .happy-hire-div{
@@ -303,12 +357,23 @@ body {
     }
   }
   .pricing-box{
-    height: 750px !important;
+    height: 1300px !important;
     background-color: black;
     padding-top: 10px !important;
     .strap-line {
       line-height: 1.2em;
       margin-bottom: 30px!important;
+    }
+    .div-plan{
+      width: 95%;
+      margin: auto;
+      .col-xs-3{
+        padding: 0;
+      }
+      .plan{
+        @include make-xs-column(12);
+        margin-bottom: 15px;
+      }
     }
   }
   #logo {
@@ -988,60 +1053,6 @@ body {
     font-size: 24px;
     color: white;
     margin-bottom: 70px!important;
-  }
-}
-.div-plan{
-  width: 95%;
-  .col-xs-3{
-    padding: 0;
-  }
-  .plan{
-    @include make-xs-column(4);
-    background-color: white;
-    padding: 20px 20px 30px;
-    border: 1px solid #D2D5D6;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    -moz-transition: 0.3s left ease,0.3s width ease;
-    -ms-transition: 0.3s left ease,0.3s width ease;
-    -o-transition: 0.3s left ease,0.3s width ease;
-    -webkit-transition: 0.3s left ease,0.3s width ease;
-    transition: 0.3s left ease,0.3s width ease;
-    span{
-      vertical-align: middle;
-    }
-    td{
-      padding-bottom: 10px;
-    }
-    table{
-      margin: auto;
-    }
-  }
-  .plan-first{
-    border-bottom-left-radius:5px;
-    border-top-left-radius:5px;
-  }
-  .plan-last{
-    border-bottom-right-radius:5px;
-    border-top-right-radius:5px;
-  }
-  .plan-second{
-    border-bottom-left-radius:5px;
-  }
-  .plan:hover{
-    border-radius:5px;
-    .font-42{
-      font-size: 60px;
-    }
-    .plan-title{
-      background-color: #00AEEF;
-      margin: -15px -15px 0;
-      padding-top: 20px;
-    }
-    .text-blue{
-      color: white;
-    }
   }
 }
 .pricing-vs-div{
