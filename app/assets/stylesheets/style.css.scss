@@ -150,6 +150,9 @@ body {
       }
     }
   }
+  .happy-hire-div{
+    margin: 65px 90px;
+  }
   .colon-1{
     display: none !important;
   }
@@ -166,8 +169,6 @@ body {
     .icon-base {
       margin: 0 auto 22px;
     }
-  }
-  .happy-hire-div {
   }
   .blog-box-1 {
     p {
@@ -197,11 +198,16 @@ body {
       float: left;
       line-height: 1.0em;
       text-align: left;
-      padding-top: 5px;
+      padding-top: 30px;
     }
     p.right {
       float: right;
     }
+  }
+}
+@media (min-width: 993px) and (max-width: 1300px){
+  .happy-hire-div{
+    margin: 15px 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px){
@@ -622,7 +628,6 @@ body {
   color: #00AEEF;
   float: left;
   text-align: center;
-  margin: 65px 90px;
 }
 .feedback-div{
   height: 300px;
