@@ -30,9 +30,9 @@
 .custom-plans
   %p=link_to('contact us for enterprise plans', contact_url)
 %div{"ng-app" => "iFind"}
-  .pricing-vs-div.mt-120.text-center{"ng-controller" => "pricing"}
+  .pricing-vs-div.text-center{"ng-controller" => "pricing"}
     %p.font-24= t(".all_plans")
-    .circle-image.mt-100.div-center
+    .circle-image.div-center
       = image_tag('/assets/pricingHire.png', :size => "50x50")
       %p= t(".hire")
     %p.font-38= t(".recruiters_vs_nujob").html_safe
@@ -53,43 +53,39 @@
         %div
           %p.text-left.font-20= t(".plan")
           = select_tag :plan, options_for_select([ 49, 299, 499, 1599 ], 299), {:class => "selectpicker", "ng-model"=>"plan_price"}
-    .div-inline.div-vs
-      .col-xs-12.pl-0
-        .comparison-slider
-          %slider#developers{"model"=>"number_of_hires"}
-          /.slider-range
-          /%span.range.dev1 5
-          /%span.range.dev2 10
-          /%span.range.dev3 15
-          /%span.range.dev4 20
-          /%span.range.dev5 25
-        .comparison-slider
-          %slider#months{"model"=>"number_of_months"}
-          /.slider-range
-          /%span.range.month1 3
-          /%span.range.month2 6
-          /%span.range.month3 9
-      .col-xs-8.pl-0
-      .col-xs-6.pl-0
-        .pricing-bad-hire
-          %img{:src => "/assets/Badprice.png", :size => "84x84"}
-          %p= t(".bad_hire_title")
+    .div-vs
+      .comparison-slider
+        %slider#developers{"model"=>"number_of_hires"}
+        /.slider-range
+        /%span.range.dev1 5
+        /%span.range.dev2 10
+        /%span.range.dev3 15
+        /%span.range.dev4 20
+        /%span.range.dev5 25
+      .comparison-slider
+        %slider#months{"model"=>"number_of_months"}
+        /.slider-range
+        /%span.range.month1 3
+        /%span.range.month2 6
+        /%span.range.month3 9
+      .pricing-bad-hire
+        %img{:src => "/assets/Badprice.png", :size => "84x84"}
+        %p= t(".bad_hire_title")
+        %div
+          %b.font-24 £
+          %b.font-42 {{total_cost_bad | number:0}}
+      .pricing-good-hire
+        %img{:src => "/assets/Goodprice.png", :size => "84x84"}
+        %p
+          %span= content_item("Pricing", "total_cost_with_nujob")
           %div
             %b.font-24 £
-            %b.font-42 {{total_cost_bad | number:0}}
-      .col-xs-6.pr-0
-        .pricing-good-hire
-          %img{:src => "/assets/Goodprice.png", :size => "84x84"}
-          %p
-            %span= content_item("Pricing", "total_cost_with_nujob")
-            %div
-              %b.font-24 £
-              %b.font-42 {{total_cost_good | number:0}}
-          %p.font-24 
-            %b (
-            %b= content_item("Pricing", "total_saving_text")
-            %b.font-24 £ {{saving_with_nujob | number:0}}
-            %b )
+            %b.font-42 {{total_cost_good | number:0}}
+        %p.font-24 
+          %b (
+          %b= content_item("Pricing", "total_saving_text")
+          %b.font-24 £ {{saving_with_nujob | number:0}}
+          %b )
 :javascript
   $(".selectpicker").selectpicker();
   $('#developers').slider({
