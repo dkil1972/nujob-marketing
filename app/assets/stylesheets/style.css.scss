@@ -216,6 +216,14 @@ body {
     margin-top: 30px;
     padding-top: 0px !important;
   }
+  .footer {
+    .contact-details{
+      .phone {
+        float: left;
+        padding-right: 15px;
+      }
+    }
+  }
 }
 @media (min-width: 768px) and (max-width: 992px){
   .benefit-section {
@@ -272,6 +280,15 @@ body {
   }
   .colons-div {
     width: auto;
+  }
+  .footer {
+    height: 190px !important;
+    .contact-details{
+      .phone {
+        float: none;
+        padding-bottom: 10px;
+      }
+    }
   }
 }
 @media (max-width: 768px){
@@ -362,6 +379,17 @@ body {
       .comparison-slider {
         padding-left: 30px;
       }
+    }
+  }
+  .footer {
+    height: 190px !important;
+    .contact-details{
+      min-width: 250px;
+      padding-top: -15px;
+      .phone {
+        margin-bottom: 10px;
+      }
+      color: white;
     }
   }
 }

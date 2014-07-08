@@ -37,9 +37,11 @@
           %li{class: active_link("login", params[:controller],params[:action])}
             %a{:href => 'https://app.nujob.co.uk'}= content_item("Footer", "login")
       .contact-details
-        .icon-footer.icon-phone
-        %span.mr-5= Constants::TELL
-        .icon-footer.icon-email
-        %span= Constants::EMAIL
+        .phone
+          .icon-footer.icon-phone
+          %span.mr-5= Constants::TELL
+        .email
+          .icon-footer.icon-email
+          %span= Constants::EMAIL
   %i.icon-search.icon-large.icon-white
 .mt-50
