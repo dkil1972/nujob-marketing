@@ -11,6 +11,9 @@ body {
   font-size: 16px;
   line-height: 130%;
 }
+.clear {
+  clear: both;
+}
 .w-410{
   width: 410px;
 }
@@ -453,7 +456,6 @@ body {
       }
       .pricing-bad-hire {
         margin-bottom: 20px;
-
       }
     }
   }
@@ -1163,15 +1165,17 @@ body {
   padding-top: 60px;
   font-size: 20px;
 }
-.pricing-good-hire{
-  background-color: green;
-}
 .pricing-bad-hire{
-  @include make-md-column(6);
+  @include make-md-column(5);
   background-color: red;
   div span, div b{
     vertical-align: middle;
   }
+}
+.pricing-good-hire{
+  @include make-md-column(5);
+  @include make-md-column-offset(2);
+  background-color: green;
 }
 .input-with-addon{
   position: relative;
