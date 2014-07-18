@@ -25,5 +25,4 @@
     %td.text-right.pr-10
       %b= hires
     %td.text-left= t(".hires")
-%button.btn.btn-orange.ph-35.pv-14.w-full
-  %b= t ".choose_plan"
+=button_to(t(".choose_plan"), contact_path, {:method => :get, :class =>" btn main-call"})
