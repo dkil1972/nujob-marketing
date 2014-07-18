@@ -15,6 +15,9 @@ class HomeController < ApplicationController
   def contact
   end
 
+  def careers
+  end
+
   def page_not_found
     respond_to do |format|
       format.html { render template: 'home/not_found_error', layout: 'layouts/application', status: 404 }

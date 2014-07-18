@@ -9,6 +9,7 @@ NujobMarketing::Application.routes.draw do
   get "/tour" => "home#tour"
   get "/pricing" => "home#pricing"
   get "/contact" => "home#contact"
+  get "/careers" => "home#careers"
   get '404', :to => 'home#page_not_found'
 
   get '/blog/', :to => 'blogs#index', :as => 'blogs'
