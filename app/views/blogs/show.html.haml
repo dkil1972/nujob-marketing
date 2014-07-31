@@ -9,6 +9,7 @@
   -else 
     .blog-item
       %p
+        %a{:href => blogs_path} << back to all articles
         -# %span.icon.icon-clock
         -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
       .font-20
