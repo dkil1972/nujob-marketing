@@ -9,7 +9,7 @@
   -else 
     .blog-item
       %p
-        %span.icon.icon-clock
+        -# %span.icon.icon-clock
         -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
       .font-20
         = @item['postbody'].html_safe
