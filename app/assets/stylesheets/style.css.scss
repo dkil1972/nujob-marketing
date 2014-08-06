@@ -1318,7 +1318,7 @@ input.parsley-error{
 .contact-box-3{
   text-align: center;
   background-color: #F3F3F3;
-  height: 380px;
+  
   padding-top: 60px;
   .our-team{
     display: inline-block;
@@ -1326,16 +1326,17 @@ input.parsley-error{
     margin-top: 60px;
   }
   .member{
-    width: 300px;
+    width: 330px;
     position: relative;
   }
   .member-avatar{
     position: absolute;
   }
   .member-info{
-    margin-left: 140px;
+    margin-left: 120px;
     text-align: left;
-    padding-top: 10px;
+    padding-top: -50px;
+    padding-bottom: 50px;
   }
 }
 .text-bold{
