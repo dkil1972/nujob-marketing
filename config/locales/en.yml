@@ -121,9 +121,9 @@ en:
       content: "Message"
       our_team: "Meet the team"
       member1_name: "Andy Davis"
-      member1_description: "Founder & CEO"
+      member1_description: "Founder"
       member2_name: "Dermot Kilroy"
-      member2_description: "Founder & CTO"    
+      member2_description: "Founder"    
     blog_item:
       read_more: "Read More"
     not_found_error:
