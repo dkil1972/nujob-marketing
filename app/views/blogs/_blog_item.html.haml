@@ -1,5 +1,5 @@
 .blog-item
-  %p.blog-title= link_to t(item['title']), blog_path(:id => item['id'])
+  %p.blog-title= link_to item['title'], blog_path(:id => item['id'])
   -# %span.icon.icon-clock
   -# %span.text-grey= item['date_added'].to_date.strftime("%b %d, %Y")
   -# %span.icon.icon-comment
