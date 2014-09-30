@@ -30,29 +30,36 @@
       .col-md-12
         .custom-placeholder
           = f.label :content, t(".content")
-          = f.text_area :content, :rows => 5, :class => "form-control required"
+          = f.text_area :content, :rows => 5, :class => "form-control required", :value => @reason
     = f.submit t(".submit"), :class => "btn"
 .contact-box-3
   %p.font-38= t(".our_team")
   .our-team
-    .col-xs-6.member
+    .col-md-6.member
       .member-avatar
-        = image_tag('/assets/Left_Person.png', :size => "127x127")
+        = image_tag('/assets/Left_Person.png', :size => "100x100")
       .member-info
         %p.text-bold.font-24= t(".member1_name")
         %p.text-blue= t(".member1_description")
         .contact
-          %span.icon.icon-small-in
-          %span.icon.icon-small-twitter
-          %span.icon.icon-small-email
-    .col-xs-6.member.pull-right
+          %a{:href=> "https://www.linkedin.com/in/majikandy"}
+            %span.icon.icon-small-in
+          %a{:href=> "http://twitter.com/nujobuk"}
+            %span.icon.icon-small-twitter
+          %a{:href=> "mailto: andy@nujob.co.uk"}
+            %span.icon.icon-small-email 
+    .col-xs-6.member
       .member-avatar
-        = image_tag('/assets/Right_Person.png', :size => "127x127")
+        = image_tag('/assets/Right_Person.png', :size => "100x100")
       .member-info
         %p.text-bold.font-24= t(".member2_name")
         %p.text-blue= t(".member2_description")
         .contact
-          %span.icon.icon-small-in
-          %span.icon.icon-small-twitter
-          %span.icon.icon-small-email
+          %a{:href=> "https://www.linkedin.com/pub/dermot-kilroy/8/879/516"}
+            %span.icon.icon-small-in
+          %a{:href=> "http://twitter.com/dermotkilroy"}
+            %span.icon.icon-small-twitter
+          %a{:href=> "mailto: dermot@nujob.co.uk"}
+            %span.icon.icon-small-email
+            
 

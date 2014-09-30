@@ -2,7 +2,7 @@ module ApplicationHelper
   def dummy_feedback
    feedbacks = [
     {
-     content: "Engaging in the technology community is a big part of our strategy. Having NuJob ensures we never miss out on referrals and passive candidates introduced through our IT teams.",
+     content: "Engaging in the technology community is a big part of our strategy. Having nujob ensures we never miss out on referrals and passive candidates introduced through our IT teams.",
       icon: "Client1.png",
       user: "Matthew Sagar",
       role: "HR Manager comparethemarket.com",

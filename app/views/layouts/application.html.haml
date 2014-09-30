@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= t(".title")
+    %title= @title
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{charset: "utf-8"}
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
@@ -10,7 +10,7 @@
     = csrf_meta_tags
     = favicon_link_tag '/assets/favicon.ico'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300'
-
+    
   .body.container
     = render 'layouts/header'
     = render "layouts/flash_message"

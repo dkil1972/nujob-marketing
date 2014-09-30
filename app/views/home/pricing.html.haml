@@ -9,26 +9,35 @@
         :price => 79,
         :manager => "1",
         :team_member => "7",
-        :roles => "5",
+        :roles => "2",
         :hires => "∞"
     .plan.plan-second
       = render "plan",
         :title => content_item("Pricing", "plan_2_title"),
         :price => 299,
         :manager => "1",
-        :team_member => "15",
-        :roles => "∞",
+        :team_member => "40",
+        :roles => "5",
         :hires => "∞"
-    .plan
+    .plan.plan-last
       = render "plan",
         :title => content_item("Pricing", "plan_3_title"),
         :price => 499,
         :manager => "3",
-        :team_member => "40",
+        :team_member => "∞",
         :roles => "∞",
         :hires => "∞"
-.custom-plans
-  %p=link_to('contact us for enterprise plans', contact_url)
+    .clear
+  .not_sure_plan
+    Not sure which plan? Decide later! There are no limits on trial accounts.
+    %br
+    %br
+    %button.btn.main-call
+      %b=link_to 'Start trial now', contact_url(:reason => 'trial') 
+  .clear
+  %br
+  .custom_plans
+    %p=link_to('contact us for enterprise plans', contact_url)
 %div{"ng-app" => "iFind"}
   .pricing-vs-div.text-center{"ng-controller" => "pricing"}
     %p.font-24= t(".all_plans")

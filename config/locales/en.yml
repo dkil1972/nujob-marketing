@@ -48,7 +48,7 @@ en:
       for_you: "for you"
       refer: "Referral made by team member"
       refer_text: "Your team are going to meetups, conferences and social networking with their peers, 
-                  NuJob allows you to tap into this endless source of great talent. 
+                  nujob allows you to tap into this endless source of great talent. 
                   You'll be amazed at how quickly your team build up a talent pool!"
       build_rapport: "Team members build rapport"
       build_rapport_text: "NuJob incentivises your team to build rapport within the IT community. 
@@ -89,7 +89,7 @@ en:
       plan2_title: "TEAM"
       plan3_title: "PROGRAMME MANAGER"
       plan4_title: "HR DEPARTMENT"
-      all_plans: "All plans give access to the full leads network and the full CRM capability"
+      all_plans: "All plans give access to full access to all software features and intelligent CRM"
       hire: "HIRE"
       recruiters_vs_nujob: "Recruiters vs <span class = 'text-blue'>NuJob</span>"
       developers_number: "Number of developers you need to hire"
@@ -114,16 +114,16 @@ en:
       choose_plan: "CHOOSE PLAN"
     contact:
       let_talk: "Let's talk"
-      submit: "SUBMIT"
-      name: "Name"
-      email: "Email"
+      submit: "Send message"
+      name: "Full Name"
+      email: "Email Address"
       phone: "Phone (Optional)"
       content: "Message"
-      our_team: "Our Team"
-      member1_name: "Andy"
-      member1_description: "Co-founder & CEO"
-      member2_name: "Dermot"
-      member2_description: "Co-founder & CEO"    
+      our_team: "Meet the team"
+      member1_name: "Andy Davis"
+      member1_description: "Founder"
+      member2_name: "Dermot Kilroy"
+      member2_description: "Founder"    
     blog_item:
       read_more: "Read More"
     not_found_error:
@@ -134,11 +134,11 @@ en:
     message_contact: "You have a new message from customers"
   blogs:
     show:
-      journal: "Nujob Journal"
+      journal: "nujob blog"
       has_no_post: "Has no post with this ID"
     index:
-      journal: "Nujob Journal"
+      journal: "nujob blog"
       newer: "Newer"
       older: "Older"
-      has_no_items: "Has no blog's items"
+      has_no_items: "Has no blog items"
  

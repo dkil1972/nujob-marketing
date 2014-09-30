@@ -236,30 +236,31 @@ body {
       }
     }
     .plan-first{
+      margin-top:20px;
+      margin-bottom:20px;
       border-bottom-left-radius:5px;
       border-top-left-radius:5px;
     }
     .plan-last{
+      margin-top:20px;
       border-bottom-right-radius:5px;
       border-top-right-radius:5px;
     }
     .plan-second{
       border-bottom-left-radius:5px;
-    }
-    .plan:hover{
       border-radius:5px;
       .font-42{
         font-size: 60px;
       }
       .plan-title{
-        background-color: #00AEEF;
+        #background-color: #00AEEF;
         margin: -15px -15px 0;
         padding-top: 20px;
       }
-      .text-blue{
-        color: white;
-      }
     }
+  }
+  .not_sure_plan {
+    color: white;
   }
 }
 @media (min-width: 993px) and (max-width: 1300px){
@@ -363,9 +364,10 @@ body {
     }
   }
   .pricing-box{
-    height: 1300px !important;
+
     background-color: black;
     padding-top: 10px !important;
+    padding-bottom: 100px !important;
     .strap-line {
       line-height: 1.2em;
       margin-bottom: 30px!important;
@@ -379,7 +381,9 @@ body {
         @include make-xs-column(12);
         margin-bottom: 15px;
       }
+      
     }
+    
   }
   #logo {
    height:65px;
@@ -1058,7 +1062,6 @@ body {
   }
 }
 .pricing-box{
-  height: 580px;
   background-image: url(pricingBase.png);
   background-repeat:no-repeat;
   padding-top: 50px;
@@ -1223,6 +1226,7 @@ body {
     .lines-3{height: 3.2em;}
     .lines-6{height: 6.8em;}
     .lines-12{height: 13.6em;}
+    .lines-20{height: 22em;}
     .truncate {overflow: hidden; position:relative}
     .truncate:after{
       content:""; 
@@ -1317,7 +1321,7 @@ input.parsley-error{
 .contact-box-3{
   text-align: center;
   background-color: #F3F3F3;
-  height: 380px;
+  
   padding-top: 60px;
   .our-team{
     display: inline-block;
@@ -1325,16 +1329,17 @@ input.parsley-error{
     margin-top: 60px;
   }
   .member{
-    width: 300px;
+    width: 330px;
     position: relative;
   }
   .member-avatar{
     position: absolute;
   }
   .member-info{
-    margin-left: 140px;
+    margin-left: 120px;
     text-align: left;
-    padding-top: 10px;
+    padding-top: -50px;
+    padding-bottom: 50px;
   }
 }
 .text-bold{
@@ -1345,4 +1350,38 @@ input.parsley-error{
 }
 textarea {
     resize: none;
+}
+.author-box {
+  background-color: rgb(245, 245, 245);
+  border-bottom-color: rgb(221, 221, 221);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(221, 221, 221);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(221, 221, 221);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(221, 221, 221);
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(51, 51, 51);
+  display: block;
+  line-height: 25px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 75%;
 }

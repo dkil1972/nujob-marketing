@@ -1,12 +1,11 @@
 .blog-item
-  %p.blog-title= item['title']
-  %p
-    %span.icon.icon-clock
-    %span.text-grey= item['date_added'].to_date.strftime("%b %d, %Y")
-    %span.icon.icon-comment
-    %a{:href=> "#{blog_url(:id => item['id'])}#disqus_thread", "data-disqus-identifier" => "#{item['id']}"}
-      0 comments
-  .truncate.lines-12
+  %p.blog-title= link_to item['title'], blog_path(:id => item['id'])
+  -# %span.icon.icon-clock
+  -# %span.text-grey= item['date_added'].to_date.strftime("%b %d, %Y")
+  -# %span.icon.icon-comment
+  -# %a{:href=> "#{blog_url(:id => item['id'])}#disqus_thread", "data-disqus-identifier" => "#{item['id']}"}
+  -# 0 comments
+  .truncate.lines-20
     = item['postbody'].html_safe
   %br
   = link_to t(".read_more"), blog_path(:id => item['id']), :class => "btn btn-blue font-15"
