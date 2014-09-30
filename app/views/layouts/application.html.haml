@@ -10,6 +10,7 @@
     = csrf_meta_tags
     = favicon_link_tag '/assets/favicon.ico'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300'
+    = render 'layouts/ga' if Rails.env.production? 
     
   .body.container
     = render 'layouts/header'
