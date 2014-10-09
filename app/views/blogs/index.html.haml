@@ -1,5 +1,7 @@
-/ .blog-box-1
-/   %p= t(".journal")
+-meta title: 'nujob blog',
+       keywords: 'referral bonus, hiring developers',
+       description: 'Articles on technical recruitment aimed at internal recruiters from the candidate perspective.'
+
 .blog-box-2.over-hidden
   .list-blog-items
     = render partial: 'blog_items', :locals => {:blog_items => @blog_items}
