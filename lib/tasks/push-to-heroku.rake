@@ -40,9 +40,6 @@ namespace :tddium do
     puts "Pushing to Heroku: #{push_target}..."
     cmd "git push #{push_target} HEAD:master --force" or abort "could not push to #{push_target}"
     Bundler.with_clean_env do
-      puts "Running Heroku Migrations..."
-      cmd "heroku run rake db:migrate --app #{app_name}" or abort "aborted migrations"
- 
       puts "Restarting Heroku..."
       cmd "heroku restart --app #{app_name}" or abort "aborted heroku restart"
     end
