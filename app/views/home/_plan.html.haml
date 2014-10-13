@@ -21,3 +21,8 @@
     %td.text-right.pr-10
       %b= roles
     %td.text-left= t(".open_roles")
+  %tr
+    %td.text-right.pr-10
+      %b= hires
+    %td.text-left= t(".hires")
+=button_to(t(".choose_plan"), contact_path, {:method => :get, :class =>" btn main-call"})

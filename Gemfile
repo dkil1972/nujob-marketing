@@ -44,6 +44,7 @@ end
 
 gem 'haml-rails', "0.4"
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'metamagic'
 group :test do
   gem 'cucumber-rails', :require => false
   # database_cleaner is not required, but highly recommended

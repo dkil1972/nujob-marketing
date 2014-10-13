@@ -1,5 +1,5 @@
 .blog-item
-  %p.blog-title= link_to item['title'], blog_path(:id => item['id'])
+  %p.blog-title= link_to item['title'], blog_path(:title => item['title'].gsub(" ", "-"), :id => item['id'])
   -# %span.icon.icon-clock
   -# %span.text-grey= item['date_added'].to_date.strftime("%b %d, %Y")
   -# %span.icon.icon-comment
@@ -8,6 +8,6 @@
   .truncate.lines-20
     = item['postbody'].html_safe
   %br
-  = link_to t(".read_more"), blog_path(:id => item['id']), :class => "btn btn-blue font-15"
+  = link_to t(".read_more"), blog_path(:title => item['title'].gsub(" ", "-"), :id => item['id']), :class => "btn btn-blue font-15"
   - if index < @blog_items.size - 1
     %hr
