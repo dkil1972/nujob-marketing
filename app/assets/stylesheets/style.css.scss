@@ -1219,6 +1219,7 @@ body {
     }
   .blog-item{
     overflow: hidden;
+    margin-top: 25px;
     /* Maximum height math is:
        line-height * #oflines - 0.4
           the 0.4 offset is to make the cutoff  look nicer */

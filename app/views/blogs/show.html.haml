@@ -12,12 +12,6 @@
     
   -else 
     .blog-item
-      %p
-        %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e3a00c154d00b2", type: "text/javascript"}
-        %a{:href => blogs_path} &lt;&lt; back to all articles
-        .addthis_sharing_toolbox
-        -# %span.icon.icon-clock
-        -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
       .font-20
         %span(id='st_twitter_vcount' displayText='Tweet')
         %span(id='st_twitterfollow_vcount'  displayText='Twitter Follow'  st_username='nujob')
@@ -25,6 +19,12 @@
         %span(id='st_email_vcount'  displayText='Email')
         = @item['postbody'].html_safe
       %br
+      %p
+        %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e3a00c154d00b2", type: "text/javascript"}
+        %a{:href => blogs_path} &lt;&lt; back to all articles
+        .addthis_sharing_toolbox
+        -# %span.icon.icon-clock
+        -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
       .author-box
         %div
           %a(href='http://www.twitter.com/nujobuk')
