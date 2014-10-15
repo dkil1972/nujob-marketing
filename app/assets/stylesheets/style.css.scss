@@ -174,7 +174,7 @@ body {
     }
   }
   .blog-box-1 {
-    p {
+    h1 {
       font-size: 30px;
       line-height: 1.2em;
     }
@@ -182,7 +182,6 @@ body {
   .blog-box-2 {
     .blog-item {
       .blog-title {
-        font-size: 38px;
         font-weight: bold;
       }
     }
@@ -319,7 +318,7 @@ body {
     }
   }
   .blog-box-1 {
-    p {
+    h1 {
       font-size: 30px;
       line-height: 1.2em;
     }
@@ -435,7 +434,7 @@ body {
     }
   }
   .blog-box-1 {
-    p {
+    h1 {
       font-size: 20px;
       padding: 0px 7px;
     }
@@ -1202,13 +1201,13 @@ body {
 }
 .blog-box-1{
   margin: 0px 5%;
-  height: 180px;
+  height: 80px;
   color: white;
   text-align: center;
   background-image: url(blogBase.png);
   background-repeat:no-repeat;
-  padding-top: 65px;
-  p{
+  padding-top: 5px;
+  h1{
     font-weight: bold;
   }
 }

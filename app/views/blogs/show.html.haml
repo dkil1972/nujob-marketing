@@ -3,7 +3,7 @@
       description: 'Articles on technical recruitment aimed at internal recruiters from the candidate perspective.'
 
 .blog-box-1
-  %p= @item['title']
+  %h1= @item['title']
 .blog-box-2.over-hidden
   - if @error.present?
     %p.text-center.font-20= @error
@@ -14,7 +14,7 @@
     .blog-item
       %p
         %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e3a00c154d00b2", type: "text/javascript"}
-        %a{:href => blogs_path} << back to all articles
+        %a{:href => blogs_path} &lt;&lt; back to all articles
         .addthis_sharing_toolbox
         -# %span.icon.icon-clock
         -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
