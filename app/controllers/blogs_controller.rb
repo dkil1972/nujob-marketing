@@ -44,13 +44,13 @@ class BlogsController < ApplicationController
   end
 
   def show
-    
     response = HTTParty.post("http://api.osmek.com/feed/jsonp",
       :query => {:api_key=> Constants::OSMEK_API,
       :section_id => Constants::SECTION_ID,
       :item_id => params[:id]
       }
     )
+
     @status = JSON.parse(response[/{.+}/])["status"]
     if @status != "fail"
       @item = JSON.parse(response[/{.+}/])["items"][0]
