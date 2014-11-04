@@ -26,13 +26,22 @@
         -# %span.icon.icon-clock
         -# %span.text-grey= @item['date_added'].to_date.strftime("%b %d, %Y")
       .author-box
-        %div
-          %a(href='http://www.twitter.com/nujobuk')
-            %img.avatar.avatar-70.photo{alt: "", height: "70", src: "http://www.nujob.co.uk/assets/Left_Person.png", width: "70"}/
-          %strong About the Author
-          %br/
-          %p 
-            Andy Davis is a software developer, currently improving recruitment for techies
+        -unless @item['author_name'].downcase == 'dermot'
+          %div
+            %a(href='http://www.twitter.com/nujobuk')
+              %img.avatar.avatar-70.photo{alt: "", height: "70", src: "http://www.nujob.co.uk/assets/Left_Person.png", width: "70"}/
+            %strong About the Author
+            %br/
+            %p 
+              Andy Davis is a software developer, currently improving recruitment for techies
+        -else
+          %div
+            %a(href='http://www.twitter.com/nujobuk')
+              %img.avatar.avatar-70.photo{alt: "", height: "70", src: "http://www.nujob.co.uk/assets/Right_Person.png", width: "70"}/
+            %strong About the Author
+            %br/
+            %p 
+              Dermot Kilroy is a software developer, currently improving recruitment for techies
       #disqus_thread
       :javascript
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
