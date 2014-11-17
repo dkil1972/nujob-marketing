@@ -19,6 +19,24 @@
         %span(id='st_email_vcount'  displayText='Email')
         = @item['postbody'].html_safe
       %br
+      .row.panel.panel-default
+        .panel-heading
+          %h3 Enjoyed the article?
+        .col-md-6
+          %p Our best content on software, marketing and business. Delivered each week for free. 
+        .col-md-6
+          %form{:_lpchecked => "1", :action => "https://www.getdrip.com/forms/5224366/submissions", "data-drip-embedded-form" => "1323", "data-drip-id" => "1323", :method => "post", :target => "_blank"}
+            %p
+              %span
+                %label{:for => "fields[email]"} Email
+                %input{:name => "fields[email]", :type => "email", :value => ""}/
+                %input{"data-drip-attribute" => "sign-up-button", :name => "submit", :type => "submit", :value => "Sign Me Up"}/
+              %br/
+              %span{:style => "font-size: smaller;"} It's easy to unsubscribe if you don't like it - but even better, give us feedback.
+            %p  
+            %input{:name => "url", :type => "hidden", :value => blog_url(:title => @item['title'].gsub(" ", "-"), :id => @item['id'])}/
+            %input{:name => "time_zone", :type => "hidden", :value => "Europe/London"}/
+            %input{:name => "page_title", :type => "hidden", :value => "nujob blog : #{@item['title']}"}/
       %p
         %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e3a00c154d00b2", type: "text/javascript"}
         %a{:href => blogs_path} &lt;&lt; back to all articles
