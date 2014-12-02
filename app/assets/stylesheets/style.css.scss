@@ -1446,11 +1446,23 @@ textarea {
         font-size: 36px;
    }
    p {
-     font-family: 'Open Sans';
-     font-weight: 400;
      font-size: 22px;
      line-height: 40px;
      padding-top: 15px;
+     font-weight: 200;
+     b {
+        font-weight: 400;
+      }
+   }
+   
+   .clients-words {
+    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+    font-size: 18px;
+   }
+   
+   .clients-name {
+    font-weight: bold;
    }
    
    a {
@@ -1525,9 +1537,33 @@ textarea {
   span.clients-name {
     font-size: 14px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: -55px;
+    left: 50%;
+    margin-left: 30px;
   }
+  .packages {
+    background-image: url(homebg1.png);
+    background-repeat:repeat-y;
+    color:white;
+    padding: 40px;
+  }
+  .guarantee {
+    display: block;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 32px -3px rgba(143,143,143,0.66);
+    -moz-box-shadow: 0px 0px 32px -3px rgba(143,143,143,0.66);
+    box-shadow: 0px 0px 32px -3px rgba(143,143,143,0.66);
+    padding:50px;
+  }
+  .guarantee-image {
+    width:300px;
+    height:300px;
+    background-image: url(guarantee_red.png);
+    background-size: 300px 300px;
+    opacity: 0.1;
+    position: absolute;
+  }
+  
 }
 
 
