@@ -11,4 +11,5 @@ class CoursesController < ApplicationController
       format.js
     end
   end
+
 end

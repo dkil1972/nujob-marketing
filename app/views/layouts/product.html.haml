@@ -1,0 +1,29 @@
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+    %meta{name: "google-site-verification", content:"RlFj3VztE9u6kXxA1BNBtHyh5qxxBUJoLWyxuYnBk_4"}
+    = metamagic description: 'We make hiring referrals so simple everyone in your company will want to get involved. We can optimise your hiring process to make referring suitable candidates a no brainer.'
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = favicon_link_tag '/assets/favicon.ico'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300'
+    = render 'layouts/ga' if Rails.env.production? 
+    
+    %link{:href => "http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,200", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:700,400", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,600,300,400,200", :rel => "stylesheet", :type => "text/css"}/
+    
+  .product
+    .main-content
+      .ribbon
+        %a{href:"/"}
+          ← Back to nujob
+      .container
+        .header
+        .body
+          = yield
+        %footer
+        %p © nujob 2014

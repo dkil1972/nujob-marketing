@@ -1,5 +1,6 @@
 NujobMarketing::Application.routes.draw do
   resources :content_items
+  get "/training/negotiating-for-contractors" => "training#negotiating_for_contractors"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -20,4 +21,5 @@ NujobMarketing::Application.routes.draw do
 
   resources :messages, :only => [:create]
   resources :courses, :only => [:create]
+
 end
