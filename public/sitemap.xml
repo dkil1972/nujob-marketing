@@ -1,59 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="
+            http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<!-- created with PRO Sitemap Service https://pro-sitemaps.com -->
 
-<url>
-  <loc>http://www.nujob.co.uk/</loc>
-  <changefreq>weekly</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/testimonials</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/tour</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/blog</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/pricing</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/contact?reason=trial</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/contact</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/blog/Why-paying-a-referral-bonus-without-employees-referring-works?id=55085</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/blog/Book-Launch:-The-In-House-Recruiters-Guide-to-Hiring-Developers?id=54763</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.nujob.co.uk/blog/Developers-are-really-bad-at-networking!?id=53501</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
+  <url>
+       <loc>http://www.nujob.co.uk/</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/contact?reason=trial</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/testimonials</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/tour</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/pricing</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/contact</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/Why-you-should-have-a-side-project!?id=56225</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/nujob-is-changing-direction,-here's-why?id=55912</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/Why-EMAIL-marketing-and-not-social-media%3F?id=56197</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/Do-you-know-the-4-career-paths-open-to-software-developers%3F?id=56039</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/Why-we-started-nujob-(Hint:-Social-Recruiting-is-right-under-your-nose!)?id=52466</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/Is-contracting-LESS-risky-than-permanent-employment%3F?id=55998</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/How-to-go-from-permanent-to-contracting-in-10-easy-steps?id=36112</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
+  <url>
+       <loc>http://www.nujob.co.uk/blog/DotNet-Recruiters-And-The-Fallacy-of-the-Fantastic-Opportunity?id=36108</loc>
+       <lastmod>2014-11-28T19:55:23+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.9500</priority>
+  </url>
 </urlset>

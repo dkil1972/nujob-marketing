@@ -1,11 +1,10 @@
-!!!
 %html
   %head
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %meta{charset: "utf-8"}
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
     %meta{name: "google-site-verification", content:"RlFj3VztE9u6kXxA1BNBtHyh5qxxBUJoLWyxuYnBk_4"}
-    = metamagic description: 'We make hiring referrals so simple everyone in your company will want to get involved. We can optimise your hiring process to make referring suitable candidates a no brainer.'
+    = metamagic description: 'We make hiring referrals simple. Everyone in your company will want to get involved.' 
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -32,4 +31,17 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(dc, s);
       })();
+    <!-- Perfect Audience -->
+    :javascript
+      (function() {
+        window._pa = window._pa || {};
+        // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+        // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+        // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/546f30cc94742552ed00005f.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+      })();       
+
+      
 
