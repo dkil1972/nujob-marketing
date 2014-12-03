@@ -1394,29 +1394,6 @@ textarea {
 }
 
 .product {
-  $trans: transparent;
-  $block: #e9fbf7;
-  $line: #dedede;
-  $gridSize: 60px;
-  $subdivisions: 5;
-  $lineAlpha: .7;
-  $sublineAlpha: .5;
-    background-color: $block;
-    background-image:
-      linear-gradient(rgba($line,$sublineAlpha) 1px, $trans 1px), /*sub horiz*/
-      linear-gradient($line 1px, $trans 1px), /*main horiz*/
-      linear-gradient(90deg, rgba($line,$sublineAlpha) 1px, $trans 1px), /*sub vert*/
-      linear-gradient(90deg, rgba($line,$lineAlpha) 1px, $trans 1px), /*main vert*/
-      linear-gradient($trans 3px, $block 3px, $block $gridSize - 2, $trans $gridSize - 2), /*nub horiz*/
-      linear-gradient(90deg, rgba($line,$lineAlpha) 3px, $trans 3px, $trans $gridSize - 2, rgba($line,$lineAlpha) $gridSize - 2) /*nub vert*/
-      ;
-    background-size:
-      $gridSize / $subdivisions $gridSize / $subdivisions,
-      $gridSize $gridSize,
-      $gridSize / $subdivisions $gridSize / $subdivisions,
-      $gridSize $gridSize,
-      $gridSize $gridSize,
-      $gridSize $gridSize;
   
   .container {
     max-width:1200px;
@@ -1470,7 +1447,6 @@ textarea {
    }
   
   .ribbon {
-    margin-top: 30px;
     color: #ddd;
     background: rgba(20, 106, 123, 0.8);
     height: 32px;
