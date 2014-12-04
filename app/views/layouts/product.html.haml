@@ -16,15 +16,21 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Roboto:300,200,400", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:700,400", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,600,300,400,200", :rel => "stylesheet", :type => "text/css"}
-    
-  .product
-    .main-content
-      .ribbon
-        %a{href:"/devs"}
-          ← Back to nujob
-      .container
-        .header
-        .body
-          = yield
-        %footer
-        %p © nujob 2014
+  %body  
+    .product
+      .main-content
+        .ribbon
+          %a{href:"/devs"}
+            ← Back to nujob
+        .container
+          .header
+          .body
+            = yield
+          %footer
+            %p © nujob 2014
+    -# Crazy Egg
+    :javascript
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/1712.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
