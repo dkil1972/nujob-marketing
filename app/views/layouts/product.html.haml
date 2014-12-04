@@ -28,7 +28,19 @@
             = yield
           %footer
             %p © nujob 2014
-    -# Crazy Egg
+            
+    <!-- Perfect Audience -->
+    :javascript
+      (function() {
+        window._pa = window._pa || {};
+        // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+        // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+        // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/546f30cc94742552ed00005f.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+      })();
+    <!-- Crazy Egg -->
     :javascript
       setTimeout(function(){var a=document.createElement("script");
       var b=document.getElementsByTagName("script")[0];
