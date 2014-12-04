@@ -1,3 +1,5 @@
+-meta title: 'Negotiating for contractors - 1 day course, London'
+
 .course
   %h1.text-center
     Negotiating for contractors
@@ -250,7 +252,11 @@
     lose a day's pay. The overwhelming feedback we've had is that Saturday 
     is the best day to run it. It's good for us because we work Monday to Friday too
     (not to mention the option for drinks afterwards). 
-  
+  %h3 Can I share this with my friends and colleagues?
+  %p
+    Of course you can, I hope they like it... here are some buttons to help you.
+  %p
+    .addthis_sharing_toolbox
   %h3 Any other questions about the course?
   %p
     If there is something I missed or any other concern about the course, please email me on 
@@ -316,3 +322,31 @@
     %a{href:"http://www.nujob.co.uk/devs"}
       No Thanks. I always negotiate the best deals. I get the best daily rates, best discounts and always sell items for the higher than I bought them for.     
   
+  <!-- enjoyed the content, get on the list -->
+  .row
+    .col-md-8.col-md-offset-2
+      .panel.panel-default
+        .panel-heading
+          %h3 Forwarded this by a friend?
+        .panel-body
+          .row
+            .col-md-6
+              %p Our best content on software, marketing and business. For software developers 
+              %i by software developers.
+              Delivered each week for free. 
+            .col-md-6
+              %form{:_lpchecked => "1", :action => "https://www.getdrip.com/forms/5224366/submissions", "data-drip-embedded-form" => "1323", "data-drip-id" => "1323", :method => "post", :target => "_blank"}
+                %p
+                  %span
+                    %label{:for => "fields[first_name]"} First name
+                    %input{:name => "fields[first_name]", :type => "text", :value => "", :style => "width:100%"}
+                    %label{:for => "fields[email]"} Email address
+                    %input{:name => "fields[email]", :type => "email", :value => "", :style => "width:100%"}
+                    %p
+                      %input{"data-drip-attribute" => "sign-up-button", :name => "submit", :type => "submit", :value => "Join the newsletter", :class => "btn btn-warning", :style => "width:100%"}
+                      %br
+                      %span{:style => "font-size: small;"} We don't spam. Unsubscribe at any time.
+                %input{:name => "fields[url]", :type => "hidden", :value => "/training/negotiaation"}
+                %input{:name => "fields[time_zone]", :type => "hidden", :value => "Europe/London"}
+                %input{:name => "fields[page_title]", :type => "hidden", :value => "negotiating for contractors"}
+              
