@@ -9,7 +9,7 @@ NujobMarketing::Application.routes.draw do
   get '/about/' => "home#about"
   get '/products/' => "home#products"
   get "/testimonials" => "home#testimonials"
-  get "/tour" => "home#tour"
+  get "/tour" => "products#tour"
   get "/pricing" => "home#pricing"
   get "/contact" => "home#contact"
   get "/careers" => "home#careers"

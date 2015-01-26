@@ -23,7 +23,8 @@
         .mt-50
   .col-md-5{:style => 'text-align:center'}
     .mt-50
-      %img{:src => '/assets/Take_Tour.png', :width => '400px', :alt => 'Take The Tour' }  
+      =link_to tour_path do 
+        = image_tag '/assets/Take_Tour.png', alt: 'Take the tour', width: '400px' 
       .mt-50
         =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
           %span.icon.icon-request
