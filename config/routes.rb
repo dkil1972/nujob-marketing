@@ -6,6 +6,8 @@ NujobMarketing::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'home#index'
+  get '/about/' => "home#about"
+  get '/products/' => "home#products"
   get "/testimonials" => "home#testimonials"
   get "/tour" => "home#tour"
   get "/pricing" => "home#pricing"
@@ -15,6 +17,7 @@ NujobMarketing::Application.routes.draw do
 
   get '/blog/', :to => 'blogs#index', :as => 'blogs'
   get '/blog/:title', :to => 'blogs#show', :as => 'blog'
+
   
   get "/content_items" => "content_items#index"
   get "/cms" => "content_items#index"

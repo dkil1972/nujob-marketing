@@ -38,6 +38,10 @@ module ApplicationHelper
       if (controller == "home") and (action == "index")
         class_name = "active"
       end
+    when "products"
+      if (controller == "home") and (action == "products")
+        class_name = "active"
+      end
     when "testimonials"
       if (controller == "home") and (action == "testimonials")
         class_name = "active"
