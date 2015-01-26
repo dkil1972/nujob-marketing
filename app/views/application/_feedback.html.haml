@@ -1,0 +1,11 @@
+%li.feedback-item
+  .feedback-content
+    = content_item("Testimonials", customer + "_quote") 
+    .feedback-arrow
+  .feedback-author
+    .feedback-icon
+      = image_tag(customer +".png")
+    .feedback-name.font-24
+      = content_item("Testimonials", customer + "_name") 
+    .feedback-role
+      = content_item("Testimonials", customer + "_role") 
