@@ -1,5 +1,32 @@
 class HomeController < ApplicationController
   def index
+    response = HTTParty.post("http://api.osmek.com/feed/jsonp",
+      :query => {
+        :api_key=> Constants::OSMEK_API,
+        :section_id => Constants::SECTION_ID,
+        :limit => Constants::PER_PAGE
+      }
+    )
+
+    @status = JSON.parse(response[/{.+}/])["status"]
+    if @status != "fail"
+      @blog_items = JSON.parse(response[/{.+}/])["items"]
+      @item_ids = @blog_items.map{|item| item['id']}
+    else
+      @error = JSON.parse(response[/{.+}/])["msg"]
+    end
+
+    rescue Exception => e
+      @error = e.message
+    ensure
+      respond_to do |format|
+        format.html
+        format.js
+      end
+  end
+
+  def about
+    render :layout => 'product'    
   end
   
   def products

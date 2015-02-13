@@ -1262,6 +1262,12 @@ body {
     float: left;
   }
 }
+.featured {
+  .blog-box-2 {
+    padding: 0;
+  }
+
+}
 #loading-indicator{
   position: fixed;
   left: 50%;
@@ -1404,6 +1410,11 @@ textarea {
     -moz-box-shadow: 0px 0px 32px -3px rgba(143,143,143,0.66);
     box-shadow: 0px 0px 32px -3px rgba(143,143,143,0.66);
   }
+  ul,ol {
+     font-size: 22px;
+     line-height: 30px;
+     font-weight: 200;
+  }
    h1 {
        font-family: 'Yanone Kaffeesatz';
        font-weight: 400;
@@ -1414,8 +1425,9 @@ textarea {
 
    h2 {
        font-family: 'Open Sans Condensed';
-       font-weight: 400;
+       font-weight: 600;
        font-size: 36px;
+       clear: both;
    }
    h3 {
         font-family: 'Open Sans Condensed';
@@ -1427,9 +1439,16 @@ textarea {
      line-height: 40px;
      padding-top: 15px;
      font-weight: 200;
+     clear: both;
      b {
         font-weight: 400;
       }
+   }
+   form {
+    .clincher {
+      font-size: 12px;
+      line-height: 1.2em;
+    }
    }
    
    .clients-words {

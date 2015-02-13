@@ -1,13 +1,3 @@
-- if params[:action] != "pricing"  
-  .trial-section.text-center
-    .font-38.white-text=content_item("Home", "start_trial")
-    .font-20.day-text
-      %strong=content_item("Home", "trial_period")
-    %br
-    %br
-    =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
-      %span.mr-10= image_tag('/assets/Request_Icon.png')
-      %strong=content_item("Home", "trial_button_text")
 .footer
   %div
     .col-50-percent

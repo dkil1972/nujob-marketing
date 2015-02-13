@@ -1,0 +1,20 @@
+.col-md-8.col-md-offset-2
+  .panel.panel-default
+    .panel-heading
+    .panel-body
+      .row
+        .col-md-8.col-md-offset-2
+          %form{:_lpchecked => "1", :action => "https://www.getdrip.com/forms/5224366/submissions", "data-drip-embedded-form" => "1323", "data-drip-id" => "1323", :method => "post", :target => "_blank"}
+            %p
+              %span
+                %label{:for => "fields[first_name]"} First name
+                %input{:name => "fields[first_name]", :type => "text", :value => "", :style => "width:100%"}/
+                %label{:for => "fields[email]"} Email address
+                %input{:name => "fields[email]", :type => "email", :value => "", :style => "width:100%"}/
+                %p
+                  %input{"data-drip-attribute" => "sign-up-button", :name => "submit", :type => "submit", :value => "Sign me up", :class => "btn btn-warning", :style => "width:100%"}/
+                  %br/
+                  %span.clincher We won't send you spam. Easily unsubscribe at any time.
+            %input{:name => "fields[url]", :type => "hidden", :value => about_url}/
+            %input{:name => "fields[time_zone]", :type => "hidden", :value => "Europe/London"}/
+            %input{:name => "fields[page_title]", :type => "hidden", :value => "nujob : About us"}/

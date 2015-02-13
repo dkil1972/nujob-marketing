@@ -5,35 +5,34 @@
   .col-md-5.font-white
     .mt-30
       %p.font-36{:style => 'text-align:center'}
-        = content_item('Home', 'main_title_text')
+        = content_item('Products', 'main_title_text')
     .mt-50
       .benefits
         .font-18
           %span.icon.icon-tick
-          %span= content_item('Home', 'benefit_1')
+          %span= content_item('Products', 'benefit_1')
         .font-18
           %span.icon.icon-tick
-          %span= content_item('Home', 'benefit_2')
+          %span= content_item('Products', 'benefit_2')
         .font-18
           %span.icon.icon-tick
-          %span= content_item('Home', 'benefit_3')
+          %span= content_item('Products', 'benefit_3')
         .font-18
           %span.icon.icon-tick
-          %span= content_item('Home', 'benefit_4')
+          %span= content_item('Products', 'benefit_4')
         .mt-50
   .col-md-5{:style => 'text-align:center'}
     .mt-50
-      =link_to tour_path do 
-        = image_tag '/assets/Take_Tour.png', alt: 'Take the tour', width: '400px' 
+      %img{:src => '/assets/Take_Tour.png', :width => '400px', :alt => 'Take The Tour' }  
       .mt-50
         =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
           %span.icon.icon-request
-          %b= content_item('Home', 'free_trial_button')
+          %b= content_item('Products', 'free_trial_button')
       .mt-50
   .col-md-1
 
 .row.h-400.text-center
-  %p.font-38.pt-75.mb-30= content_item('Home', 'bad_hire_title')
+  %p.font-38.pt-75.mb-30= content_item('Products', 'bad_hire_title')
   .bad-hire
     .bad-hire-step
       .colons-div
@@ -41,76 +40,76 @@
         %span.icon.icon-colon.colon-2
         %span.icon.icon-colon.colon-3
       %b.icon.icon-base.text-center= 1
-      %span.description= content_item("Home", "bad_hire_step_1")
+      %span.description= content_item('Products', "bad_hire_step_1")
     .bad-hire-step
       .colons-div
         %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 2
-      %span.description= content_item("Home", "bad_hire_step_2")
+      %span.description= content_item('Products', "bad_hire_step_2")
     .bad-hire-step
       .colons-div
         %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 3
-      %span.description= content_item("Home", "bad_hire_step_3")
+      %span.description= content_item('Products', "bad_hire_step_3")
     .bad-hire-step
       .colons-div
         %span.icon.icon-colon.colon-1
         %span.icon.icon-colon
         %span.icon.icon-colon
       %b.icon.icon-base.text-center= 4
-      %span= content_item("Home", "bad_hire_step_4")
+      %span= content_item('Products', "bad_hire_step_4")
     .bad-hire-step.text-red.bad_hire_result
       %b.icon.icon-bad-hire
-      %b= content_item("Home", "bad_hire_step_5")
+      %b= content_item('Products', "bad_hire_step_5")
 .homepage-box-2.font-white.text-center
   %p.font-38.mb-50
     %span= t ".happy_hire_title"
     %b= t ".happy_hire_steps"
   .good-hire-large-screen
     .good-hire-div-1
-      %p= content_item("Home", "good_hire_step_1")
+      %p= content_item('Products', "good_hire_step_1")
       .icon.icon-dev.icon-86.has-background
     .div-inline.div-center
       .good-hire-div-2.float-left.text-right
-        %p= content_item("Home", "good_hire_step_2")
+        %p= content_item('Products', "good_hire_step_2")
         %span= "&nbsp;&nbsp;".html_safe
         %span.icon.icon-hand-shake.icon-86.has-background
       .happy-hire-div
         .icon.icon-happy-hire
         %p
-          %b.font-20= content_item("Home", "good_hire_result")
+          %b.font-20= content_item('Products', "good_hire_result")
       .good-hire-div-2.float-left.text-left
         %span.icon.icon-list.icon-86.has-background
         %span= "&nbsp;&nbsp;".html_safe
-        %p.right= content_item("Home", "good_hire_step_3")
+        %p.right= content_item('Products', "good_hire_step_3")
     .good-hire-div-1.w-260
       .icon.icon-relationship.icon-86.has-background
-      %p= content_item("Home", "good_hire_step_4")
+      %p= content_item('Products', "good_hire_step_4")
   .good-hire-small-screen{:style => 'display:none'}
     .good-hire-div-1
       .icon.icon-dev.icon-86.has-background
-      .good-step-1-text= content_item("Home", "good_hire_step_1")
+      .good-step-1-text= content_item('Products', "good_hire_step_1")
     .good-hire-div-1
       .icon.icon-list.icon-86.has-background
-      .good-step-2-text= content_item("Home", "good_hire_step_3")
+      .good-step-2-text= content_item('Products', "good_hire_step_3")
     .good-hire-div-1
       .icon.icon-relationship.icon-86.has-background
-      .good-step-4-text= content_item("Home", "good_hire_step_4")
+      .good-step-4-text= content_item('Products', "good_hire_step_4")
     .good-hire-div-1
       .icon.icon-hand-shake.icon-86.has-background
-      .good-step-3-text= content_item("Home", "good_hire_step_2")
+      .good-step-3-text= content_item('Products', "good_hire_step_2")
     .good-hire-div-1
       .icon.icon-happy-hire
-      .good-hire-result-text= content_item("Home", "good_hire_result")
+      .good-hire-result-text= content_item('Products', "good_hire_result")
     %br
 
 .mt-50
 .h-450.text-center
-  %p.font-38= link_to(t(".feedback_title"), testimonials_path)
+  %p.font-38= t ".feedback_title"
   .div-inline
     .feedback-div
       %ul.bxslider.feedback-slider
@@ -140,9 +139,9 @@
       .circle-image
         = image_tag('/assets/Referal.png')
       %span.title-text
-        = content_item('Home','more_benefits_1_title')
+        = content_item('Products','more_benefits_1_title')
     .description
-      = content_item('Home','more_benefits_1_text')
+      = content_item('Products','more_benefits_1_text')
   .another-benefit
     .title
       .circle-image
@@ -172,3 +171,13 @@
 %br
 %br
 
+- if params[:action] != "pricing"  
+  .trial-section.text-center
+    .font-38.white-text=content_item("Home", "start_trial")
+    .font-20.day-text
+      %strong=content_item("Home", "trial_period")
+    %br
+    %br
+    =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
+      %span.mr-10= image_tag('/assets/Request_Icon.png')
+      %strong=content_item("Home", "trial_button_text")

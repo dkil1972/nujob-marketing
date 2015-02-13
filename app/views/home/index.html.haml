@@ -1,1 +1,42 @@
-%p this is the home page
+-meta title: 'nujob - because referrals are the best way to hire'
+
+.row.homepage-box-1
+  .col-md-6.font-white
+    .mt-30
+      %h2{:style => 'text-align:center'}
+        = content_item('Home', 'main_title_text')
+      %h3{:style => 'text-align:center'}
+        = content_item('Home', 'sub_title_text')
+    .mt-50
+      .benefits
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_1')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_2')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_3')
+        .font-18
+          %span.icon.icon-tick
+          %span= content_item('Home', 'benefit_4')
+        .mt-50
+  .col-md-5{:style => 'text-align:center'}
+    .mt-50
+      %img{:src => '/assets/Take_Tour.png', :width => '400px', :alt => 'Take The Tour' }  
+      .mt-50
+        =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
+          %span.icon.icon-request
+          %b= content_item('Home', 'free_trial_button')
+      .mt-50
+  .col-md-1
+.row.featured
+  .col-md-122
+    .blog-box-2.over-hidden
+      .list-blog-items
+        = render partial: 'blog_items', :locals => {:blog_items => @blog_items}
+  /.col-md-3
+  /%p.font-38.pt-75.mb-30
+  /Resources
+  .bad-hire
