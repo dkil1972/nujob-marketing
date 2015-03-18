@@ -67,8 +67,8 @@
       %b= content_item('Products', "bad_hire_step_5")
 .homepage-box-2.font-white.text-center
   %p.font-38.mb-50
-    %span= t ".happy_hire_title"
-    %b= t ".happy_hire_steps"
+    %span= content_item("Products", "happy_hire_title")
+    %b= t content_item("Products", ".happy_hire_steps")
   .good-hire-large-screen
     .good-hire-div-1
       %p= content_item('Products', "good_hire_step_1")
@@ -109,7 +109,7 @@
 
 .mt-50
 .h-450.text-center
-  %p.font-38= t ".feedback_title"
+  %p.font-38= content_item("Products", "feedback_title")
   .div-inline
     .feedback-div
       %ul.bxslider.feedback-slider
