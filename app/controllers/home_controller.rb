@@ -26,7 +26,7 @@ class HomeController < ApplicationController
   end
 
   def about
-    render :layout => 'product'    
+    render :layout => 'no-nav'    
   end
   
   def products
