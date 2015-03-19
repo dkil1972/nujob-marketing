@@ -26,7 +26,7 @@
     .mt-50
       %img{:src => '/assets/Take_Tour.png', :width => '400px', :alt => 'Take The Tour' }  
       .mt-50
-        =link_to(contact_url(:reason => 'trial'), {:class => 'btn main-call' }) do 
+        =link_to(signup_url, {:class => 'btn main-call' }) do 
           %span.icon.icon-request
           %b= content_item('Home', 'free_trial_button')
       .mt-50

@@ -31,6 +31,10 @@ class HomeController < ApplicationController
   
   def products
   end
+
+  def sign_me_up
+    render :layout => 'no-nav'    
+  end
   
   def contact
     @reason_param = params[:reason]

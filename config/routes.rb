@@ -8,6 +8,7 @@ NujobMarketing::Application.routes.draw do
   root 'home#index'
   get '/about/' => "home#about"
   get '/products/' => "home#products"
+  get '/signup/' => "home#sign_me_up"
   get "/testimonials" => "products#testimonials"
   get "/tour" => "products#tour"
   get "/pricing" => "home#pricing"
