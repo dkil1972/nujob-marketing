@@ -44,6 +44,16 @@ class BlogsController < ApplicationController
   end
 
   def show
+     
+    # if request.path_info.include?('You-have-45-minutes-complete-the-coding')
+    if request.path_info.include?('xxx')
+      redirect_to '/blog/You-have-45-minutes-to-complete-the-coding-challenge?id=59308', :status => 301
+    end
+    
+    if params[:id] = nil
+      redirect_to '/blog'
+    end
+        
     response = HTTParty.post("http://api.osmek.com/feed/jsonp",
       :query => {:api_key=> Constants::OSMEK_API,
       :section_id => Constants::SECTION_ID,
@@ -60,4 +70,5 @@ class BlogsController < ApplicationController
     rescue Exception => e
       @error = e.message    
   end
+  
 end
